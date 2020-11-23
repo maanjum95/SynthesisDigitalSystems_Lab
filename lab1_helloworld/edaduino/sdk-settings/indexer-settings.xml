@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdtprojectproperties>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.IncludePaths">
+<language name="C Source File">
+<includepath>${RISCV}/riscv32-unknown-elf/include/</includepath>
+<includepath>${RISCV}/riscv32-unknown-elf/include/c++/9.2.0</includepath>
+<includepath>${RISCV}/riscv32-unknown-elf/include/c++/9.2.0/backward</includepath>
+<includepath>${RISCV}/riscv32-unknown-elf/include/c++/9.2.0/riscv32-unknown-elf</includepath>
+<includepath>${RISCV}/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/9.2.0/include</includepath>
+<includepath>${RISCV}/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/9.2.0/include-fixed</includepath>
+
+</language>
+<language name="C++ Source File">
+<includepath>${RISCV}/riscv32-unknown-elf/include/</includepath>
+<includepath>${RISCV}/riscv32-unknown-elf/include/c++/9.2.0</includepath>
+<includepath>${RISCV}/riscv32-unknown-elf/include/c++/9.2.0/backward</includepath>
+<includepath>${RISCV}/riscv32-unknown-elf/include/c++/9.2.0/riscv32-unknown-elf</includepath>
+<includepath>${RISCV}/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/9.2.0/include</includepath>
+<includepath>${RISCV}/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/9.2.0/include-fixed</includepath>
+
+</language>
+<language name="Object File">
+
+</language>
+<language name="Assembly Source File">
+<includepath>${RISCV}/riscv32-unknown-elf/include/</includepath>
+<includepath>${RISCV}/riscv32-unknown-elf/include/c++/9.2.0</includepath>
+<includepath>${RISCV}/riscv32-unknown-elf/include/c++/9.2.0/backward</includepath>
+<includepath>${RISCV}/riscv32-unknown-elf/include/c++/9.2.0/riscv32-unknown-elf</includepath>
+<includepath>${RISCV}/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/9.2.0/include</includepath>
+<includepath>${RISCV}/riscv32-unknown-elf/lib/gcc/riscv32-unknown-elf/9.2.0/include-fixed</includepath>
+
+</language>
+</section>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.Macros">
+<language name="C Source File">
+
+</language>
+<language name="C++ Source File">
+
+</language>
+<language name="Object File">
+
+</language>
+<language name="Assembly Source File">
+
+</language>
+</section>
+</cdtprojectproperties>
