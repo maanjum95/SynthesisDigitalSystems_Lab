@@ -27,10 +27,12 @@ volatile int uart_irq_flag = 0; ///< This is the interrupt messaging flag
 /// \brief Custom uart interrupt handler. Source is the UART peripheral interrupt
 static void uart_irqhandler(void){
   custom_print_string(ETISSVP_LOGGER, "UART interrupt callback taken\n");
-  // Task TODO: >>>
+  // Task DONE: >>>
   /* Find a way to determine the interrupt type and message the
     wfi_uart() that a "received data available" interrupt was fired */
-  // <<< Task TODO
+  if (*(uart0.iir_) & UART_IIR_RECEIVED_DATA_AVAILABLE)
+	  uart_irq_flag = 1;
+  // <<< Task DONE
 }
 
 void wfi_uart(void) {
@@ -61,21 +63,19 @@ int main() {
   printf("Hello World! %s", _s);
   custom_print_string(ETISSVP_LOGGER, "Hello World! From ETISS!\n");
 
-  // Task TODO: >>>
+  // Task DONE: >>>
   /* Enable the "Received Data Available" Interrupt in the Uart IER register */
-  // <<< Task TODO
+  uart0.ops_->enable_interrupt(&uart0, UART_IER_RECEIVED_DATA_AVAILABLE);
+  // <<< Task DONE
 
   // UART input mirror
   while(1){
     int i = 0;
 
-    // Task TODO: >>>
-    while( (* (uart0.lsr_) & 0x1) == 0 ) {
-      // busy wait for input data
-      asm ("");
-    }
-    /* Replace the busy poll-wait with the wfi_uart() */
-    // <<< Task TODO
+    // Task DONE: >>>
+    /* Replace the busy poll - wait with the wfi_uart () */
+    wfi_uart();
+    // <<< Task DONE
 
     while( *uart0.lsr_ & 0x1 && i < BUF_SIZE) {
       // check the overflow flag, i.e. unread input data
