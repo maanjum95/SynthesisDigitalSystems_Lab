@@ -1,0 +1,101 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 8ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flgb2104-1-e'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'dct.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 909.203 ; gain = 194.969 ; free physical = 187 ; free virtual = 4501
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 909.203 ; gain = 194.969 ; free physical = 187 ; free virtual = 4501
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 909.203 ; gain = 194.969 ; free physical = 181 ; free virtual = 4496
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 909.203 ; gain = 194.969 ; free physical = 179 ; free virtual = 4495
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'DCT_Outer_Loop' (dct.cpp:55) in function 'dct_1d' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'DCT_Inner_Loop' (dct.cpp:59) in function 'dct_1d' completely with a factor of 8.
+INFO: [XFORM 203-102] Partitioning array 'dct_coeff_table' in dimension 2 automatically.
+INFO: [XFORM 203-101] Partitioning array 'buf_2d_in' (dct.cpp:124) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'col_inbuf' (dct.cpp:71) in dimension 2 completely.
+WARNING: [XFORM 203-713] All the elements of global array 'buf_2d_in[0]' should be updated in process function 'read_data', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'buf_2d_in[1]' should be updated in process function 'read_data', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'buf_2d_in[2]' should be updated in process function 'read_data', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'buf_2d_in[3]' should be updated in process function 'read_data', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'buf_2d_in[4]' should be updated in process function 'read_data', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'buf_2d_in[5]' should be updated in process function 'read_data', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'buf_2d_in[6]' should be updated in process function 'read_data', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'buf_2d_in[7]' should be updated in process function 'read_data', otherwise it may not be synthesized correctly.
+INFO: [XFORM 203-712] Applying dataflow to function 'dct', detected/extracted 3 process function(s): 
+	 'read_data'
+	 'dct_2d'
+	 'write_data'.
+INFO: [XFORM 203-11] Balancing expressions in function 'dct_1d' (dct.cpp:48)...8 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 909.203 ; gain = 194.969 ; free physical = 156 ; free virtual = 4473
+INFO: [XFORM 203-541] Flattening a loop nest 'WR_Loop_Row' (dct.cpp:115:29) in function 'write_data'.
+INFO: [XFORM 203-541] Flattening a loop nest 'RD_Loop_Row' (dct.cpp:103:29) in function 'read_data'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Xpose_Row_Outer_Loop' (dct.cpp:82:1) in function 'dct_2d'.
+INFO: [XFORM 203-541] Flattening a loop nest 'Xpose_Col_Outer_Loop' (dct.cpp:93:1) in function 'dct_2d'.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 909.203 ; gain = 194.969 ; free physical = 129 ; free virtual = 4445
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'dct' ...
+WARNING: [SYN 201-107] Renaming port name 'dct/input' to 'dct/input_r' to avoid the conflict with HDL keywords or other object names.
+WARNING: [SYN 201-107] Renaming port name 'dct/output' to 'dct/output_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'read_data' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'RD_Loop_Row_RD_Loop_Col'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 11.08 seconds; current allocated memory: 153.526 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 153.803 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct_1d' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'DCT_Outer_Loop'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 3.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.33 seconds; current allocated memory: 154.181 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.08 seconds; current allocated memory: 154.534 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'dct_2d' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Xpose_Row_Outer_Loop_Xpose_Row_Inner_Loop'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Xpose_Col_Outer_Loop_Xpose_Col_Inner_Loop'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 154.932 MB.
+INFO: [HLS 200-434] Only 2 loops out of a total 4 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.17 seconds; current allocated memory: 155.437 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'write_data' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'WR_Loop_Row_WR_Loop_Col'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.35 seconds; current allocated memory: 155.558 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]

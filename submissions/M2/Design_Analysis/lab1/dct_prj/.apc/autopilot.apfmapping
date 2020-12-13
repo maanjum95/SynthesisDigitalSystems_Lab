@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="dct.cpp" path="/nas/ei/share/TUEIEDA/LabSDS/WS20/ge46bod/Design_Analysis/lab1/dct.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="out.golden.dat" path="/nas/ei/share/TUEIEDA/LabSDS/WS20/ge46bod/Design_Analysis/lab1/out.golden.dat"/>
+    <originFiles name="in.dat" path="/nas/ei/share/TUEIEDA/LabSDS/WS20/ge46bod/Design_Analysis/lab1/in.dat"/>
+    <originFiles name="dct_test.cpp" path="/nas/ei/share/TUEIEDA/LabSDS/WS20/ge46bod/Design_Analysis/lab1/dct_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
