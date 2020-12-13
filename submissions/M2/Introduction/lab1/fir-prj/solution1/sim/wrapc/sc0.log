@@ -1,0 +1,21 @@
+   Build using "/nfs/tools/xilinx/Vivado/2019.1/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling apatb_fir.cpp
+   Compiling (apcc) fir.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/nfs/tools/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'ge46bod' on host 'prakt28.regent.e-technik.tu-muenchen.de' (Linux_x86_64 version 4.15.0-128-generic) on Sun Dec 13 22:59:56 CET 2020
+INFO: [HLS 200-10] On os Ubuntu 18.04.5 LTS
+INFO: [HLS 200-10] In directory '/nas/ei/share/TUEIEDA/LabSDS/WS20/ge46bod/Introduction/lab1/fir-prj/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_ge46bod/162351607896796108699
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) fir_test.c_pre.c.tb.c
+INFO: [HLS 200-10] Running '/nfs/tools/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/apcc'
+INFO: [HLS 200-10] For user 'ge46bod' on host 'prakt28.regent.e-technik.tu-muenchen.de' (Linux_x86_64 version 4.15.0-128-generic) on Sun Dec 13 23:00:08 CET 2020
+INFO: [HLS 200-10] On os Ubuntu 18.04.5 LTS
+INFO: [HLS 200-10] In directory '/nas/ei/share/TUEIEDA/LabSDS/WS20/ge46bod/Introduction/lab1/fir-prj/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is /tmp/apcc_db_ge46bod/163661607896808436033
+INFO: [APCC 202-1] APCC is done.
+   Generating cosim.tv.exe

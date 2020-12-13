@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="fir.c" path="/nas/ei/share/TUEIEDA/LabSDS/WS20/ge46bod/Introduction/lab1/fir.c"/>
+  </source>
+  <testbench>
+    <originFiles name="fir_test.c" path="/nas/ei/share/TUEIEDA/LabSDS/WS20/ge46bod/Introduction/lab1/fir_test.c"/>
+    <originFiles name="out.gold.dat" path="/nas/ei/share/TUEIEDA/LabSDS/WS20/ge46bod/Introduction/lab1/out.gold.dat"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

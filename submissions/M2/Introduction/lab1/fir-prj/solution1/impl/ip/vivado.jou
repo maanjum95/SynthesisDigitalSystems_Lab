@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Dec 13 23:03:42 2020
+# Process ID: 17217
+# Current directory: /nas/ei/share/TUEIEDA/LabSDS/WS20/ge46bod/Introduction/lab1/fir-prj/solution1/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /nas/ei/share/TUEIEDA/LabSDS/WS20/ge46bod/Introduction/lab1/fir-prj/solution1/impl/ip/vivado.log
+# Journal file: /nas/ei/share/TUEIEDA/LabSDS/WS20/ge46bod/Introduction/lab1/fir-prj/solution1/impl/ip/vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

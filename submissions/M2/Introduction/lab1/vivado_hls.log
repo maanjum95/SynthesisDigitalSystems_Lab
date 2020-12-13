@@ -1,0 +1,22 @@
+INFO: [HLS 200-10] Running '/nfs/tools/xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'ge46bod' on host 'prakt28.regent.e-technik.tu-muenchen.de' (Linux_x86_64 version 4.15.0-128-generic) on Sun Dec 13 23:03:27 CET 2020
+INFO: [HLS 200-10] On os Ubuntu 18.04.5 LTS
+INFO: [HLS 200-10] In directory '/nas/ei/share/TUEIEDA/LabSDS/WS20/ge46bod/Introduction/lab1'
+Sourcing Tcl script '/nas/ei/share/TUEIEDA/LabSDS/WS20/ge46bod/Introduction/lab1/fir-prj/solution1/export.tcl'
+INFO: [HLS 200-10] Opening project '/nas/ei/share/TUEIEDA/LabSDS/WS20/ge46bod/Introduction/lab1/fir-prj'.
+INFO: [HLS 200-10] Opening solution '/nas/ei/share/TUEIEDA/LabSDS/WS20/ge46bod/Introduction/lab1/fir-prj/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcvu9p-flgb2104-1-e'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+ipx::create_core: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1442.941 ; gain = 52.016 ; free physical = 140 ; free virtual = 4608
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/nfs/tools/xilinx/Vivado/2019.1/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Sun Dec 13 23:04:34 2020...
