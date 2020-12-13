@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /nas/ei/share/TUEIEDA/LabSDS/WS20/ge46bod/Introduction/lab1/fir-prj/solution1/./sim/autowrap/testbench/fir.c_pre.c.tb.c
