@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'dct/output' to 'dct/output_r' to avoid the conflict with HDL keywords or other object names." projectName="dct_prj" solutionName="solution6" date="2020-12-14T00:45:31.312+0100" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'dct/input' to 'dct/input_r' to avoid the conflict with HDL keywords or other object names." projectName="dct_prj" solutionName="solution6" date="2020-12-14T00:45:31.302+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'Loop_Col_DCT_Loop_proc' to 'Loop_Col_DCT_Loop_pr' (dct.cpp:48:23)" projectName="dct_prj" solutionName="solution6" date="2020-12-14T00:45:31.275+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'Loop_Row_DCT_Loop_proc' to 'Loop_Row_DCT_Loop_pr' (dct.cpp:48:23)" projectName="dct_prj" solutionName="solution6" date="2020-12-14T00:45:31.134+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'Loop_Xpose_Col_Outer_Loop_proc' to 'Loop_Xpose_Col_Outer' (dct.cpp:92:9)" projectName="dct_prj" solutionName="solution6" date="2020-12-14T00:45:31.126+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'Loop_Xpose_Row_Outer_Loop_proc' to 'Loop_Xpose_Row_Outer' (dct.cpp:81:9)" projectName="dct_prj" solutionName="solution6" date="2020-12-14T00:45:31.119+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Col_DCT_Loop' (dct.cpp:87:29) in function 'Loop_Col_DCT_Loop_proc' : &#xA;&#xA;&#xA;the outer loop is not a perfect loop." projectName="dct_prj" solutionName="solution6" date="2020-12-14T00:45:31.111+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Row_DCT_Loop' (dct.cpp:76:28) in function 'Loop_Row_DCT_Loop_proc' : &#xA;&#xA;&#xA;the outer loop is not a perfect loop." projectName="dct_prj" solutionName="solution6" date="2020-12-14T00:45:31.079+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'col_outbuf.i'  should be updated in process function 'Loop_Col_DCT_Loop_proc', otherwise it may not be synthesized correctly." projectName="dct_prj" solutionName="solution6" date="2020-12-14T00:45:30.911+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'col_inbuf[7]' should be updated in process function 'Loop_Xpose_Row_Outer_Loop_proc', otherwise it may not be synthesized correctly." projectName="dct_prj" solutionName="solution6" date="2020-12-14T00:45:30.903+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'col_inbuf[6]' should be updated in process function 'Loop_Xpose_Row_Outer_Loop_proc', otherwise it may not be synthesized correctly." projectName="dct_prj" solutionName="solution6" date="2020-12-14T00:45:30.893+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'col_inbuf[5]' should be updated in process function 'Loop_Xpose_Row_Outer_Loop_proc', otherwise it may not be synthesized correctly." projectName="dct_prj" solutionName="solution6" date="2020-12-14T00:45:30.882+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'col_inbuf[4]' should be updated in process function 'Loop_Xpose_Row_Outer_Loop_proc', otherwise it may not be synthesized correctly." projectName="dct_prj" solutionName="solution6" date="2020-12-14T00:45:30.874+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'col_inbuf[3]' should be updated in process function 'Loop_Xpose_Row_Outer_Loop_proc', otherwise it may not be synthesized correctly." projectName="dct_prj" solutionName="solution6" date="2020-12-14T00:45:30.863+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'col_inbuf[2]' should be updated in process function 'Loop_Xpose_Row_Outer_Loop_proc', otherwise it may not be synthesized correctly." projectName="dct_prj" solutionName="solution6" date="2020-12-14T00:45:30.854+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'col_inbuf[1]' should be updated in process function 'Loop_Xpose_Row_Outer_Loop_proc', otherwise it may not be synthesized correctly." projectName="dct_prj" solutionName="solution6" date="2020-12-14T00:45:30.848+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'col_inbuf[0]' should be updated in process function 'Loop_Xpose_Row_Outer_Loop_proc', otherwise it may not be synthesized correctly." projectName="dct_prj" solutionName="solution6" date="2020-12-14T00:45:30.842+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'row_outbuf.i'  should be updated in process function 'Loop_Row_DCT_Loop_proc', otherwise it may not be synthesized correctly." projectName="dct_prj" solutionName="solution6" date="2020-12-14T00:45:30.832+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'buf_2d_in[7]' should be updated in process function 'read_data', otherwise it may not be synthesized correctly." projectName="dct_prj" solutionName="solution6" date="2020-12-14T00:45:30.825+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'buf_2d_in[6]' should be updated in process function 'read_data', otherwise it may not be synthesized correctly." projectName="dct_prj" solutionName="solution6" date="2020-12-14T00:45:30.814+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'buf_2d_in[5]' should be updated in process function 'read_data', otherwise it may not be synthesized correctly." projectName="dct_prj" solutionName="solution6" date="2020-12-14T00:45:30.807+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'buf_2d_in[4]' should be updated in process function 'read_data', otherwise it may not be synthesized correctly." projectName="dct_prj" solutionName="solution6" date="2020-12-14T00:45:30.799+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'buf_2d_in[3]' should be updated in process function 'read_data', otherwise it may not be synthesized correctly." projectName="dct_prj" solutionName="solution6" date="2020-12-14T00:45:30.792+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'buf_2d_in[2]' should be updated in process function 'read_data', otherwise it may not be synthesized correctly." projectName="dct_prj" solutionName="solution6" date="2020-12-14T00:45:30.786+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'buf_2d_in[1]' should be updated in process function 'read_data', otherwise it may not be synthesized correctly." projectName="dct_prj" solutionName="solution6" date="2020-12-14T00:45:30.779+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'buf_2d_in[0]' should be updated in process function 'read_data', otherwise it may not be synthesized correctly." projectName="dct_prj" solutionName="solution6" date="2020-12-14T00:45:30.769+0100" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'dct/output' to 'dct/output_r' to avoid the conflict with HDL keywords or other object names." projectName="dct_prj" solutionName="solution5" date="2020-12-14T00:40:28.732+0100" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'dct/input' to 'dct/input_r' to avoid the conflict with HDL keywords or other object names." projectName="dct_prj" solutionName="solution5" date="2020-12-14T00:40:28.725+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'buf_2d_in[7]' should be updated in process function 'read_data', otherwise it may not be synthesized correctly." projectName="dct_prj" solutionName="solution5" date="2020-12-14T00:40:28.371+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'buf_2d_in[6]' should be updated in process function 'read_data', otherwise it may not be synthesized correctly." projectName="dct_prj" solutionName="solution5" date="2020-12-14T00:40:28.366+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'buf_2d_in[5]' should be updated in process function 'read_data', otherwise it may not be synthesized correctly." projectName="dct_prj" solutionName="solution5" date="2020-12-14T00:40:28.360+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'buf_2d_in[4]' should be updated in process function 'read_data', otherwise it may not be synthesized correctly." projectName="dct_prj" solutionName="solution5" date="2020-12-14T00:40:28.354+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'buf_2d_in[3]' should be updated in process function 'read_data', otherwise it may not be synthesized correctly." projectName="dct_prj" solutionName="solution5" date="2020-12-14T00:40:28.349+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'buf_2d_in[2]' should be updated in process function 'read_data', otherwise it may not be synthesized correctly." projectName="dct_prj" solutionName="solution5" date="2020-12-14T00:40:28.343+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'buf_2d_in[1]' should be updated in process function 'read_data', otherwise it may not be synthesized correctly." projectName="dct_prj" solutionName="solution5" date="2020-12-14T00:40:28.337+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'buf_2d_in[0]' should be updated in process function 'read_data', otherwise it may not be synthesized correctly." projectName="dct_prj" solutionName="solution5" date="2020-12-14T00:40:28.329+0100" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'dct/output' to 'dct/output_r' to avoid the conflict with HDL keywords or other object names." projectName="dct_prj" solutionName="solution4" date="2020-12-14T00:35:58.998+0100" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'dct/input' to 'dct/input_r' to avoid the conflict with HDL keywords or other object names." projectName="dct_prj" solutionName="solution4" date="2020-12-14T00:35:58.989+0100" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-69] Unable to schedule 'load' operation ('src_load_2', dct.cpp:61) on array 'src' due to limited memory ports. Please consider using a memory core with more ports or partitioning the array 'src'." projectName="dct_prj" solutionName="solution3" date="2020-12-14T00:22:13.287+0100" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'dct/output' to 'dct/output_r' to avoid the conflict with HDL keywords or other object names." projectName="dct_prj" solutionName="solution3" date="2020-12-14T00:22:13.205+0100" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'dct/input' to 'dct/input_r' to avoid the conflict with HDL keywords or other object names." projectName="dct_prj" solutionName="solution3" date="2020-12-14T00:22:13.193+0100" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'dct/output' to 'dct/output_r' to avoid the conflict with HDL keywords or other object names." projectName="dct_prj" solutionName="solution2" date="2020-12-14T00:06:16.730+0100" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'dct/input' to 'dct/input_r' to avoid the conflict with HDL keywords or other object names." projectName="dct_prj" solutionName="solution2" date="2020-12-14T00:06:16.703+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-542] Cannot flatten a loop nest 'DCT_Outer_Loop' (dct.cpp:55:29) in function 'dct_1d' : &#xA;&#xA;&#xA;the outer loop is not a perfect loop because there is nontrivial logic in the loop latch." projectName="dct_prj" solutionName="solution2" date="2020-12-14T00:06:16.367+0100" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'dct/output' to 'dct/output_r' to avoid the conflict with HDL keywords or other object names." projectName="dct_prj" solutionName="solution1" date="2020-12-13T23:34:24.726+0100" type="Warning"/>
+        <logs message="WARNING: [SYN 201-107] Renaming port name 'dct/input' to 'dct/input_r' to avoid the conflict with HDL keywords or other object names." projectName="dct_prj" solutionName="solution1" date="2020-12-13T23:34:24.714+0100" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -1,0 +1,1014 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1607901735000">
+  <ports id="1" name="src" type="PortType" originalName="src" coreName="RAM" bitwidth="16" iftype="IfTypeRegister" arraysize="64">
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+    <dataOutputObjs>load</dataOutputObjs>
+  </ports>
+  <ports id="2" name="src_offset" type="PortType" bitwidth="4">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="dst" type="PortType" originalName="dst" coreName="RAM" bitwidth="16" direction="DirOut" iftype="IfTypeRegister" arraysize="64"/>
+  <ports id="4" name="dst_offset" type="PortType" bitwidth="4">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="122" source_obj="//@ports.3" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="124" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="204" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.9"/>
+  <edges id="207" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="208" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="209" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="210" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="213" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="216" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="217" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="218" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="299" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.25"/>
+  <edges id="300" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.25"/>
+  <edges id="301" source_obj="//@regions.0/@basic_blocks.1/@node_objs.12" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.26"/>
+  <edges id="302" source_obj="//@regions.0/@basic_blocks.1/@node_objs.9" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.26"/>
+  <edges id="303" source_obj="//@regions.0/@basic_blocks.1/@node_objs.25" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.27"/>
+  <edges id="304" source_obj="//@regions.0/@basic_blocks.1/@node_objs.26" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.27"/>
+  <edges id="305" source_obj="//@regions.0/@basic_blocks.1/@node_objs.18" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.28"/>
+  <edges id="306" source_obj="//@regions.0/@basic_blocks.1/@node_objs.15" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.28"/>
+  <edges id="307" source_obj="//@regions.0/@basic_blocks.1/@node_objs.24" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.29"/>
+  <edges id="310" source_obj="//@regions.0/@basic_blocks.1/@node_objs.21" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.30"/>
+  <edges id="311" source_obj="//@regions.0/@basic_blocks.1/@node_objs.29" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.30"/>
+  <edges id="312" source_obj="//@regions.0/@basic_blocks.1/@node_objs.28" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.31"/>
+  <edges id="313" source_obj="//@regions.0/@basic_blocks.1/@node_objs.30" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.31"/>
+  <edges id="314" source_obj="//@regions.0/@basic_blocks.1/@node_objs.27" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.32"/>
+  <edges id="315" source_obj="//@regions.0/@basic_blocks.1/@node_objs.31" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.32"/>
+  <edges id="325" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.34"/>
+  <edges id="354" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="355" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="356" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="357" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.17"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.20"/>
+  <edges id="-1" source_obj="//@blocks.0/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.23"/>
+  <edges id="-1" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.23"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.16"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.19"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.22"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.33"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.13" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.14" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.16" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.17" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.18"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.19" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.21"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.20" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.21"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.22" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.24"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.23" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.24"/>
+  <edges id="-1" source_obj="//@regions.0/@basic_blocks.1/@node_objs.32" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.33"/>
+  <blocks id="42" name="block_42" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_48</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="13" name="dst_offset_read" lineNumber="63" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_1d" bitwidth="4" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="63" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+      <dataInputObjs>dst_offset</dataInputObjs>
+      <dataOutputObjs>add</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="14" name="src_offset_read" lineNumber="63" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_1d" bitwidth="4" opcode="read" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="63" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+      <dataInputObjs>src_offset</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+      <dataOutputObjs>or</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="20" name="or_ln61" lineNumber="61" fileName="dct.cpp" fileDirectory=".." rtlName="or_ln61_fu_316_p2" contextFuncName="dct_1d" bitwidth="7" opcode="or" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="61" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="23" name="or_ln61_1" lineNumber="61" fileName="dct.cpp" fileDirectory=".." rtlName="or_ln61_1_fu_331_p2" contextFuncName="dct_1d" bitwidth="7" opcode="or" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="61" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="26" name="or_ln61_2" lineNumber="61" fileName="dct.cpp" fileDirectory=".." rtlName="or_ln61_2_fu_346_p2" contextFuncName="dct_1d" bitwidth="7" opcode="or" m_display="0" m_topoIndex="14" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="61" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="29" name="or_ln61_3" lineNumber="61" fileName="dct.cpp" fileDirectory=".." rtlName="or_ln61_3_fu_361_p2" contextFuncName="dct_1d" bitwidth="7" opcode="or" m_display="0" m_topoIndex="17" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="61" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="32" name="or_ln61_4" lineNumber="61" fileName="dct.cpp" fileDirectory=".." rtlName="or_ln61_4_fu_376_p2" contextFuncName="dct_1d" bitwidth="7" opcode="or" m_display="0" m_topoIndex="20" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="61" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="35" name="or_ln61_5" lineNumber="61" fileName="dct.cpp" fileDirectory=".." rtlName="or_ln61_5_fu_391_p2" contextFuncName="dct_1d" bitwidth="7" opcode="or" m_display="0" m_topoIndex="23" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="61" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="38" name="or_ln61_6" lineNumber="61" fileName="dct.cpp" fileDirectory=".." rtlName="or_ln61_6_fu_406_p2" contextFuncName="dct_1d" bitwidth="7" opcode="or" m_display="0" m_topoIndex="26" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="61" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="41" name="_ln55" lineNumber="55" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_1d" opcode="br" m_display="0" m_delay="0.73" m_topoIndex="29" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="55" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+      <controlInputObjs>block_48</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="dct.cpp">
+      <validLinenumbers>63</validLinenumbers>
+      <validLinenumbers>61</validLinenumbers>
+      <validLinenumbers>55</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="119" name="block_119" type="BlockType">
+    <controlInputObjs>block_48</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="118" name="_ln65" lineNumber="65" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_1d" opcode="ret" nodeLabel="6.0" m_display="0" m_topoIndex="98" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="dct.cpp" linenumber="65" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="dct.cpp">
+      <validLinenumbers>65</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="4" typeName="Pipeline" id="440" pipe_depth="5" RegionName="DCT_Outer_Loop">
+    <basic_blocks id="48" name="block_48" type="BlockType">
+      <controlInputObjs>block_42</controlInputObjs>
+      <controlInputObjs>DCT_Outer_Loop</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_119</controlOutputObjs>
+      <controlOutputObjs>DCT_Outer_Loop</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="k_0" originalName="k" bitwidth="4" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="30" m_clusterGroupNumber="-1">
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <controlInputObjs>block_42</controlInputObjs>
+        <controlInputObjs>DCT_Outer_Loop</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="icmp_ln55" lineNumber="55" fileName="dct.cpp" fileDirectory=".." rtlName="icmp_ln55_fu_421_p2" contextFuncName="dct_1d" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.72" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="55" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="46" name="k" lineNumber="55" originalName="k" fileName="dct.cpp" fileDirectory=".." rtlName="k_fu_427_p2" contextFuncName="dct_1d" bitwidth="4" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.8" m_topoIndex="32" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="55" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="47" name="_ln55" lineNumber="55" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_1d" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="33" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="55" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>DCT_Outer_Loop</controlInputObjs>
+        <controlInputObjs>block_119</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="dct.cpp">
+        <validLinenumbers>55</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="117" name="DCT_Outer_Loop" type="BlockType">
+      <controlInputObjs>block_48</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_48</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="54" name="add_ln63_8" lineNumber="63" fileName="dct.cpp" fileDirectory=".." rtlName="add_ln63_8_fu_449_p2" contextFuncName="dct_1d" bitwidth="8" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.85" m_topoIndex="36" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="63" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="58" name="dct_coeff_table_0_lo" lineNumber="60" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_1d" bitwidth="14" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="1.29" m_topoIndex="38" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="60" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="60" name="src_load" lineNumber="61" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_1d" bitwidth="16" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="1.29" m_topoIndex="39" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="61" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>src</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="62" name="mul_ln61" lineNumber="61" fileName="dct.cpp" fileDirectory=".." rtlName="dct_mac_muladd_16s_14ns_29s_29_1_1_U1" contextFuncName="dct_1d" bitwidth="29" opcode="mul" nodeLabel="2.0" m_display="0" m_delay="0.63" m_topoIndex="57" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="61" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="64" name="dct_coeff_table_1_lo" lineNumber="60" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_1d" bitwidth="15" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="1.29" m_topoIndex="41" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="60" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="66" name="src_load_1" lineNumber="61" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_1d" bitwidth="16" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="1.29" m_topoIndex="42" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="61" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataInputObjs>src</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="68" name="mul_ln61_1" lineNumber="61" fileName="dct.cpp" fileDirectory=".." rtlName="dct_mul_mul_16s_15s_29_1_1_U2" contextFuncName="dct_1d" bitwidth="29" opcode="mul" nodeLabel="2.0" m_display="0" m_delay="2.84" m_topoIndex="60" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="61" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="70" name="dct_coeff_table_2_lo" lineNumber="60" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_1d" bitwidth="15" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="1.29" m_topoIndex="44" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="60" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="72" name="src_load_2" lineNumber="61" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_1d" bitwidth="16" opcode="load" nodeLabel="2.0" nodeLatency="1" m_display="1" m_delay="1.29" m_isLCDNode="true" m_isStartOfPath="true" m_topoIndex="61" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="61" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataInputObjs>src</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="74" name="mul_ln61_2" lineNumber="61" fileName="dct.cpp" fileDirectory=".." rtlName="dct_mac_muladd_16s_15s_29s_29_1_1_U3" contextFuncName="dct_1d" bitwidth="29" opcode="mul" nodeLabel="3.0" m_display="0" m_delay="0.63" m_topoIndex="66" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="61" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="76" name="dct_coeff_table_3_lo" lineNumber="60" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_1d" bitwidth="15" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="1.29" m_topoIndex="46" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="60" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="78" name="src_load_3" lineNumber="61" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_1d" bitwidth="16" opcode="load" nodeLabel="2.0" nodeLatency="1" m_display="0" m_delay="1.29" m_topoIndex="62" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="61" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataInputObjs>src</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="80" name="mul_ln61_3" lineNumber="61" fileName="dct.cpp" fileDirectory=".." rtlName="dct_mul_mul_16s_15s_29_1_1_U4" contextFuncName="dct_1d" bitwidth="29" opcode="mul" nodeLabel="3.0" m_display="0" m_delay="2.84" m_topoIndex="69" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="61" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="82" name="dct_coeff_table_4_lo" lineNumber="60" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_1d" bitwidth="15" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="1.29" m_topoIndex="48" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="60" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="84" name="src_load_4" lineNumber="61" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_1d" bitwidth="16" opcode="load" nodeLabel="4.0" nodeLatency="1" m_display="0" m_delay="1.29" m_topoIndex="73" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="61" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataInputObjs>src</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="86" name="mul_ln61_4" lineNumber="61" fileName="dct.cpp" fileDirectory=".." rtlName="dct_mac_muladd_16s_15s_29s_29_1_1_U7" contextFuncName="dct_1d" bitwidth="29" opcode="mul" nodeLabel="5.0" m_display="0" m_delay="0.63" m_topoIndex="87" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="61" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="88" name="dct_coeff_table_5_lo" lineNumber="60" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_1d" bitwidth="15" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="1.29" m_topoIndex="50" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="60" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="90" name="src_load_5" lineNumber="61" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_1d" bitwidth="16" opcode="load" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="1.29" m_topoIndex="70" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="61" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataInputObjs>src</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="92" name="mul_ln61_5" lineNumber="61" fileName="dct.cpp" fileDirectory=".." rtlName="dct_mul_mul_16s_15s_29_1_1_U5" contextFuncName="dct_1d" bitwidth="29" opcode="mul" nodeLabel="4.0" m_display="0" m_delay="2.84" m_topoIndex="76" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="61" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="94" name="dct_coeff_table_6_lo" lineNumber="60" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_1d" bitwidth="15" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="1.29" m_topoIndex="52" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="60" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="96" name="src_load_6" lineNumber="61" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_1d" bitwidth="16" opcode="load" nodeLabel="4.0" nodeLatency="1" m_display="0" m_delay="1.29" m_topoIndex="77" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="61" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataInputObjs>src</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="98" name="mul_ln61_6" lineNumber="61" fileName="dct.cpp" fileDirectory=".." rtlName="dct_mac_muladd_16s_15s_29s_29_1_1_U8" contextFuncName="dct_1d" bitwidth="29" opcode="mul" nodeLabel="5.0" m_display="0" m_delay="0.63" m_topoIndex="90" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="61" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="100" name="dct_coeff_table_7_lo" lineNumber="60" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_1d" bitwidth="15" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="1.29" m_topoIndex="54" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="60" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="102" name="src_load_7" lineNumber="61" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_1d" bitwidth="16" opcode="load" nodeLabel="3.0" nodeLatency="1" m_display="0" m_delay="1.29" m_topoIndex="71" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="61" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>or</dataInputObjs>
+        <dataInputObjs>src</dataInputObjs>
+        <dataOutputObjs>mul</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="104" name="mul_ln61_7" lineNumber="61" fileName="dct.cpp" fileDirectory=".." rtlName="dct_mac_muladd_16s_15s_14ns_29_1_1_U6" contextFuncName="dct_1d" bitwidth="29" opcode="mul" nodeLabel="4.0" m_display="0" m_delay="0.63" m_topoIndex="80" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="61" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="105" name="add_ln63_1" lineNumber="63" fileName="dct.cpp" fileDirectory=".." rtlName="dct_mac_muladd_16s_14ns_29s_29_1_1_U1" contextFuncName="dct_1d" bitwidth="29" opcode="add" nodeLabel="2.0" m_display="0" m_delay="2.2" m_topoIndex="63" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="63" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="106" name="add_ln63_2" lineNumber="63" fileName="dct.cpp" fileDirectory=".." rtlName="dct_mac_muladd_16s_15s_29s_29_1_1_U3" contextFuncName="dct_1d" bitwidth="29" opcode="add" nodeLabel="3.0" m_display="0" m_delay="2.2" m_topoIndex="72" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="63" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="107" name="add_ln63_3" lineNumber="63" fileName="dct.cpp" fileDirectory=".." rtlName="add_ln63_3_fu_498_p2" contextFuncName="dct_1d" bitwidth="29" opcode="add" nodeLabel="4.0" m_display="0" m_delay="1.13" m_topoIndex="81" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="63" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="108" name="add_ln63_4" lineNumber="63" fileName="dct.cpp" fileDirectory=".." rtlName="dct_mac_muladd_16s_15s_29s_29_1_1_U7" contextFuncName="dct_1d" bitwidth="29" opcode="add" nodeLabel="5.0" m_display="0" m_delay="2.2" m_topoIndex="91" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="63" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="109" name="add_ln63_5" lineNumber="63" fileName="dct.cpp" fileDirectory=".." rtlName="dct_mac_muladd_16s_15s_14ns_29_1_1_U6" contextFuncName="dct_1d" bitwidth="29" opcode="add" nodeLabel="4.0" m_display="0" m_delay="2.2" m_topoIndex="82" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="63" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="110" name="add_ln63_6" lineNumber="63" fileName="dct.cpp" fileDirectory=".." rtlName="dct_mac_muladd_16s_15s_29s_29_1_1_U8" contextFuncName="dct_1d" bitwidth="29" opcode="add" nodeLabel="5.0" m_display="0" m_delay="2.2" m_topoIndex="92" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="63" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>mul</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="111" name="add_ln63_7" lineNumber="63" fileName="dct.cpp" fileDirectory=".." rtlName="add_ln63_7_fu_520_p2" contextFuncName="dct_1d" bitwidth="29" opcode="add" nodeLabel="5.0" m_display="0" m_topoIndex="93" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="63" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="112" name="add_ln63" lineNumber="63" fileName="dct.cpp" fileDirectory=".." rtlName="add_ln63_fu_524_p2" contextFuncName="dct_1d" bitwidth="29" opcode="add" nodeLabel="5.0" m_display="0" m_delay="0.89" m_topoIndex="94" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="63" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="114" name="dst_addr_write_ln63" lineNumber="63" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_1d" opcode="store" nodeLabel="5.0" m_display="0" m_delay="1.29" m_topoIndex="96" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="63" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="116" name="_ln55" lineNumber="55" fileName="dct.cpp" fileDirectory=".." contextFuncName="dct_1d" opcode="br" nodeLabel="5.0" m_display="0" m_topoIndex="97" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="dct.cpp" linenumber="55" fileDirectory="/usr/local/labs/SDS/current/ge46bod/Design_Analysis/lab1" functionName="dct_1d"/>
+        <controlInputObjs>block_48</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="dct.cpp">
+        <validLinenumbers>63</validLinenumbers>
+        <validLinenumbers>60</validLinenumbers>
+        <validLinenumbers>61</validLinenumbers>
+        <validLinenumbers>55</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <regnodes realName="dct_coeff_table_6_ad_reg_687">
+    <nodeIds>93</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln63_5_reg_747">
+    <nodeIds>109</nodeIds>
+  </regnodes>
+  <regnodes realName="dct_coeff_table_3_lo_reg_702">
+    <nodeIds>76</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln63_3_reg_742">
+    <nodeIds>107</nodeIds>
+  </regnodes>
+  <regnodes realName="src_addr_4_reg_623">
+    <nodeIds>31</nodeIds>
+  </regnodes>
+  <regnodes realName="dct_coeff_table_2_ad_reg_667">
+    <nodeIds>69</nodeIds>
+  </regnodes>
+  <regnodes realName="dct_coeff_table_4_lo_reg_707">
+    <nodeIds>82</nodeIds>
+  </regnodes>
+  <regnodes realName="src_addr_reg_603">
+    <nodeIds>19</nodeIds>
+  </regnodes>
+  <regnodes realName="dct_coeff_table_4_ad_reg_677">
+    <nodeIds>81</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln63_8_reg_652">
+    <nodeIds>54</nodeIds>
+  </regnodes>
+  <regnodes realName="dct_coeff_table_6_lo_reg_717">
+    <nodeIds>94</nodeIds>
+  </regnodes>
+  <regnodes realName="src_addr_2_reg_613">
+    <nodeIds>25</nodeIds>
+  </regnodes>
+  <regnodes realName="dct_coeff_table_3_ad_reg_672">
+    <nodeIds>75</nodeIds>
+  </regnodes>
+  <regnodes realName="dct_coeff_table_5_ad_reg_682">
+    <nodeIds>87</nodeIds>
+  </regnodes>
+  <regnodes realName="dct_coeff_table_1_ad_reg_662">
+    <nodeIds>63</nodeIds>
+  </regnodes>
+  <regnodes realName="zext_ln61_2_reg_598">
+    <nodeIds>16</nodeIds>
+  </regnodes>
+  <regnodes realName="dct_coeff_table_7_ad_reg_692">
+    <nodeIds>99</nodeIds>
+  </regnodes>
+  <regnodes realName="k_reg_647">
+    <nodeIds>46</nodeIds>
+  </regnodes>
+  <regnodes realName="src_addr_5_reg_628">
+    <nodeIds>34</nodeIds>
+  </regnodes>
+  <regnodes realName="src_addr_6_reg_633">
+    <nodeIds>37</nodeIds>
+  </regnodes>
+  <regnodes realName="src_addr_1_reg_608">
+    <nodeIds>22</nodeIds>
+  </regnodes>
+  <regnodes realName="src_addr_7_reg_638">
+    <nodeIds>40</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln63_2_reg_732">
+    <nodeIds>106</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln55_reg_643">
+    <nodeIds>44</nodeIds>
+  </regnodes>
+  <regnodes realName="dct_coeff_table_0_ad_reg_657">
+    <nodeIds>57</nodeIds>
+  </regnodes>
+  <regnodes realName="k_0_reg_280">
+    <nodeIds>43</nodeIds>
+  </regnodes>
+  <regnodes realName="dct_coeff_table_2_lo_reg_697">
+    <nodeIds>70</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln63_1_reg_727">
+    <nodeIds>105</nodeIds>
+  </regnodes>
+  <regnodes realName="src_addr_3_reg_618">
+    <nodeIds>28</nodeIds>
+  </regnodes>
+  <regnodes realName="dct_coeff_table_7_lo_reg_722">
+    <nodeIds>100</nodeIds>
+  </regnodes>
+  <regnodes realName="mul_ln61_5_reg_737">
+    <nodeIds>92</nodeIds>
+  </regnodes>
+  <regnodes realName="dct_coeff_table_5_lo_reg_712">
+    <nodeIds>88</nodeIds>
+  </regnodes>
+  <expressionNodes realName="dct_coeff_table_3_ad_gep_fu_202">
+    <nodeIds>75</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="trunc_ln_fu_529">
+    <nodeIds>113</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mul_ln61_1_fu_547">
+    <nodeIds>68</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln61_5_fu_391">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln61_13_fu_491">
+    <nodeIds>101</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln61_14_fu_494">
+    <nodeIds>103</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln63_8_fu_449">
+    <nodeIds>54</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln60_fu_433">
+    <nodeIds>52</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_1_fu_397">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="src_addr_gep_fu_98">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_9_fu_367">
+    <nodeIds>30</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="grp_fu_590">
+    <nodeIds>98</nodeIds>
+    <nodeIds>110</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln61_fu_316">
+    <nodeIds>20</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_6_fu_322">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="src_addr_3_gep_fu_119">
+    <nodeIds>28</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln63_7_fu_520">
+    <nodeIds>111</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="grp_fu_554">
+    <nodeIds>74</nodeIds>
+    <nodeIds>106</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="src_addr_1_gep_fu_105">
+    <nodeIds>22</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="src_addr_5_gep_fu_133">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln61_9_fu_484">
+    <nodeIds>89</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="dct_coeff_table_6_ad_gep_fu_241">
+    <nodeIds>93</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln63_fu_445">
+    <nodeIds>53</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="src_addr_2_gep_fu_112">
+    <nodeIds>25</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln61_3_fu_361">
+    <nodeIds>29</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="grp_fu_582">
+    <nodeIds>86</nodeIds>
+    <nodeIds>108</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln61_2_fu_346">
+    <nodeIds>26</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="dct_coeff_table_4_ad_gep_fu_215">
+    <nodeIds>81</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="grp_fu_540">
+    <nodeIds>62</nodeIds>
+    <nodeIds>105</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln61_fu_458">
+    <nodeIds>61</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_2_fu_412">
+    <nodeIds>39</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln63_1_fu_502">
+    <nodeIds>55</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln61_2_fu_466">
+    <nodeIds>67</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln61_fu_454">
+    <nodeIds>59</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln61_4_fu_473">
+    <nodeIds>73</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_4_fu_291">
+    <nodeIds>15</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="dct_coeff_table_7_ad_gep_fu_254">
+    <nodeIds>99</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln61_1_fu_331">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln61_3_fu_470">
+    <nodeIds>71</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln61_5_fu_477">
+    <nodeIds>77</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln61_4_fu_376">
+    <nodeIds>32</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln61_7_fu_506">
+    <nodeIds>83</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_s_fu_382">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln61_8_fu_509">
+    <nodeIds>85</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="grp_fu_574">
+    <nodeIds>104</nodeIds>
+    <nodeIds>109</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="dct_coeff_table_2_ad_gep_fu_189">
+    <nodeIds>69</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="dct_coeff_table_1_ad_gep_fu_172">
+    <nodeIds>63</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln61_11_fu_513">
+    <nodeIds>95</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln61_12_fu_516">
+    <nodeIds>97</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln63_3_fu_498">
+    <nodeIds>107</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="k_fu_427">
+    <nodeIds>46</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="src_addr_6_gep_fu_140">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_5_fu_303">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="dct_coeff_table_0_ad_gep_fu_154">
+    <nodeIds>57</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="k_0_phi_fu_284">
+    <nodeIds>43</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="src_addr_4_gep_fu_126">
+    <nodeIds>31</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_8_fu_352">
+    <nodeIds>27</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="dst_addr_gep_fu_267">
+    <nodeIds>56</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mul_ln61_3_fu_561">
+    <nodeIds>80</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="or_ln61_6_fu_406">
+    <nodeIds>38</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln55_fu_421">
+    <nodeIds>44</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln61_10_fu_487">
+    <nodeIds>91</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln61_1_fu_462">
+    <nodeIds>65</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="tmp_7_fu_337">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln63_fu_524">
+    <nodeIds>112</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln61_6_fu_480">
+    <nodeIds>79</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="mul_ln61_5_fu_568">
+    <nodeIds>92</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln61_1_fu_311">
+    <nodeIds>18</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="src_addr_7_gep_fu_147">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="zext_ln61_2_fu_299">
+    <nodeIds>16</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="dct_coeff_table_5_ad_gep_fu_228">
+    <nodeIds>87</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="src_offset_read_read_fu_92">
+    <nodeIds>14</nodeIds>
+  </ioNodes>
+  <ioNodes realName="dst_offset_read_read_fu_86">
+    <nodeIds>13</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="dct_coeff_table_0">
+    <nodeIds>58</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_coeff_table_1">
+    <nodeIds>64</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_coeff_table_2">
+    <nodeIds>70</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_coeff_table_3">
+    <nodeIds>76</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_coeff_table_4">
+    <nodeIds>82</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_coeff_table_5">
+    <nodeIds>88</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_coeff_table_6">
+    <nodeIds>94</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dct_coeff_table_7">
+    <nodeIds>100</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="dst">
+    <nodeIds>114</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="src">
+    <nodeIds>60</nodeIds>
+    <nodeIds>72</nodeIds>
+    <nodeIds>90</nodeIds>
+    <nodeIds>84</nodeIds>
+  </memoryPorts>
+  <memoryPorts dataString="src" portID="1">
+    <nodeIds>66</nodeIds>
+    <nodeIds>78</nodeIds>
+    <nodeIds>102</nodeIds>
+    <nodeIds>96</nodeIds>
+  </memoryPorts>
+  <ioPorts name="dst(p0)">
+    <contents name="store">
+      <nodeIds>114</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="dst_offset">
+    <contents name="read">
+      <nodeIds>13</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="src(p0)">
+    <contents name="load">
+      <nodeIds>60</nodeIds>
+      <nodeIds>72</nodeIds>
+      <nodeIds>90</nodeIds>
+      <nodeIds>84</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="src(p1)">
+    <contents name="load">
+      <nodeIds>66</nodeIds>
+      <nodeIds>78</nodeIds>
+      <nodeIds>102</nodeIds>
+      <nodeIds>96</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="src_offset">
+    <contents name="read">
+      <nodeIds>14</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+      <operations id="45" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+      <operations id="47" stage="1" latency="1"/>
+      <operations id="52" stage="1" latency="1"/>
+      <operations id="53" stage="1" latency="1"/>
+      <operations id="54" stage="1" latency="1"/>
+      <operations id="57" stage="1" latency="1"/>
+      <operations id="58" stage="2" latency="2"/>
+      <operations id="60" stage="2" latency="2"/>
+      <operations id="63" stage="1" latency="1"/>
+      <operations id="64" stage="2" latency="2"/>
+      <operations id="66" stage="2" latency="2"/>
+      <operations id="69" stage="1" latency="1"/>
+      <operations id="70" stage="2" latency="2"/>
+      <operations id="75" stage="1" latency="1"/>
+      <operations id="76" stage="2" latency="2"/>
+      <operations id="81" stage="1" latency="1"/>
+      <operations id="82" stage="2" latency="2"/>
+      <operations id="87" stage="1" latency="1"/>
+      <operations id="88" stage="2" latency="2"/>
+      <operations id="93" stage="1" latency="1"/>
+      <operations id="94" stage="2" latency="2"/>
+      <operations id="99" stage="1" latency="1"/>
+      <operations id="100" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="58" stage="1" latency="2"/>
+      <operations id="59" stage="1" latency="1"/>
+      <operations id="60" stage="1" latency="2"/>
+      <operations id="61" stage="1" latency="1"/>
+      <operations id="62" stage="1" latency="1"/>
+      <operations id="64" stage="1" latency="2"/>
+      <operations id="65" stage="1" latency="1"/>
+      <operations id="66" stage="1" latency="2"/>
+      <operations id="67" stage="1" latency="1"/>
+      <operations id="68" stage="1" latency="1"/>
+      <operations id="70" stage="1" latency="2"/>
+      <operations id="72" stage="2" latency="2"/>
+      <operations id="76" stage="1" latency="2"/>
+      <operations id="78" stage="2" latency="2"/>
+      <operations id="82" stage="1" latency="2"/>
+      <operations id="88" stage="1" latency="2"/>
+      <operations id="94" stage="1" latency="2"/>
+      <operations id="100" stage="1" latency="2"/>
+      <operations id="105" stage="1" latency="1"/>
+    </states>
+    <states id="4">
+      <operations id="71" stage="1" latency="1"/>
+      <operations id="72" stage="1" latency="2"/>
+      <operations id="73" stage="1" latency="1"/>
+      <operations id="74" stage="1" latency="1"/>
+      <operations id="77" stage="1" latency="1"/>
+      <operations id="78" stage="1" latency="2"/>
+      <operations id="79" stage="1" latency="1"/>
+      <operations id="80" stage="1" latency="1"/>
+      <operations id="90" stage="2" latency="2"/>
+      <operations id="102" stage="2" latency="2"/>
+      <operations id="106" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="84" stage="2" latency="2"/>
+      <operations id="89" stage="1" latency="1"/>
+      <operations id="90" stage="1" latency="2"/>
+      <operations id="91" stage="1" latency="1"/>
+      <operations id="92" stage="1" latency="1"/>
+      <operations id="96" stage="2" latency="2"/>
+      <operations id="101" stage="1" latency="1"/>
+      <operations id="102" stage="1" latency="2"/>
+      <operations id="103" stage="1" latency="1"/>
+      <operations id="104" stage="1" latency="1"/>
+      <operations id="107" stage="1" latency="1"/>
+      <operations id="109" stage="1" latency="1"/>
+    </states>
+    <states id="6">
+      <operations id="49" stage="1" latency="1"/>
+      <operations id="50" stage="1" latency="1"/>
+      <operations id="51" stage="1" latency="1"/>
+      <operations id="55" stage="1" latency="1"/>
+      <operations id="56" stage="1" latency="1"/>
+      <operations id="83" stage="1" latency="1"/>
+      <operations id="84" stage="1" latency="2"/>
+      <operations id="85" stage="1" latency="1"/>
+      <operations id="86" stage="1" latency="1"/>
+      <operations id="95" stage="1" latency="1"/>
+      <operations id="96" stage="1" latency="2"/>
+      <operations id="97" stage="1" latency="1"/>
+      <operations id="98" stage="1" latency="1"/>
+      <operations id="108" stage="1" latency="1"/>
+      <operations id="110" stage="1" latency="1"/>
+      <operations id="111" stage="1" latency="1"/>
+      <operations id="112" stage="1" latency="1"/>
+      <operations id="113" stage="1" latency="1"/>
+      <operations id="114" stage="1" latency="1"/>
+      <operations id="115" stage="1" latency="1"/>
+      <operations id="116" stage="1" latency="1"/>
+    </states>
+    <states id="7">
+      <operations id="118" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="dct_1d2" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="34" mMaxLatency="34">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>42</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="DCT_Outer_Loop" mII="4" mDepth="5" mMinTripCount="8" mMaxTripCount="8" mMinLatency="32" mMaxLatency="32" mType="1">
+      <basicBlocks>48</basicBlocks>
+      <basicBlocks>117</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>119</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>
