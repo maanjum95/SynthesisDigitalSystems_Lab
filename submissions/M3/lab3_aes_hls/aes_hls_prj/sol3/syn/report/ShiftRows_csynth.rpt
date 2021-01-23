@@ -1,0 +1,142 @@
+
+
+================================================================
+== Vivado HLS Report for 'ShiftRows'
+================================================================
+* Date:           Sat Jan 23 21:09:27 2021
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        aes_hls_prj
+* Solution:       sol3
+* Product family: spartan7
+* Target device:  xc7s15-ftgb196-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+--------+----------+------------+
+    |  Clock | Target | Estimated| Uncertainty|
+    +--------+--------+----------+------------+
+    |ap_clk  |  100.00|     1.769|       12.50|
+    +--------+--------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   11|   11|   11|   11|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT | URAM|
++-----------------+---------+-------+-------+------+-----+
+|DSP              |        -|      -|      -|     -|    -|
+|Expression       |        -|      -|      -|     -|    -|
+|FIFO             |        -|      -|      -|     -|    -|
+|Instance         |        -|      -|      -|     -|    -|
+|Memory           |        -|      -|      -|     -|    -|
+|Multiplexer      |        -|      -|      -|   262|    -|
+|Register         |        -|      -|     92|     -|    -|
++-----------------+---------+-------+-------+------+-----+
+|Total            |        0|      0|     92|   262|    0|
++-----------------+---------+-------+-------+------+-----+
+|Available        |       20|     20|  16000|  8000|    0|
++-----------------+---------+-------+-------+------+-----+
+|Utilization (%)  |        0|      0|   ~0  |     3|    0|
++-----------------+---------+-------+-------+------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    +----------------+----+-----------+-----+-----------+
+    |      Name      | LUT| Input Size| Bits| Total Bits|
+    +----------------+----+-----------+-----+-----------+
+    |ap_NS_fsm       |  56|         13|    1|         13|
+    |reg_145         |   9|          2|    8|         16|
+    |reg_152         |   9|          2|    8|         16|
+    |state_address0  |  56|         13|    4|         52|
+    |state_address1  |  56|         13|    4|         52|
+    |state_d0        |  38|          7|    8|         56|
+    |state_d1        |  38|          7|    8|         56|
+    +----------------+----+-----------+-----+-----------+
+    |Total           | 262|         57|   41|        261|
+    +----------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------+----+----+-----+-----------+
+    |         Name         | FF | LUT| Bits| Const Bits|
+    +----------------------+----+----+-----+-----------+
+    |ap_CS_fsm             |  12|   0|   12|          0|
+    |reg_145               |   8|   0|    8|          0|
+    |reg_152               |   8|   0|    8|          0|
+    |state_load_2_reg_194  |   8|   0|    8|          0|
+    |state_load_4_reg_214  |   8|   0|    8|          0|
+    |state_load_6_reg_234  |   8|   0|    8|          0|
+    |state_load_8_reg_254  |   8|   0|    8|          0|
+    |temp_1_reg_209        |   8|   0|    8|          0|
+    |temp_2_reg_229        |   8|   0|    8|          0|
+    |temp_3_reg_249        |   8|   0|    8|          0|
+    |temp_reg_179          |   8|   0|    8|          0|
+    +----------------------+----+----+-----+-----------+
+    |Total                 |  92|   0|   92|          0|
+    +----------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------+-----+-----+------------+--------------+--------------+
+|    RTL Ports   | Dir | Bits|  Protocol  | Source Object|    C Type    |
++----------------+-----+-----+------------+--------------+--------------+
+|ap_clk          |  in |    1| ap_ctrl_hs |   ShiftRows  | return value |
+|ap_rst          |  in |    1| ap_ctrl_hs |   ShiftRows  | return value |
+|ap_start        |  in |    1| ap_ctrl_hs |   ShiftRows  | return value |
+|ap_done         | out |    1| ap_ctrl_hs |   ShiftRows  | return value |
+|ap_idle         | out |    1| ap_ctrl_hs |   ShiftRows  | return value |
+|ap_ready        | out |    1| ap_ctrl_hs |   ShiftRows  | return value |
+|state_address0  | out |    4|  ap_memory |     state    |     array    |
+|state_ce0       | out |    1|  ap_memory |     state    |     array    |
+|state_we0       | out |    1|  ap_memory |     state    |     array    |
+|state_d0        | out |    8|  ap_memory |     state    |     array    |
+|state_q0        |  in |    8|  ap_memory |     state    |     array    |
+|state_address1  | out |    4|  ap_memory |     state    |     array    |
+|state_ce1       | out |    1|  ap_memory |     state    |     array    |
+|state_we1       | out |    1|  ap_memory |     state    |     array    |
+|state_d1        | out |    8|  ap_memory |     state    |     array    |
+|state_q1        |  in |    8|  ap_memory |     state    |     array    |
++----------------+-----+-----+------------+--------------+--------------+
+

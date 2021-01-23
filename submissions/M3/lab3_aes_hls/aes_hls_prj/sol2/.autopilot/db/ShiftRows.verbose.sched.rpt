@@ -1,0 +1,132 @@
+
+
+================================================================
+== Vivado HLS Report for 'ShiftRows'
+================================================================
+* Date:           Sat Jan 23 11:19:13 2021
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        aes_hls_prj
+* Solution:       sol2
+* Product family: spartan7
+* Target device:  xc7s15-ftgb196-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+--------+----------+------------+
+    |  Clock | Target | Estimated| Uncertainty|
+    +--------+--------+----------+------------+
+    |ap_clk  |  100.00|     0.000|       12.50|
+    +--------+--------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    0|    0|    1|    1| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%state_3_3_read_2 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %state_3_3_read)" [c_src/aes.c:284]   --->   Operation 2 'read' 'state_3_3_read_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%state_3_2_read11 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %state_3_2_read)" [c_src/aes.c:284]   --->   Operation 3 'read' 'state_3_2_read11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%state_3_1_read_2 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %state_3_1_read)" [c_src/aes.c:284]   --->   Operation 4 'read' 'state_3_1_read_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%state_2_3_read_2 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %state_2_3_read)" [c_src/aes.c:284]   --->   Operation 5 'read' 'state_2_3_read_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%state_2_2_read_2 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %state_2_2_read)" [c_src/aes.c:284]   --->   Operation 6 'read' 'state_2_2_read_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%state_2_1_read_2 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %state_2_1_read)" [c_src/aes.c:284]   --->   Operation 7 'read' 'state_2_1_read_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%state_1_3_read_2 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %state_1_3_read)" [c_src/aes.c:284]   --->   Operation 8 'read' 'state_1_3_read_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%state_1_2_read_2 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %state_1_2_read)" [c_src/aes.c:284]   --->   Operation 9 'read' 'state_1_2_read_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%state_1_1_read_2 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %state_1_1_read)" [c_src/aes.c:284]   --->   Operation 10 'read' 'state_1_1_read_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%state_0_3_read_2 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %state_0_3_read)" [c_src/aes.c:284]   --->   Operation 11 'read' 'state_0_3_read_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%state_0_2_read_2 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %state_0_2_read)" [c_src/aes.c:284]   --->   Operation 12 'read' 'state_0_2_read_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%state_0_1_read_2 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %state_0_1_read)" [c_src/aes.c:284]   --->   Operation 13 'read' 'state_0_1_read_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%mrv = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } undef, i8 %state_1_1_read_2, 0" [c_src/aes.c:309]   --->   Operation 14 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv, i8 %state_2_2_read_2, 1" [c_src/aes.c:309]   --->   Operation 15 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%mrv_2 = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv_1, i8 %state_3_3_read_2, 2" [c_src/aes.c:309]   --->   Operation 16 'insertvalue' 'mrv_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%mrv_3 = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv_2, i8 %state_2_1_read_2, 3" [c_src/aes.c:309]   --->   Operation 17 'insertvalue' 'mrv_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%mrv_4 = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv_3, i8 %state_3_2_read11, 4" [c_src/aes.c:309]   --->   Operation 18 'insertvalue' 'mrv_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%mrv_5 = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv_4, i8 %state_0_3_read_2, 5" [c_src/aes.c:309]   --->   Operation 19 'insertvalue' 'mrv_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%mrv_6 = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv_5, i8 %state_3_1_read_2, 6" [c_src/aes.c:309]   --->   Operation 20 'insertvalue' 'mrv_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%mrv_7 = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv_6, i8 %state_0_2_read_2, 7" [c_src/aes.c:309]   --->   Operation 21 'insertvalue' 'mrv_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%mrv_8 = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv_7, i8 %state_1_3_read_2, 8" [c_src/aes.c:309]   --->   Operation 22 'insertvalue' 'mrv_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%mrv_9 = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv_8, i8 %state_0_1_read_2, 9" [c_src/aes.c:309]   --->   Operation 23 'insertvalue' 'mrv_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%mrv_10 = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv_9, i8 %state_1_2_read_2, 10" [c_src/aes.c:309]   --->   Operation 24 'insertvalue' 'mrv_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%mrv_11 = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv_10, i8 %state_2_3_read_2, 11" [c_src/aes.c:309]   --->   Operation 25 'insertvalue' 'mrv_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "ret { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv_11" [c_src/aes.c:309]   --->   Operation 26 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 100ns, clock uncertainty: 12.5ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

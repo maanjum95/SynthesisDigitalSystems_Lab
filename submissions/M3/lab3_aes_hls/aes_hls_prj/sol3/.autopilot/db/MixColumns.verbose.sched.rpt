@@ -1,0 +1,212 @@
+
+
+================================================================
+== Vivado HLS Report for 'MixColumns'
+================================================================
+* Date:           Sat Jan 23 21:09:23 2021
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        aes_hls_prj
+* Solution:       sol3
+* Product family: spartan7
+* Target device:  xc7s15-ftgb196-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+--------+----------+------------+
+    |  Clock | Target | Estimated| Uncertainty|
+    +--------+--------+----------+------------+
+    |ap_clk  |  100.00|     6.100|       12.50|
+    +--------+--------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   17|   17|   17|   17|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------+-----+-----+----------+-----------+-----------+------+----------+
+        |                     |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name      | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- MixColumns_label0  |   16|   16|         4|          -|          -|     4|    no    |
+        +---------------------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 2 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.39>
+ST_1 : Operation 6 [1/1] (1.39ns)   --->   "br label %1" [c_src/aes.c:317]   --->   Operation 6 'br' <Predicate = true> <Delay = 1.39>
+
+State 2 <SV = 1> <Delay = 1.76>
+ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%i_0 = phi i3 [ 0, %0 ], [ %i, %2 ]"   --->   Operation 7 'phi' 'i_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 8 [1/1] (0.98ns)   --->   "%icmp_ln317 = icmp eq i3 %i_0, -4" [c_src/aes.c:317]   --->   Operation 8 'icmp' 'icmp_ln317' <Predicate = true> <Delay = 0.98> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.98> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 4, i64 4, i64 4) nounwind"   --->   Operation 9 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (1.45ns)   --->   "%i = add i3 %i_0, 1" [c_src/aes.c:317]   --->   Operation 10 'add' 'i' <Predicate = true> <Delay = 1.45> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.45> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "br i1 %icmp_ln317, label %3, label %2" [c_src/aes.c:317]   --->   Operation 11 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "%tmp = call i5 @_ssdm_op_BitConcatenate.i5.i3.i2(i3 %i_0, i2 0)" [c_src/aes.c:318]   --->   Operation 12 'bitconcatenate' 'tmp' <Predicate = (!icmp_ln317)> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%zext_ln318 = zext i5 %tmp to i64" [c_src/aes.c:318]   --->   Operation 13 'zext' 'zext_ln318' <Predicate = (!icmp_ln317)> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%state_addr = getelementptr [16 x i8]* %state, i64 0, i64 %zext_ln318" [c_src/aes.c:318]   --->   Operation 14 'getelementptr' 'state_addr' <Predicate = (!icmp_ln317)> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%or_ln319 = or i5 %tmp, 1" [c_src/aes.c:319]   --->   Operation 15 'or' 'or_ln319' <Predicate = (!icmp_ln317)> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "%tmp_6 = call i64 @_ssdm_op_BitConcatenate.i64.i59.i5(i59 0, i5 %or_ln319)" [c_src/aes.c:319]   --->   Operation 16 'bitconcatenate' 'tmp_6' <Predicate = (!icmp_ln317)> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%state_addr_12 = getelementptr [16 x i8]* %state, i64 0, i64 %tmp_6" [c_src/aes.c:319]   --->   Operation 17 'getelementptr' 'state_addr_12' <Predicate = (!icmp_ln317)> <Delay = 0.00>
+ST_2 : Operation 18 [2/2] (1.76ns)   --->   "%t = load i8* %state_addr, align 1" [c_src/aes.c:318]   --->   Operation 18 'load' 't' <Predicate = (!icmp_ln317)> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 16> <RAM>
+ST_2 : Operation 19 [2/2] (1.76ns)   --->   "%state_load = load i8* %state_addr_12, align 1" [c_src/aes.c:319]   --->   Operation 19 'load' 'state_load' <Predicate = (!icmp_ln317)> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 16> <RAM>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "ret void" [c_src/aes.c:333]   --->   Operation 20 'ret' <Predicate = (icmp_ln317)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 1.76>
+ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%or_ln319_1 = or i5 %tmp, 2" [c_src/aes.c:319]   --->   Operation 21 'or' 'or_ln319_1' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%tmp_7 = call i64 @_ssdm_op_BitConcatenate.i64.i59.i5(i59 0, i5 %or_ln319_1)" [c_src/aes.c:319]   --->   Operation 22 'bitconcatenate' 'tmp_7' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%state_addr_13 = getelementptr [16 x i8]* %state, i64 0, i64 %tmp_7" [c_src/aes.c:319]   --->   Operation 23 'getelementptr' 'state_addr_13' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%or_ln319_2 = or i5 %tmp, 3" [c_src/aes.c:319]   --->   Operation 24 'or' 'or_ln319_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%tmp_8 = call i64 @_ssdm_op_BitConcatenate.i64.i59.i5(i59 0, i5 %or_ln319_2)" [c_src/aes.c:319]   --->   Operation 25 'bitconcatenate' 'tmp_8' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%state_addr_14 = getelementptr [16 x i8]* %state, i64 0, i64 %tmp_8" [c_src/aes.c:319]   --->   Operation 26 'getelementptr' 'state_addr_14' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 27 [1/2] (1.76ns)   --->   "%t = load i8* %state_addr, align 1" [c_src/aes.c:318]   --->   Operation 27 'load' 't' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 16> <RAM>
+ST_3 : Operation 28 [1/2] (1.76ns)   --->   "%state_load = load i8* %state_addr_12, align 1" [c_src/aes.c:319]   --->   Operation 28 'load' 'state_load' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 16> <RAM>
+ST_3 : Operation 29 [2/2] (1.76ns)   --->   "%state_load_11 = load i8* %state_addr_13, align 1" [c_src/aes.c:319]   --->   Operation 29 'load' 'state_load_11' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 16> <RAM>
+ST_3 : Operation 30 [2/2] (1.76ns)   --->   "%state_load_12 = load i8* %state_addr_14, align 1" [c_src/aes.c:319]   --->   Operation 30 'load' 'state_load_12' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 16> <RAM>
+
+State 4 <SV = 3> <Delay = 6.10>
+ST_4 : Operation 31 [1/2] (1.76ns)   --->   "%state_load_11 = load i8* %state_addr_13, align 1" [c_src/aes.c:319]   --->   Operation 31 'load' 'state_load_11' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 16> <RAM>
+ST_4 : Operation 32 [1/2] (1.76ns)   --->   "%state_load_12 = load i8* %state_addr_14, align 1" [c_src/aes.c:319]   --->   Operation 32 'load' 'state_load_12' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 16> <RAM>
+ST_4 : Operation 33 [1/1] (0.79ns)   --->   "%Tm = xor i8 %state_load, %t" [c_src/aes.c:319]   --->   Operation 33 'xor' 'Tm' <Predicate = true> <Delay = 0.79> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 34 [1/1] (0.79ns)   --->   "%xor_ln319_1 = xor i8 %state_load_11, %Tm" [c_src/aes.c:319]   --->   Operation 34 'xor' 'xor_ln319_1' <Predicate = true> <Delay = 0.79> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 35 [1/1] (0.79ns)   --->   "%Tmp = xor i8 %state_load_12, %xor_ln319_1" [c_src/aes.c:319]   --->   Operation 35 'xor' 'Tmp' <Predicate = true> <Delay = 0.79> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 36 [1/1] (0.00ns) (grouped into LUT with out node xor_ln322_1)   --->   "%shl_ln311 = shl i8 %Tm, 1" [c_src/aes.c:311->c_src/aes.c:321]   --->   Operation 36 'shl' 'shl_ln311' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 37 [1/1] (0.00ns) (grouped into LUT with out node xor_ln322_1)   --->   "%tmp_1 = call i1 @_ssdm_op_BitSelect.i1.i8.i32(i8 %Tm, i32 7)" [c_src/aes.c:311->c_src/aes.c:321]   --->   Operation 37 'bitselect' 'tmp_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 38 [1/1] (0.00ns) (grouped into LUT with out node xor_ln322_1)   --->   "%select_ln311 = select i1 %tmp_1, i8 27, i8 0" [c_src/aes.c:311->c_src/aes.c:321]   --->   Operation 38 'select' 'select_ln311' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 39 [1/1] (0.00ns) (grouped into LUT with out node xor_ln322_1)   --->   "%xor_ln322 = xor i8 %t, %select_ln311" [c_src/aes.c:322]   --->   Operation 39 'xor' 'xor_ln322' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 40 [1/1] (0.00ns) (grouped into LUT with out node xor_ln322_1)   --->   "%xor_ln322_2 = xor i8 %shl_ln311, %Tmp" [c_src/aes.c:322]   --->   Operation 40 'xor' 'xor_ln322_2' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 41 [1/1] (0.97ns) (out node of the LUT)   --->   "%xor_ln322_1 = xor i8 %xor_ln322_2, %xor_ln322" [c_src/aes.c:322]   --->   Operation 41 'xor' 'xor_ln322_1' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 42 [1/1] (1.76ns)   --->   "store i8 %xor_ln322_1, i8* %state_addr, align 1" [c_src/aes.c:322]   --->   Operation 42 'store' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 16> <RAM>
+ST_4 : Operation 43 [1/1] (0.79ns)   --->   "%Tm_1 = xor i8 %state_load_11, %state_load" [c_src/aes.c:323]   --->   Operation 43 'xor' 'Tm_1' <Predicate = true> <Delay = 0.79> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 44 [1/1] (0.00ns) (grouped into LUT with out node xor_ln325_1)   --->   "%shl_ln311_1 = shl i8 %Tm_1, 1" [c_src/aes.c:311->c_src/aes.c:324]   --->   Operation 44 'shl' 'shl_ln311_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 45 [1/1] (0.00ns) (grouped into LUT with out node xor_ln325_1)   --->   "%tmp_2 = call i1 @_ssdm_op_BitSelect.i1.i8.i32(i8 %Tm_1, i32 7)" [c_src/aes.c:311->c_src/aes.c:324]   --->   Operation 45 'bitselect' 'tmp_2' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 46 [1/1] (0.00ns) (grouped into LUT with out node xor_ln325_1)   --->   "%select_ln311_1 = select i1 %tmp_2, i8 27, i8 0" [c_src/aes.c:311->c_src/aes.c:324]   --->   Operation 46 'select' 'select_ln311_1' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 47 [1/1] (0.00ns) (grouped into LUT with out node xor_ln325_1)   --->   "%xor_ln325 = xor i8 %state_load, %select_ln311_1" [c_src/aes.c:325]   --->   Operation 47 'xor' 'xor_ln325' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 48 [1/1] (0.00ns) (grouped into LUT with out node xor_ln325_1)   --->   "%xor_ln325_2 = xor i8 %shl_ln311_1, %Tmp" [c_src/aes.c:325]   --->   Operation 48 'xor' 'xor_ln325_2' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 49 [1/1] (0.97ns) (out node of the LUT)   --->   "%xor_ln325_1 = xor i8 %xor_ln325_2, %xor_ln325" [c_src/aes.c:325]   --->   Operation 49 'xor' 'xor_ln325_1' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 50 [1/1] (1.76ns)   --->   "store i8 %xor_ln325_1, i8* %state_addr_12, align 1" [c_src/aes.c:325]   --->   Operation 50 'store' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 16> <RAM>
+ST_4 : Operation 51 [1/1] (0.79ns)   --->   "%Tm_2 = xor i8 %state_load_12, %state_load_11" [c_src/aes.c:326]   --->   Operation 51 'xor' 'Tm_2' <Predicate = true> <Delay = 0.79> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 52 [1/1] (0.00ns) (grouped into LUT with out node xor_ln328_1)   --->   "%shl_ln311_2 = shl i8 %Tm_2, 1" [c_src/aes.c:311->c_src/aes.c:327]   --->   Operation 52 'shl' 'shl_ln311_2' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 53 [1/1] (0.00ns) (grouped into LUT with out node xor_ln328_1)   --->   "%tmp_3 = call i1 @_ssdm_op_BitSelect.i1.i8.i32(i8 %Tm_2, i32 7)" [c_src/aes.c:311->c_src/aes.c:327]   --->   Operation 53 'bitselect' 'tmp_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 54 [1/1] (0.00ns) (grouped into LUT with out node xor_ln328_1)   --->   "%select_ln311_2 = select i1 %tmp_3, i8 27, i8 0" [c_src/aes.c:311->c_src/aes.c:327]   --->   Operation 54 'select' 'select_ln311_2' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 55 [1/1] (0.00ns) (grouped into LUT with out node xor_ln328_1)   --->   "%xor_ln328 = xor i8 %state_load_11, %select_ln311_2" [c_src/aes.c:328]   --->   Operation 55 'xor' 'xor_ln328' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 56 [1/1] (0.00ns) (grouped into LUT with out node xor_ln328_1)   --->   "%xor_ln328_2 = xor i8 %shl_ln311_2, %Tmp" [c_src/aes.c:328]   --->   Operation 56 'xor' 'xor_ln328_2' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 57 [1/1] (0.97ns) (out node of the LUT)   --->   "%xor_ln328_1 = xor i8 %xor_ln328_2, %xor_ln328" [c_src/aes.c:328]   --->   Operation 57 'xor' 'xor_ln328_1' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 58 [1/1] (0.79ns)   --->   "%Tm_3 = xor i8 %state_load_12, %t" [c_src/aes.c:329]   --->   Operation 58 'xor' 'Tm_3' <Predicate = true> <Delay = 0.79> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 59 [1/1] (0.00ns) (grouped into LUT with out node xor_ln331)   --->   "%shl_ln311_3 = shl i8 %Tm_3, 1" [c_src/aes.c:311->c_src/aes.c:330]   --->   Operation 59 'shl' 'shl_ln311_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 60 [1/1] (0.00ns) (grouped into LUT with out node xor_ln331)   --->   "%tmp_4 = call i1 @_ssdm_op_BitSelect.i1.i8.i32(i8 %Tm_3, i32 7)" [c_src/aes.c:311->c_src/aes.c:330]   --->   Operation 60 'bitselect' 'tmp_4' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 61 [1/1] (0.00ns) (grouped into LUT with out node xor_ln331)   --->   "%select_ln311_3 = select i1 %tmp_4, i8 27, i8 0" [c_src/aes.c:311->c_src/aes.c:330]   --->   Operation 61 'select' 'select_ln311_3' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 62 [1/1] (0.00ns) (grouped into LUT with out node xor_ln331)   --->   "%xor_ln331_1 = xor i8 %shl_ln311_3, %xor_ln319_1" [c_src/aes.c:331]   --->   Operation 62 'xor' 'xor_ln331_1' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 63 [1/1] (0.97ns) (out node of the LUT)   --->   "%xor_ln331 = xor i8 %xor_ln331_1, %select_ln311_3" [c_src/aes.c:331]   --->   Operation 63 'xor' 'xor_ln331' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.79> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 1.76>
+ST_5 : Operation 64 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([18 x i8]* @p_str11) nounwind" [c_src/aes.c:317]   --->   Operation 64 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 65 [1/1] (1.76ns)   --->   "store i8 %xor_ln328_1, i8* %state_addr_13, align 1" [c_src/aes.c:328]   --->   Operation 65 'store' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 16> <RAM>
+ST_5 : Operation 66 [1/1] (1.76ns)   --->   "store i8 %xor_ln331, i8* %state_addr_14, align 1" [c_src/aes.c:331]   --->   Operation 66 'store' <Predicate = true> <Delay = 1.76> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.76> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 8> <Depth = 16> <RAM>
+ST_5 : Operation 67 [1/1] (0.00ns)   --->   "br label %1" [c_src/aes.c:317]   --->   Operation 67 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 100ns, clock uncertainty: 12.5ns.
+
+ <State 1>: 1.39ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', c_src/aes.c:317) [4]  (1.39 ns)
+
+ <State 2>: 1.77ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', c_src/aes.c:317) [4]  (0 ns)
+	'getelementptr' operation ('state_addr', c_src/aes.c:318) [13]  (0 ns)
+	'load' operation ('t', c_src/aes.c:318) on array 'state' [23]  (1.77 ns)
+
+ <State 3>: 1.77ns
+The critical path consists of the following:
+	'or' operation ('or_ln319_1', c_src/aes.c:319) [17]  (0 ns)
+	'getelementptr' operation ('state_addr_13', c_src/aes.c:319) [19]  (0 ns)
+	'load' operation ('state_load_11', c_src/aes.c:319) on array 'state' [25]  (1.77 ns)
+
+ <State 4>: 6.1ns
+The critical path consists of the following:
+	'load' operation ('state_load_11', c_src/aes.c:319) on array 'state' [25]  (1.77 ns)
+	'xor' operation ('xor_ln319_1', c_src/aes.c:319) [28]  (0.795 ns)
+	'xor' operation ('Tmp', c_src/aes.c:319) [29]  (0.795 ns)
+	'xor' operation ('xor_ln322_2', c_src/aes.c:322) [34]  (0 ns)
+	'xor' operation ('xor_ln322_1', c_src/aes.c:322) [35]  (0.972 ns)
+	'store' operation ('store_ln322', c_src/aes.c:322) of variable 'xor_ln322_1', c_src/aes.c:322 on array 'state' [36]  (1.77 ns)
+
+ <State 5>: 1.77ns
+The critical path consists of the following:
+	'store' operation ('store_ln328', c_src/aes.c:328) of variable 'xor_ln328_1', c_src/aes.c:328 on array 'state' [52]  (1.77 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

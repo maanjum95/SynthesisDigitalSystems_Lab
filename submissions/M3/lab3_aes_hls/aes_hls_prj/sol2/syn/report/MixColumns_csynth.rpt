@@ -1,0 +1,220 @@
+
+
+================================================================
+== Vivado HLS Report for 'MixColumns'
+================================================================
+* Date:           Sat Jan 23 11:19:22 2021
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        aes_hls_prj
+* Solution:       sol2
+* Product family: spartan7
+* Target device:  xc7s15-ftgb196-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+--------+----------+------------+
+    |  Clock | Target | Estimated| Uncertainty|
+    +--------+--------+----------+------------+
+    |ap_clk  |  100.00|     3.357|       12.50|
+    +--------+--------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    0|    0|    1|    1| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT | URAM|
++-----------------+---------+-------+-------+------+-----+
+|DSP              |        -|      -|      -|     -|    -|
+|Expression       |        -|      -|      0|   624|    -|
+|FIFO             |        -|      -|      -|     -|    -|
+|Instance         |        -|      -|      -|     -|    -|
+|Memory           |        -|      -|      -|     -|    -|
+|Multiplexer      |        -|      -|      -|     -|    -|
+|Register         |        -|      -|      -|     -|    -|
++-----------------+---------+-------+-------+------+-----+
+|Total            |        0|      0|      0|   624|    0|
++-----------------+---------+-------+-------+------+-----+
+|Available        |       20|     20|  16000|  8000|    0|
++-----------------+---------+-------+-------+------+-----+
+|Utilization (%)  |        0|      0|      0|     7|    0|
++-----------------+---------+-------+-------+------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------+----------+-------+---+----+------------+------------+
+    |       Variable Name       | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------+----------+-------+---+----+------------+------------+
+    |select_ln311_10_fu_646_p3  |  select  |      0|  0|   5|           1|           5|
+    |select_ln311_11_fu_692_p3  |  select  |      0|  0|   5|           1|           5|
+    |select_ln311_12_fu_744_p3  |  select  |      0|  0|   5|           1|           5|
+    |select_ln311_13_fu_790_p3  |  select  |      0|  0|   5|           1|           5|
+    |select_ln311_14_fu_836_p3  |  select  |      0|  0|   5|           1|           5|
+    |select_ln311_15_fu_882_p3  |  select  |      0|  0|   5|           1|           5|
+    |select_ln311_1_fu_220_p3   |  select  |      0|  0|   5|           1|           5|
+    |select_ln311_2_fu_266_p3   |  select  |      0|  0|   5|           1|           5|
+    |select_ln311_3_fu_312_p3   |  select  |      0|  0|   5|           1|           5|
+    |select_ln311_4_fu_364_p3   |  select  |      0|  0|   5|           1|           5|
+    |select_ln311_5_fu_410_p3   |  select  |      0|  0|   5|           1|           5|
+    |select_ln311_6_fu_456_p3   |  select  |      0|  0|   5|           1|           5|
+    |select_ln311_7_fu_502_p3   |  select  |      0|  0|   5|           1|           5|
+    |select_ln311_8_fu_554_p3   |  select  |      0|  0|   5|           1|           5|
+    |select_ln311_9_fu_600_p3   |  select  |      0|  0|   5|           1|           5|
+    |select_ln311_fu_174_p3     |  select  |      0|  0|   5|           1|           5|
+    |xor_ln319_10_fu_522_p2     |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln319_11_fu_712_p2     |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln319_1_fu_148_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln319_2_fu_154_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln319_3_fu_338_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln319_4_fu_344_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln319_5_fu_528_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln319_6_fu_534_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln319_7_fu_718_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln319_8_fu_724_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln319_9_fu_332_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln319_fu_142_p2        |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln322_10_fu_758_p2     |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln322_11_fu_764_p2     |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln322_1_fu_188_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln322_2_fu_194_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln322_3_fu_372_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln322_4_fu_378_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln322_5_fu_384_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln322_6_fu_562_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln322_7_fu_568_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln322_8_fu_574_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln322_9_fu_752_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln322_fu_182_p2        |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln323_1_fu_390_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln323_2_fu_580_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln323_3_fu_770_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln323_fu_200_p2        |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln325_10_fu_804_p2     |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln325_11_fu_810_p2     |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln325_1_fu_234_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln325_2_fu_240_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln325_3_fu_418_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln325_4_fu_424_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln325_5_fu_430_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln325_6_fu_608_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln325_7_fu_614_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln325_8_fu_620_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln325_9_fu_798_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln325_fu_228_p2        |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln326_1_fu_436_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln326_2_fu_626_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln326_3_fu_816_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln326_fu_246_p2        |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln328_10_fu_850_p2     |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln328_11_fu_856_p2     |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln328_1_fu_280_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln328_2_fu_286_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln328_3_fu_464_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln328_4_fu_470_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln328_5_fu_476_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln328_6_fu_654_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln328_7_fu_660_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln328_8_fu_666_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln328_9_fu_844_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln328_fu_274_p2        |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln329_1_fu_482_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln329_2_fu_672_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln329_3_fu_862_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln329_fu_292_p2        |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln331_1_fu_326_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln331_2_fu_510_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln331_3_fu_516_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln331_4_fu_700_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln331_5_fu_706_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln331_6_fu_890_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln331_7_fu_896_p2      |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln331_fu_320_p2        |    xor   |      0|  0|   8|           8|           8|
+    +---------------------------+----------+-------+---+----+------------+------------+
+    |Total                      |          |      0|  0| 624|         560|         624|
+    +---------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------+-----+-----+------------+----------------+--------------+
+|    RTL Ports   | Dir | Bits|  Protocol  |  Source Object |    C Type    |
++----------------+-----+-----+------------+----------------+--------------+
+|ap_ready        | out |    1| ap_ctrl_hs |   MixColumns   | return value |
+|ap_return_0     | out |    8| ap_ctrl_hs |   MixColumns   | return value |
+|ap_return_1     | out |    8| ap_ctrl_hs |   MixColumns   | return value |
+|ap_return_2     | out |    8| ap_ctrl_hs |   MixColumns   | return value |
+|ap_return_3     | out |    8| ap_ctrl_hs |   MixColumns   | return value |
+|ap_return_4     | out |    8| ap_ctrl_hs |   MixColumns   | return value |
+|ap_return_5     | out |    8| ap_ctrl_hs |   MixColumns   | return value |
+|ap_return_6     | out |    8| ap_ctrl_hs |   MixColumns   | return value |
+|ap_return_7     | out |    8| ap_ctrl_hs |   MixColumns   | return value |
+|ap_return_8     | out |    8| ap_ctrl_hs |   MixColumns   | return value |
+|ap_return_9     | out |    8| ap_ctrl_hs |   MixColumns   | return value |
+|ap_return_10    | out |    8| ap_ctrl_hs |   MixColumns   | return value |
+|ap_return_11    | out |    8| ap_ctrl_hs |   MixColumns   | return value |
+|ap_return_12    | out |    8| ap_ctrl_hs |   MixColumns   | return value |
+|ap_return_13    | out |    8| ap_ctrl_hs |   MixColumns   | return value |
+|ap_return_14    | out |    8| ap_ctrl_hs |   MixColumns   | return value |
+|ap_return_15    | out |    8| ap_ctrl_hs |   MixColumns   | return value |
+|state_0_0_read  |  in |    8|   ap_none  | state_0_0_read |    scalar    |
+|state_0_1_read  |  in |    8|   ap_none  | state_0_1_read |    scalar    |
+|state_0_2_read  |  in |    8|   ap_none  | state_0_2_read |    scalar    |
+|state_0_3_read  |  in |    8|   ap_none  | state_0_3_read |    scalar    |
+|state_1_0_read  |  in |    8|   ap_none  | state_1_0_read |    scalar    |
+|state_1_1_read  |  in |    8|   ap_none  | state_1_1_read |    scalar    |
+|state_1_2_read  |  in |    8|   ap_none  | state_1_2_read |    scalar    |
+|state_1_3_read  |  in |    8|   ap_none  | state_1_3_read |    scalar    |
+|state_2_0_read  |  in |    8|   ap_none  | state_2_0_read |    scalar    |
+|state_2_1_read  |  in |    8|   ap_none  | state_2_1_read |    scalar    |
+|state_2_2_read  |  in |    8|   ap_none  | state_2_2_read |    scalar    |
+|state_2_3_read  |  in |    8|   ap_none  | state_2_3_read |    scalar    |
+|state_3_0_read  |  in |    8|   ap_none  | state_3_0_read |    scalar    |
+|state_3_1_read  |  in |    8|   ap_none  | state_3_1_read |    scalar    |
+|state_3_2_read  |  in |    8|   ap_none  | state_3_2_read |    scalar    |
+|state_3_3_read  |  in |    8|   ap_none  | state_3_3_read |    scalar    |
++----------------+-----+-----+------------+----------------+--------------+
+

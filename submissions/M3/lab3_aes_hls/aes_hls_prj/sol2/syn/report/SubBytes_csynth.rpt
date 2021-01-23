@@ -1,0 +1,158 @@
+
+
+================================================================
+== Vivado HLS Report for 'SubBytes'
+================================================================
+* Date:           Sat Jan 23 11:19:21 2021
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        aes_hls_prj
+* Solution:       sol2
+* Product family: spartan7
+* Target device:  xc7s15-ftgb196-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+--------+----------+------------+
+    |  Clock | Target | Estimated| Uncertainty|
+    +--------+--------+----------+------------+
+    |ap_clk  |  100.00|     2.771|       12.50|
+    +--------+--------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    1|    1|    1|    1| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT | URAM|
++-----------------+---------+-------+-------+------+-----+
+|DSP              |        -|      -|      -|     -|    -|
+|Expression       |        -|      -|      0|     6|    -|
+|FIFO             |        -|      -|      -|     -|    -|
+|Instance         |        -|      -|      -|     -|    -|
+|Memory           |        8|      -|      0|     0|    -|
+|Multiplexer      |        -|      -|      -|     -|    -|
+|Register         |        -|      -|      2|     -|    -|
++-----------------+---------+-------+-------+------+-----+
+|Total            |        8|      0|      2|     6|    0|
++-----------------+---------+-------+-------+------+-----+
+|Available        |       20|     20|  16000|  8000|    0|
++-----------------+---------+-------+-------+------+-----+
+|Utilization (%)  |       40|      0|   ~0  |  ~0  |    0|
++-----------------+---------+-------+-------+------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    +--------+---------------+---------+---+----+-----+------+-----+------+-------------+
+    | Memory |     Module    | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +--------+---------------+---------+---+----+-----+------+-----+------+-------------+
+    |sbox_U  |SubBytes_sbox  |        8|  0|   0|    0|   256|    8|     1|         2048|
+    +--------+---------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total   |               |        8|  0|   0|    0|   256|    8|     1|         2048|
+    +--------+---------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------------+----------+-------+---+----+------------+------------+
+    |        Variable Name        | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------------+----------+-------+---+----+------------+------------+
+    |ap_block_pp0_stage0_11001    |    and   |      0|  0|   2|           1|           1|
+    |ap_block_pp0_stage0_subdone  |    or    |      0|  0|   2|           1|           1|
+    |ap_enable_pp0                |    xor   |      0|  0|   2|           1|           2|
+    +-----------------------------+----------+-------+---+----+------------+------------+
+    |Total                        |          |      0|  0|   6|           3|           4|
+    +-----------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    +-------------------------+---+----+-----+-----------+
+    |           Name          | FF| LUT| Bits| Const Bits|
+    +-------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                |  1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |  1|   0|    1|          0|
+    +-------------------------+---+----+-----+-----------+
+    |Total                    |  2|   0|    2|          0|
+    +-------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------+-----+-----+------------+----------------+--------------+
+|    RTL Ports   | Dir | Bits|  Protocol  |  Source Object |    C Type    |
++----------------+-----+-----+------------+----------------+--------------+
+|ap_clk          |  in |    1| ap_ctrl_hs |    SubBytes    | return value |
+|ap_rst          |  in |    1| ap_ctrl_hs |    SubBytes    | return value |
+|ap_start        |  in |    1| ap_ctrl_hs |    SubBytes    | return value |
+|ap_done         | out |    1| ap_ctrl_hs |    SubBytes    | return value |
+|ap_idle         | out |    1| ap_ctrl_hs |    SubBytes    | return value |
+|ap_ready        | out |    1| ap_ctrl_hs |    SubBytes    | return value |
+|ap_ce           |  in |    1| ap_ctrl_hs |    SubBytes    | return value |
+|ap_return_0     | out |    8| ap_ctrl_hs |    SubBytes    | return value |
+|ap_return_1     | out |    8| ap_ctrl_hs |    SubBytes    | return value |
+|ap_return_2     | out |    8| ap_ctrl_hs |    SubBytes    | return value |
+|ap_return_3     | out |    8| ap_ctrl_hs |    SubBytes    | return value |
+|ap_return_4     | out |    8| ap_ctrl_hs |    SubBytes    | return value |
+|ap_return_5     | out |    8| ap_ctrl_hs |    SubBytes    | return value |
+|ap_return_6     | out |    8| ap_ctrl_hs |    SubBytes    | return value |
+|ap_return_7     | out |    8| ap_ctrl_hs |    SubBytes    | return value |
+|ap_return_8     | out |    8| ap_ctrl_hs |    SubBytes    | return value |
+|ap_return_9     | out |    8| ap_ctrl_hs |    SubBytes    | return value |
+|ap_return_10    | out |    8| ap_ctrl_hs |    SubBytes    | return value |
+|ap_return_11    | out |    8| ap_ctrl_hs |    SubBytes    | return value |
+|ap_return_12    | out |    8| ap_ctrl_hs |    SubBytes    | return value |
+|ap_return_13    | out |    8| ap_ctrl_hs |    SubBytes    | return value |
+|ap_return_14    | out |    8| ap_ctrl_hs |    SubBytes    | return value |
+|ap_return_15    | out |    8| ap_ctrl_hs |    SubBytes    | return value |
+|state_0_0_read  |  in |    8|   ap_none  | state_0_0_read |    scalar    |
+|state_0_1_read  |  in |    8|   ap_none  | state_0_1_read |    scalar    |
+|state_0_2_read  |  in |    8|   ap_none  | state_0_2_read |    scalar    |
+|state_0_3_read  |  in |    8|   ap_none  | state_0_3_read |    scalar    |
+|state_1_0_read  |  in |    8|   ap_none  | state_1_0_read |    scalar    |
+|state_1_1_read  |  in |    8|   ap_none  | state_1_1_read |    scalar    |
+|state_1_2_read  |  in |    8|   ap_none  | state_1_2_read |    scalar    |
+|state_1_3_read  |  in |    8|   ap_none  | state_1_3_read |    scalar    |
+|state_2_0_read  |  in |    8|   ap_none  | state_2_0_read |    scalar    |
+|state_2_1_read  |  in |    8|   ap_none  | state_2_1_read |    scalar    |
+|state_2_2_read  |  in |    8|   ap_none  | state_2_2_read |    scalar    |
+|state_2_3_read  |  in |    8|   ap_none  | state_2_3_read |    scalar    |
+|state_3_0_read  |  in |    8|   ap_none  | state_3_0_read |    scalar    |
+|state_3_1_read  |  in |    8|   ap_none  | state_3_1_read |    scalar    |
+|state_3_2_read  |  in |    8|   ap_none  | state_3_2_read |    scalar    |
+|state_3_3_read  |  in |    8|   ap_none  | state_3_3_read |    scalar    |
++----------------+-----+-----+------------+----------------+--------------+
+

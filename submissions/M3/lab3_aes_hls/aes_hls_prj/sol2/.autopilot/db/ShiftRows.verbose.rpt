@@ -1,0 +1,861 @@
+
+
+================================================================
+== Vivado HLS Report for 'ShiftRows'
+================================================================
+* Date:           Sat Jan 23 11:19:21 2021
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        aes_hls_prj
+* Solution:       sol2
+* Product family: spartan7
+* Target device:  xc7s15-ftgb196-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+--------+----------+------------+
+    |  Clock | Target | Estimated| Uncertainty|
+    +--------+--------+----------+------------+
+    |ap_clk  |  100.00|     0.000|       12.50|
+    +--------+--------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    0|    0|    1|    1| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT | URAM|
++-----------------+---------+-------+-------+------+-----+
+|DSP              |        -|      -|      -|     -|    -|
+|Expression       |        -|      -|      -|     -|    -|
+|FIFO             |        -|      -|      -|     -|    -|
+|Instance         |        -|      -|      -|     -|    -|
+|Memory           |        -|      -|      -|     -|    -|
+|Multiplexer      |        -|      -|      -|     -|    -|
+|Register         |        -|      -|      -|     -|    -|
++-----------------+---------+-------+-------+------+-----+
+|Total            |        0|      0|      0|     0|    0|
++-----------------+---------+-------+-------+------+-----+
+|Available        |       20|     20|  16000|  8000|    0|
++-----------------+---------+-------+-------+------+-----+
+|Utilization (%)  |        0|      0|      0|     0|    0|
++-----------------+---------+-------+-------+------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------+-----+-----+------------+----------------+--------------+
+|    RTL Ports   | Dir | Bits|  Protocol  |  Source Object |    C Type    |
++----------------+-----+-----+------------+----------------+--------------+
+|ap_ready        | out |    1| ap_ctrl_hs |    ShiftRows   | return value |
+|ap_return_0     | out |    8| ap_ctrl_hs |    ShiftRows   | return value |
+|ap_return_1     | out |    8| ap_ctrl_hs |    ShiftRows   | return value |
+|ap_return_2     | out |    8| ap_ctrl_hs |    ShiftRows   | return value |
+|ap_return_3     | out |    8| ap_ctrl_hs |    ShiftRows   | return value |
+|ap_return_4     | out |    8| ap_ctrl_hs |    ShiftRows   | return value |
+|ap_return_5     | out |    8| ap_ctrl_hs |    ShiftRows   | return value |
+|ap_return_6     | out |    8| ap_ctrl_hs |    ShiftRows   | return value |
+|ap_return_7     | out |    8| ap_ctrl_hs |    ShiftRows   | return value |
+|ap_return_8     | out |    8| ap_ctrl_hs |    ShiftRows   | return value |
+|ap_return_9     | out |    8| ap_ctrl_hs |    ShiftRows   | return value |
+|ap_return_10    | out |    8| ap_ctrl_hs |    ShiftRows   | return value |
+|ap_return_11    | out |    8| ap_ctrl_hs |    ShiftRows   | return value |
+|state_0_1_read  |  in |    8|   ap_none  | state_0_1_read |    scalar    |
+|state_0_2_read  |  in |    8|   ap_none  | state_0_2_read |    scalar    |
+|state_0_3_read  |  in |    8|   ap_none  | state_0_3_read |    scalar    |
+|state_1_1_read  |  in |    8|   ap_none  | state_1_1_read |    scalar    |
+|state_1_2_read  |  in |    8|   ap_none  | state_1_2_read |    scalar    |
+|state_1_3_read  |  in |    8|   ap_none  | state_1_3_read |    scalar    |
+|state_2_1_read  |  in |    8|   ap_none  | state_2_1_read |    scalar    |
+|state_2_2_read  |  in |    8|   ap_none  | state_2_2_read |    scalar    |
+|state_2_3_read  |  in |    8|   ap_none  | state_2_3_read |    scalar    |
+|state_3_1_read  |  in |    8|   ap_none  | state_3_1_read |    scalar    |
+|state_3_2_read  |  in |    8|   ap_none  | state_3_2_read |    scalar    |
+|state_3_3_read  |  in |    8|   ap_none  | state_3_3_read |    scalar    |
++----------------+-----+-----+------------+----------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 1
+IsDatapathOnly: 2
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%state_3_3_read_2 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %state_3_3_read)" [c_src/aes.c:284]   --->   Operation 2 'read' 'state_3_3_read_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%state_3_2_read11 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %state_3_2_read)" [c_src/aes.c:284]   --->   Operation 3 'read' 'state_3_2_read11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%state_3_1_read_2 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %state_3_1_read)" [c_src/aes.c:284]   --->   Operation 4 'read' 'state_3_1_read_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%state_2_3_read_2 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %state_2_3_read)" [c_src/aes.c:284]   --->   Operation 5 'read' 'state_2_3_read_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%state_2_2_read_2 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %state_2_2_read)" [c_src/aes.c:284]   --->   Operation 6 'read' 'state_2_2_read_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%state_2_1_read_2 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %state_2_1_read)" [c_src/aes.c:284]   --->   Operation 7 'read' 'state_2_1_read_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%state_1_3_read_2 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %state_1_3_read)" [c_src/aes.c:284]   --->   Operation 8 'read' 'state_1_3_read_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%state_1_2_read_2 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %state_1_2_read)" [c_src/aes.c:284]   --->   Operation 9 'read' 'state_1_2_read_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%state_1_1_read_2 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %state_1_1_read)" [c_src/aes.c:284]   --->   Operation 10 'read' 'state_1_1_read_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%state_0_3_read_2 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %state_0_3_read)" [c_src/aes.c:284]   --->   Operation 11 'read' 'state_0_3_read_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%state_0_2_read_2 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %state_0_2_read)" [c_src/aes.c:284]   --->   Operation 12 'read' 'state_0_2_read_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%state_0_1_read_2 = call i8 @_ssdm_op_Read.ap_auto.i8(i8 %state_0_1_read)" [c_src/aes.c:284]   --->   Operation 13 'read' 'state_0_1_read_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%mrv = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } undef, i8 %state_1_1_read_2, 0" [c_src/aes.c:309]   --->   Operation 14 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv, i8 %state_2_2_read_2, 1" [c_src/aes.c:309]   --->   Operation 15 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%mrv_2 = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv_1, i8 %state_3_3_read_2, 2" [c_src/aes.c:309]   --->   Operation 16 'insertvalue' 'mrv_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%mrv_3 = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv_2, i8 %state_2_1_read_2, 3" [c_src/aes.c:309]   --->   Operation 17 'insertvalue' 'mrv_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%mrv_4 = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv_3, i8 %state_3_2_read11, 4" [c_src/aes.c:309]   --->   Operation 18 'insertvalue' 'mrv_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%mrv_5 = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv_4, i8 %state_0_3_read_2, 5" [c_src/aes.c:309]   --->   Operation 19 'insertvalue' 'mrv_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%mrv_6 = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv_5, i8 %state_3_1_read_2, 6" [c_src/aes.c:309]   --->   Operation 20 'insertvalue' 'mrv_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%mrv_7 = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv_6, i8 %state_0_2_read_2, 7" [c_src/aes.c:309]   --->   Operation 21 'insertvalue' 'mrv_7' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%mrv_8 = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv_7, i8 %state_1_3_read_2, 8" [c_src/aes.c:309]   --->   Operation 22 'insertvalue' 'mrv_8' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%mrv_9 = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv_8, i8 %state_0_1_read_2, 9" [c_src/aes.c:309]   --->   Operation 23 'insertvalue' 'mrv_9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%mrv_10 = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv_9, i8 %state_1_2_read_2, 10" [c_src/aes.c:309]   --->   Operation 24 'insertvalue' 'mrv_10' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%mrv_11 = insertvalue { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv_10, i8 %state_2_3_read_2, 11" [c_src/aes.c:309]   --->   Operation 25 'insertvalue' 'mrv_11' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "ret { i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8, i8 } %mrv_11" [c_src/aes.c:309]   --->   Operation 26 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 1
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 1
+- Is top level: 0
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ state_0_1_read]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ state_0_2_read]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ state_0_3_read]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ state_1_1_read]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ state_1_2_read]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ state_1_3_read]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ state_2_1_read]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ state_2_2_read]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ state_2_3_read]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ state_3_1_read]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ state_3_2_read]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ state_3_3_read]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+state_3_3_read_2 (read       ) [ 00]
+state_3_2_read11 (read       ) [ 00]
+state_3_1_read_2 (read       ) [ 00]
+state_2_3_read_2 (read       ) [ 00]
+state_2_2_read_2 (read       ) [ 00]
+state_2_1_read_2 (read       ) [ 00]
+state_1_3_read_2 (read       ) [ 00]
+state_1_2_read_2 (read       ) [ 00]
+state_1_1_read_2 (read       ) [ 00]
+state_0_3_read_2 (read       ) [ 00]
+state_0_2_read_2 (read       ) [ 00]
+state_0_1_read_2 (read       ) [ 00]
+mrv              (insertvalue) [ 00]
+mrv_1            (insertvalue) [ 00]
+mrv_2            (insertvalue) [ 00]
+mrv_3            (insertvalue) [ 00]
+mrv_4            (insertvalue) [ 00]
+mrv_5            (insertvalue) [ 00]
+mrv_6            (insertvalue) [ 00]
+mrv_7            (insertvalue) [ 00]
+mrv_8            (insertvalue) [ 00]
+mrv_9            (insertvalue) [ 00]
+mrv_10           (insertvalue) [ 00]
+mrv_11           (insertvalue) [ 00]
+ret_ln309        (ret        ) [ 00]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="state_0_1_read">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="state_0_1_read"/></StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="state_0_2_read">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="state_0_2_read"/></StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="state_0_3_read">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="state_0_3_read"/></StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="state_1_1_read">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="state_1_1_read"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="state_1_2_read">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="state_1_2_read"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1000" name="state_1_3_read">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="state_1_3_read"/></StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1000" name="state_2_1_read">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="state_2_1_read"/></StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1000" name="state_2_2_read">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="state_2_2_read"/></StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1000" name="state_2_3_read">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="state_2_3_read"/></StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1000" name="state_3_1_read">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="state_3_1_read"/></StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1000" name="state_3_2_read">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="state_3_2_read"/></StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1000" name="state_3_3_read">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="state_3_3_read"/></StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1001" name="const_24">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i8"/></StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1001" name="const_26">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1004" name="state_3_3_read_2_read_fu_28">
+<pin_list>
+<pin id="29" dir="0" index="0" bw="8" slack="0"/>
+<pin id="30" dir="0" index="1" bw="8" slack="0"/>
+<pin id="31" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="state_3_3_read_2/1 "/>
+</bind>
+</comp>
+
+<comp id="34" class="1004" name="state_3_2_read11_read_fu_34">
+<pin_list>
+<pin id="35" dir="0" index="0" bw="8" slack="0"/>
+<pin id="36" dir="0" index="1" bw="8" slack="0"/>
+<pin id="37" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="state_3_2_read11/1 "/>
+</bind>
+</comp>
+
+<comp id="40" class="1004" name="state_3_1_read_2_read_fu_40">
+<pin_list>
+<pin id="41" dir="0" index="0" bw="8" slack="0"/>
+<pin id="42" dir="0" index="1" bw="8" slack="0"/>
+<pin id="43" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="state_3_1_read_2/1 "/>
+</bind>
+</comp>
+
+<comp id="46" class="1004" name="state_2_3_read_2_read_fu_46">
+<pin_list>
+<pin id="47" dir="0" index="0" bw="8" slack="0"/>
+<pin id="48" dir="0" index="1" bw="8" slack="0"/>
+<pin id="49" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="state_2_3_read_2/1 "/>
+</bind>
+</comp>
+
+<comp id="52" class="1004" name="state_2_2_read_2_read_fu_52">
+<pin_list>
+<pin id="53" dir="0" index="0" bw="8" slack="0"/>
+<pin id="54" dir="0" index="1" bw="8" slack="0"/>
+<pin id="55" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="state_2_2_read_2/1 "/>
+</bind>
+</comp>
+
+<comp id="58" class="1004" name="state_2_1_read_2_read_fu_58">
+<pin_list>
+<pin id="59" dir="0" index="0" bw="8" slack="0"/>
+<pin id="60" dir="0" index="1" bw="8" slack="0"/>
+<pin id="61" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="state_2_1_read_2/1 "/>
+</bind>
+</comp>
+
+<comp id="64" class="1004" name="state_1_3_read_2_read_fu_64">
+<pin_list>
+<pin id="65" dir="0" index="0" bw="8" slack="0"/>
+<pin id="66" dir="0" index="1" bw="8" slack="0"/>
+<pin id="67" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="state_1_3_read_2/1 "/>
+</bind>
+</comp>
+
+<comp id="70" class="1004" name="state_1_2_read_2_read_fu_70">
+<pin_list>
+<pin id="71" dir="0" index="0" bw="8" slack="0"/>
+<pin id="72" dir="0" index="1" bw="8" slack="0"/>
+<pin id="73" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="state_1_2_read_2/1 "/>
+</bind>
+</comp>
+
+<comp id="76" class="1004" name="state_1_1_read_2_read_fu_76">
+<pin_list>
+<pin id="77" dir="0" index="0" bw="8" slack="0"/>
+<pin id="78" dir="0" index="1" bw="8" slack="0"/>
+<pin id="79" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="state_1_1_read_2/1 "/>
+</bind>
+</comp>
+
+<comp id="82" class="1004" name="state_0_3_read_2_read_fu_82">
+<pin_list>
+<pin id="83" dir="0" index="0" bw="8" slack="0"/>
+<pin id="84" dir="0" index="1" bw="8" slack="0"/>
+<pin id="85" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="state_0_3_read_2/1 "/>
+</bind>
+</comp>
+
+<comp id="88" class="1004" name="state_0_2_read_2_read_fu_88">
+<pin_list>
+<pin id="89" dir="0" index="0" bw="8" slack="0"/>
+<pin id="90" dir="0" index="1" bw="8" slack="0"/>
+<pin id="91" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="state_0_2_read_2/1 "/>
+</bind>
+</comp>
+
+<comp id="94" class="1004" name="state_0_1_read_2_read_fu_94">
+<pin_list>
+<pin id="95" dir="0" index="0" bw="8" slack="0"/>
+<pin id="96" dir="0" index="1" bw="8" slack="0"/>
+<pin id="97" dir="1" index="2" bw="8" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="state_0_1_read_2/1 "/>
+</bind>
+</comp>
+
+<comp id="100" class="1004" name="mrv_fu_100">
+<pin_list>
+<pin id="101" dir="0" index="0" bw="96" slack="0"/>
+<pin id="102" dir="0" index="1" bw="8" slack="0"/>
+<pin id="103" dir="1" index="2" bw="96" slack="0"/>
+</pin_list>
+<bind>
+<opcode="insertvalue(57) " fcode="insertvalue"/>
+<opset="mrv/1 "/>
+</bind>
+</comp>
+
+<comp id="106" class="1004" name="mrv_1_fu_106">
+<pin_list>
+<pin id="107" dir="0" index="0" bw="96" slack="0"/>
+<pin id="108" dir="0" index="1" bw="8" slack="0"/>
+<pin id="109" dir="1" index="2" bw="96" slack="0"/>
+</pin_list>
+<bind>
+<opcode="insertvalue(57) " fcode="insertvalue"/>
+<opset="mrv_1/1 "/>
+</bind>
+</comp>
+
+<comp id="112" class="1004" name="mrv_2_fu_112">
+<pin_list>
+<pin id="113" dir="0" index="0" bw="96" slack="0"/>
+<pin id="114" dir="0" index="1" bw="8" slack="0"/>
+<pin id="115" dir="1" index="2" bw="96" slack="0"/>
+</pin_list>
+<bind>
+<opcode="insertvalue(57) " fcode="insertvalue"/>
+<opset="mrv_2/1 "/>
+</bind>
+</comp>
+
+<comp id="118" class="1004" name="mrv_3_fu_118">
+<pin_list>
+<pin id="119" dir="0" index="0" bw="96" slack="0"/>
+<pin id="120" dir="0" index="1" bw="8" slack="0"/>
+<pin id="121" dir="1" index="2" bw="96" slack="0"/>
+</pin_list>
+<bind>
+<opcode="insertvalue(57) " fcode="insertvalue"/>
+<opset="mrv_3/1 "/>
+</bind>
+</comp>
+
+<comp id="124" class="1004" name="mrv_4_fu_124">
+<pin_list>
+<pin id="125" dir="0" index="0" bw="96" slack="0"/>
+<pin id="126" dir="0" index="1" bw="8" slack="0"/>
+<pin id="127" dir="1" index="2" bw="96" slack="0"/>
+</pin_list>
+<bind>
+<opcode="insertvalue(57) " fcode="insertvalue"/>
+<opset="mrv_4/1 "/>
+</bind>
+</comp>
+
+<comp id="130" class="1004" name="mrv_5_fu_130">
+<pin_list>
+<pin id="131" dir="0" index="0" bw="96" slack="0"/>
+<pin id="132" dir="0" index="1" bw="8" slack="0"/>
+<pin id="133" dir="1" index="2" bw="96" slack="0"/>
+</pin_list>
+<bind>
+<opcode="insertvalue(57) " fcode="insertvalue"/>
+<opset="mrv_5/1 "/>
+</bind>
+</comp>
+
+<comp id="136" class="1004" name="mrv_6_fu_136">
+<pin_list>
+<pin id="137" dir="0" index="0" bw="96" slack="0"/>
+<pin id="138" dir="0" index="1" bw="8" slack="0"/>
+<pin id="139" dir="1" index="2" bw="96" slack="0"/>
+</pin_list>
+<bind>
+<opcode="insertvalue(57) " fcode="insertvalue"/>
+<opset="mrv_6/1 "/>
+</bind>
+</comp>
+
+<comp id="142" class="1004" name="mrv_7_fu_142">
+<pin_list>
+<pin id="143" dir="0" index="0" bw="96" slack="0"/>
+<pin id="144" dir="0" index="1" bw="8" slack="0"/>
+<pin id="145" dir="1" index="2" bw="96" slack="0"/>
+</pin_list>
+<bind>
+<opcode="insertvalue(57) " fcode="insertvalue"/>
+<opset="mrv_7/1 "/>
+</bind>
+</comp>
+
+<comp id="148" class="1004" name="mrv_8_fu_148">
+<pin_list>
+<pin id="149" dir="0" index="0" bw="96" slack="0"/>
+<pin id="150" dir="0" index="1" bw="8" slack="0"/>
+<pin id="151" dir="1" index="2" bw="96" slack="0"/>
+</pin_list>
+<bind>
+<opcode="insertvalue(57) " fcode="insertvalue"/>
+<opset="mrv_8/1 "/>
+</bind>
+</comp>
+
+<comp id="154" class="1004" name="mrv_9_fu_154">
+<pin_list>
+<pin id="155" dir="0" index="0" bw="96" slack="0"/>
+<pin id="156" dir="0" index="1" bw="8" slack="0"/>
+<pin id="157" dir="1" index="2" bw="96" slack="0"/>
+</pin_list>
+<bind>
+<opcode="insertvalue(57) " fcode="insertvalue"/>
+<opset="mrv_9/1 "/>
+</bind>
+</comp>
+
+<comp id="160" class="1004" name="mrv_10_fu_160">
+<pin_list>
+<pin id="161" dir="0" index="0" bw="96" slack="0"/>
+<pin id="162" dir="0" index="1" bw="8" slack="0"/>
+<pin id="163" dir="1" index="2" bw="96" slack="0"/>
+</pin_list>
+<bind>
+<opcode="insertvalue(57) " fcode="insertvalue"/>
+<opset="mrv_10/1 "/>
+</bind>
+</comp>
+
+<comp id="166" class="1004" name="mrv_11_fu_166">
+<pin_list>
+<pin id="167" dir="0" index="0" bw="96" slack="0"/>
+<pin id="168" dir="0" index="1" bw="8" slack="0"/>
+<pin id="169" dir="1" index="2" bw="96" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="insertvalue(57) " fcode="insertvalue"/>
+<opset="mrv_11/1 "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="32"><net_src comp="24" pin="0"/><net_sink comp="28" pin=0"/></net>
+
+<net id="33"><net_src comp="22" pin="0"/><net_sink comp="28" pin=1"/></net>
+
+<net id="38"><net_src comp="24" pin="0"/><net_sink comp="34" pin=0"/></net>
+
+<net id="39"><net_src comp="20" pin="0"/><net_sink comp="34" pin=1"/></net>
+
+<net id="44"><net_src comp="24" pin="0"/><net_sink comp="40" pin=0"/></net>
+
+<net id="45"><net_src comp="18" pin="0"/><net_sink comp="40" pin=1"/></net>
+
+<net id="50"><net_src comp="24" pin="0"/><net_sink comp="46" pin=0"/></net>
+
+<net id="51"><net_src comp="16" pin="0"/><net_sink comp="46" pin=1"/></net>
+
+<net id="56"><net_src comp="24" pin="0"/><net_sink comp="52" pin=0"/></net>
+
+<net id="57"><net_src comp="14" pin="0"/><net_sink comp="52" pin=1"/></net>
+
+<net id="62"><net_src comp="24" pin="0"/><net_sink comp="58" pin=0"/></net>
+
+<net id="63"><net_src comp="12" pin="0"/><net_sink comp="58" pin=1"/></net>
+
+<net id="68"><net_src comp="24" pin="0"/><net_sink comp="64" pin=0"/></net>
+
+<net id="69"><net_src comp="10" pin="0"/><net_sink comp="64" pin=1"/></net>
+
+<net id="74"><net_src comp="24" pin="0"/><net_sink comp="70" pin=0"/></net>
+
+<net id="75"><net_src comp="8" pin="0"/><net_sink comp="70" pin=1"/></net>
+
+<net id="80"><net_src comp="24" pin="0"/><net_sink comp="76" pin=0"/></net>
+
+<net id="81"><net_src comp="6" pin="0"/><net_sink comp="76" pin=1"/></net>
+
+<net id="86"><net_src comp="24" pin="0"/><net_sink comp="82" pin=0"/></net>
+
+<net id="87"><net_src comp="4" pin="0"/><net_sink comp="82" pin=1"/></net>
+
+<net id="92"><net_src comp="24" pin="0"/><net_sink comp="88" pin=0"/></net>
+
+<net id="93"><net_src comp="2" pin="0"/><net_sink comp="88" pin=1"/></net>
+
+<net id="98"><net_src comp="24" pin="0"/><net_sink comp="94" pin=0"/></net>
+
+<net id="99"><net_src comp="0" pin="0"/><net_sink comp="94" pin=1"/></net>
+
+<net id="104"><net_src comp="26" pin="0"/><net_sink comp="100" pin=0"/></net>
+
+<net id="105"><net_src comp="76" pin="2"/><net_sink comp="100" pin=1"/></net>
+
+<net id="110"><net_src comp="100" pin="2"/><net_sink comp="106" pin=0"/></net>
+
+<net id="111"><net_src comp="52" pin="2"/><net_sink comp="106" pin=1"/></net>
+
+<net id="116"><net_src comp="106" pin="2"/><net_sink comp="112" pin=0"/></net>
+
+<net id="117"><net_src comp="28" pin="2"/><net_sink comp="112" pin=1"/></net>
+
+<net id="122"><net_src comp="112" pin="2"/><net_sink comp="118" pin=0"/></net>
+
+<net id="123"><net_src comp="58" pin="2"/><net_sink comp="118" pin=1"/></net>
+
+<net id="128"><net_src comp="118" pin="2"/><net_sink comp="124" pin=0"/></net>
+
+<net id="129"><net_src comp="34" pin="2"/><net_sink comp="124" pin=1"/></net>
+
+<net id="134"><net_src comp="124" pin="2"/><net_sink comp="130" pin=0"/></net>
+
+<net id="135"><net_src comp="82" pin="2"/><net_sink comp="130" pin=1"/></net>
+
+<net id="140"><net_src comp="130" pin="2"/><net_sink comp="136" pin=0"/></net>
+
+<net id="141"><net_src comp="40" pin="2"/><net_sink comp="136" pin=1"/></net>
+
+<net id="146"><net_src comp="136" pin="2"/><net_sink comp="142" pin=0"/></net>
+
+<net id="147"><net_src comp="88" pin="2"/><net_sink comp="142" pin=1"/></net>
+
+<net id="152"><net_src comp="142" pin="2"/><net_sink comp="148" pin=0"/></net>
+
+<net id="153"><net_src comp="64" pin="2"/><net_sink comp="148" pin=1"/></net>
+
+<net id="158"><net_src comp="148" pin="2"/><net_sink comp="154" pin=0"/></net>
+
+<net id="159"><net_src comp="94" pin="2"/><net_sink comp="154" pin=1"/></net>
+
+<net id="164"><net_src comp="154" pin="2"/><net_sink comp="160" pin=0"/></net>
+
+<net id="165"><net_src comp="70" pin="2"/><net_sink comp="160" pin=1"/></net>
+
+<net id="170"><net_src comp="160" pin="2"/><net_sink comp="166" pin=0"/></net>
+
+<net id="171"><net_src comp="46" pin="2"/><net_sink comp="166" pin=1"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+	Port: ShiftRows : state_0_1_read | {1 }
+	Port: ShiftRows : state_0_2_read | {1 }
+	Port: ShiftRows : state_0_3_read | {1 }
+	Port: ShiftRows : state_1_1_read | {1 }
+	Port: ShiftRows : state_1_2_read | {1 }
+	Port: ShiftRows : state_1_3_read | {1 }
+	Port: ShiftRows : state_2_1_read | {1 }
+	Port: ShiftRows : state_2_2_read | {1 }
+	Port: ShiftRows : state_2_3_read | {1 }
+	Port: ShiftRows : state_3_1_read | {1 }
+	Port: ShiftRows : state_3_2_read | {1 }
+	Port: ShiftRows : state_3_3_read | {1 }
+  - Chain level:
+	State 1
+		mrv_1 : 1
+		mrv_2 : 2
+		mrv_3 : 3
+		mrv_4 : 4
+		mrv_5 : 5
+		mrv_6 : 6
+		mrv_7 : 7
+		mrv_8 : 8
+		mrv_9 : 9
+		mrv_10 : 10
+		mrv_11 : 11
+		ret_ln309 : 12
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|-----------------------------|
+| Operation|       Functional Unit       |
+|----------|-----------------------------|
+|          | state_3_3_read_2_read_fu_28 |
+|          | state_3_2_read11_read_fu_34 |
+|          | state_3_1_read_2_read_fu_40 |
+|          | state_2_3_read_2_read_fu_46 |
+|          | state_2_2_read_2_read_fu_52 |
+|   read   | state_2_1_read_2_read_fu_58 |
+|          | state_1_3_read_2_read_fu_64 |
+|          | state_1_2_read_2_read_fu_70 |
+|          | state_1_1_read_2_read_fu_76 |
+|          | state_0_3_read_2_read_fu_82 |
+|          | state_0_2_read_2_read_fu_88 |
+|          | state_0_1_read_2_read_fu_94 |
+|----------|-----------------------------|
+|          |          mrv_fu_100         |
+|          |         mrv_1_fu_106        |
+|          |         mrv_2_fu_112        |
+|          |         mrv_3_fu_118        |
+|          |         mrv_4_fu_124        |
+|insertvalue|         mrv_5_fu_130        |
+|          |         mrv_6_fu_136        |
+|          |         mrv_7_fu_142        |
+|          |         mrv_8_fu_148        |
+|          |         mrv_9_fu_154        |
+|          |        mrv_10_fu_160        |
+|          |        mrv_11_fu_166        |
+|----------|-----------------------------|
+|   Total  |                             |
+|----------|-----------------------------|
+
+Memories:
+N/A
+
+* Register list:
+N/A
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+
+|           |
++-----------+
+|  Function |
+|   Memory  |
+|Multiplexer|
+|  Register |
++-----------+
+|   Total   |
++-----------+

@@ -1,0 +1,217 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'MixColumns'" level="0">
+<item name = "Date">Sat Jan 23 11:19:22 2021
+</item>
+<item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
+<item name = "Project">aes_hls_prj</item>
+<item name = "Solution">sol2</item>
+<item name = "Product family">spartan7</item>
+<item name = "Target device">xc7s15-ftgb196-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">100.00, 3.357, 12.50</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">0, 0, 1, 1, function</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 624, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, -, -</column>
+<column name="Register">-, -, -, -, -</column>
+<specialColumn name="Available">20, 20, 16000, 8000, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, 0, 7, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="select_ln311_10_fu_646_p3">select, 0, 0, 5, 1, 5</column>
+<column name="select_ln311_11_fu_692_p3">select, 0, 0, 5, 1, 5</column>
+<column name="select_ln311_12_fu_744_p3">select, 0, 0, 5, 1, 5</column>
+<column name="select_ln311_13_fu_790_p3">select, 0, 0, 5, 1, 5</column>
+<column name="select_ln311_14_fu_836_p3">select, 0, 0, 5, 1, 5</column>
+<column name="select_ln311_15_fu_882_p3">select, 0, 0, 5, 1, 5</column>
+<column name="select_ln311_1_fu_220_p3">select, 0, 0, 5, 1, 5</column>
+<column name="select_ln311_2_fu_266_p3">select, 0, 0, 5, 1, 5</column>
+<column name="select_ln311_3_fu_312_p3">select, 0, 0, 5, 1, 5</column>
+<column name="select_ln311_4_fu_364_p3">select, 0, 0, 5, 1, 5</column>
+<column name="select_ln311_5_fu_410_p3">select, 0, 0, 5, 1, 5</column>
+<column name="select_ln311_6_fu_456_p3">select, 0, 0, 5, 1, 5</column>
+<column name="select_ln311_7_fu_502_p3">select, 0, 0, 5, 1, 5</column>
+<column name="select_ln311_8_fu_554_p3">select, 0, 0, 5, 1, 5</column>
+<column name="select_ln311_9_fu_600_p3">select, 0, 0, 5, 1, 5</column>
+<column name="select_ln311_fu_174_p3">select, 0, 0, 5, 1, 5</column>
+<column name="xor_ln319_10_fu_522_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln319_11_fu_712_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln319_1_fu_148_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln319_2_fu_154_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln319_3_fu_338_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln319_4_fu_344_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln319_5_fu_528_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln319_6_fu_534_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln319_7_fu_718_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln319_8_fu_724_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln319_9_fu_332_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln319_fu_142_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln322_10_fu_758_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln322_11_fu_764_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln322_1_fu_188_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln322_2_fu_194_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln322_3_fu_372_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln322_4_fu_378_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln322_5_fu_384_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln322_6_fu_562_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln322_7_fu_568_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln322_8_fu_574_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln322_9_fu_752_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln322_fu_182_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln323_1_fu_390_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln323_2_fu_580_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln323_3_fu_770_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln323_fu_200_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln325_10_fu_804_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln325_11_fu_810_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln325_1_fu_234_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln325_2_fu_240_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln325_3_fu_418_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln325_4_fu_424_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln325_5_fu_430_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln325_6_fu_608_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln325_7_fu_614_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln325_8_fu_620_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln325_9_fu_798_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln325_fu_228_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln326_1_fu_436_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln326_2_fu_626_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln326_3_fu_816_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln326_fu_246_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln328_10_fu_850_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln328_11_fu_856_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln328_1_fu_280_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln328_2_fu_286_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln328_3_fu_464_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln328_4_fu_470_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln328_5_fu_476_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln328_6_fu_654_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln328_7_fu_660_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln328_8_fu_666_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln328_9_fu_844_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln328_fu_274_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln329_1_fu_482_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln329_2_fu_672_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln329_3_fu_862_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln329_fu_292_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln331_1_fu_326_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln331_2_fu_510_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln331_3_fu_516_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln331_4_fu_700_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln331_5_fu_706_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln331_6_fu_890_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln331_7_fu_896_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln331_fu_320_p2">xor, 0, 0, 8, 8, 8</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_ready">out, 1, ap_ctrl_hs, MixColumns, return value</column>
+<column name="ap_return_0">out, 8, ap_ctrl_hs, MixColumns, return value</column>
+<column name="ap_return_1">out, 8, ap_ctrl_hs, MixColumns, return value</column>
+<column name="ap_return_2">out, 8, ap_ctrl_hs, MixColumns, return value</column>
+<column name="ap_return_3">out, 8, ap_ctrl_hs, MixColumns, return value</column>
+<column name="ap_return_4">out, 8, ap_ctrl_hs, MixColumns, return value</column>
+<column name="ap_return_5">out, 8, ap_ctrl_hs, MixColumns, return value</column>
+<column name="ap_return_6">out, 8, ap_ctrl_hs, MixColumns, return value</column>
+<column name="ap_return_7">out, 8, ap_ctrl_hs, MixColumns, return value</column>
+<column name="ap_return_8">out, 8, ap_ctrl_hs, MixColumns, return value</column>
+<column name="ap_return_9">out, 8, ap_ctrl_hs, MixColumns, return value</column>
+<column name="ap_return_10">out, 8, ap_ctrl_hs, MixColumns, return value</column>
+<column name="ap_return_11">out, 8, ap_ctrl_hs, MixColumns, return value</column>
+<column name="ap_return_12">out, 8, ap_ctrl_hs, MixColumns, return value</column>
+<column name="ap_return_13">out, 8, ap_ctrl_hs, MixColumns, return value</column>
+<column name="ap_return_14">out, 8, ap_ctrl_hs, MixColumns, return value</column>
+<column name="ap_return_15">out, 8, ap_ctrl_hs, MixColumns, return value</column>
+<column name="state_0_0_read">in, 8, ap_none, state_0_0_read, scalar</column>
+<column name="state_0_1_read">in, 8, ap_none, state_0_1_read, scalar</column>
+<column name="state_0_2_read">in, 8, ap_none, state_0_2_read, scalar</column>
+<column name="state_0_3_read">in, 8, ap_none, state_0_3_read, scalar</column>
+<column name="state_1_0_read">in, 8, ap_none, state_1_0_read, scalar</column>
+<column name="state_1_1_read">in, 8, ap_none, state_1_1_read, scalar</column>
+<column name="state_1_2_read">in, 8, ap_none, state_1_2_read, scalar</column>
+<column name="state_1_3_read">in, 8, ap_none, state_1_3_read, scalar</column>
+<column name="state_2_0_read">in, 8, ap_none, state_2_0_read, scalar</column>
+<column name="state_2_1_read">in, 8, ap_none, state_2_1_read, scalar</column>
+<column name="state_2_2_read">in, 8, ap_none, state_2_2_read, scalar</column>
+<column name="state_2_3_read">in, 8, ap_none, state_2_3_read, scalar</column>
+<column name="state_3_0_read">in, 8, ap_none, state_3_0_read, scalar</column>
+<column name="state_3_1_read">in, 8, ap_none, state_3_1_read, scalar</column>
+<column name="state_3_2_read">in, 8, ap_none, state_3_2_read, scalar</column>
+<column name="state_3_3_read">in, 8, ap_none, state_3_3_read, scalar</column>
+</table>
+</item>
+</section>
+</profile>
