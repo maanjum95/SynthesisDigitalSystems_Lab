@@ -1,0 +1,7 @@
+build/
+aes_hls_prj/sol1/.autopilot/
+aes_hls_prj/sol1/sim/
+*out.dat
+*.log
+./*.dat
+*.vcd

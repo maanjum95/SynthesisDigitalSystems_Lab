@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="top_aes.c" path="/nas/ei/share/TUEIEDA/LabSDS/SS20/ge29noy/lab2_aes_hls/hls/top_aes.c"/>
+    <originFiles name="top_aes.h" path="/nas/ei/share/TUEIEDA/LabSDS/SS20/ge29noy/lab2_aes_hls/hls/top_aes.h"/>
+    <originFiles name="aes.c" path="/nas/ei/share/TUEIEDA/LabSDS/SS20/ge29noy/lab2_aes_hls/c_src/aes.c"/>
+    <originFiles name="aes.h" path="/nas/ei/share/TUEIEDA/LabSDS/SS20/ge29noy/lab2_aes_hls/c_src/aes.h"/>
+  </source>
+  <testbench>
+    <originFiles name="aes_test.c" path="/nas/ei/share/TUEIEDA/LabSDS/SS20/ge29noy/lab2_aes_hls/testbench/aes_test.c"/>
+    <originFiles name="out.gold.dat" path="/nas/ei/share/TUEIEDA/LabSDS/SS20/ge29noy/lab2_aes_hls/testbench/out.gold.dat"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

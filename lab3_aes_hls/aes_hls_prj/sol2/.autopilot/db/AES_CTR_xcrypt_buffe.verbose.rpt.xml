@@ -1,0 +1,283 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'AES_CTR_xcrypt_buffe'" level="0">
+<item name = "Date">Tue Jun 16 16:56:01 2020
+</item>
+<item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
+<item name = "Project">aes_hls_prj</item>
+<item name = "Solution">sol2</item>
+<item name = "Product family">spartan7</item>
+<item name = "Target device">xc7s15-ftgb196-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 7.173, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">115, 115, 108, 108, function</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_Cipher_fu_480">Cipher, 107, 107, 108, 108, function</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 353, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">8, -, 606, 2574, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 814, -</column>
+<column name="Register">-, -, 515, -, -</column>
+<specialColumn name="Available">20, 20, 16000, 8000, 0</specialColumn>
+<specialColumn name="Utilization (%)">40, 0, 7, 46, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="grp_Cipher_fu_480">Cipher, 8, 0, 606, 2574, 0</column>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln577_fu_593_p2">+, 0, 0, 15, 8, 1</column>
+<column name="ap_block_pp0_stage0_11001">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_369">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_574">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_577">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_580">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_583">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_586">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_589">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_592">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_595">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_598">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_601">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_604">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_607">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_610">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_613">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln573_10_fu_558_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln573_11_fu_563_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln573_12_fu_568_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln573_13_fu_573_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln573_14_fu_578_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln573_15_fu_583_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln573_1_fu_512_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln573_2_fu_518_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln573_3_fu_523_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln573_4_fu_528_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln573_5_fu_533_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln573_6_fu_538_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln573_7_fu_543_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln573_8_fu_548_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln573_9_fu_553_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln573_fu_506_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln583_10_fu_714_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln583_11_fu_719_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln583_12_fu_724_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln583_13_fu_729_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln583_14_fu_734_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln583_15_fu_739_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln583_1_fu_669_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln583_2_fu_674_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln583_3_fu_679_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln583_4_fu_684_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln583_5_fu_689_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln583_6_fu_694_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln583_7_fu_699_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln583_8_fu_704_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln583_9_fu_709_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln583_fu_664_p2">xor, 0, 0, 8, 8, 8</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">477, 109, 1, 109</column>
+<column name="ap_enable_reg_pp0_iter0">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
+<column name="ap_phi_reg_pp0_iter0_ctx_Iv_addr_4_lcssa_013_reg_411">65, 16, 4, 64</column>
+<column name="ap_phi_reg_pp0_iter0_ctx_Iv_load_4_lcssa_s_reg_373">65, 16, 8, 128</column>
+<column name="ctx_Iv_address0">89, 18, 4, 72</column>
+<column name="ctx_Iv_address1">85, 17, 4, 68</column>
+<column name="ctx_Iv_d0">15, 3, 8, 24</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">108, 0, 108, 0</column>
+<column name="ap_enable_reg_pp0_iter0_reg">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_phi_reg_pp0_iter0_ctx_Iv_addr_4_lcssa_013_reg_411">4, 0, 4, 0</column>
+<column name="ap_phi_reg_pp0_iter0_ctx_Iv_load_4_lcssa_s_reg_373">8, 0, 8, 0</column>
+<column name="ap_port_reg_buf_0_read">8, 0, 8, 0</column>
+<column name="ap_port_reg_buf_10_read">8, 0, 8, 0</column>
+<column name="ap_port_reg_buf_11_read">8, 0, 8, 0</column>
+<column name="ap_port_reg_buf_12_read">8, 0, 8, 0</column>
+<column name="ap_port_reg_buf_13_read">8, 0, 8, 0</column>
+<column name="ap_port_reg_buf_14_read">8, 0, 8, 0</column>
+<column name="ap_port_reg_buf_15_read">8, 0, 8, 0</column>
+<column name="ap_port_reg_buf_1_read">8, 0, 8, 0</column>
+<column name="ap_port_reg_buf_2_read">8, 0, 8, 0</column>
+<column name="ap_port_reg_buf_3_read">8, 0, 8, 0</column>
+<column name="ap_port_reg_buf_4_read">8, 0, 8, 0</column>
+<column name="ap_port_reg_buf_5_read">8, 0, 8, 0</column>
+<column name="ap_port_reg_buf_6_read">8, 0, 8, 0</column>
+<column name="ap_port_reg_buf_7_read">8, 0, 8, 0</column>
+<column name="ap_port_reg_buf_8_read">8, 0, 8, 0</column>
+<column name="ap_port_reg_buf_9_read">8, 0, 8, 0</column>
+<column name="buf_0_read_1_reg_1185">8, 0, 8, 0</column>
+<column name="buf_10_read_1_reg_1135">8, 0, 8, 0</column>
+<column name="buf_11_read_1_reg_1130">8, 0, 8, 0</column>
+<column name="buf_12_read_1_reg_1125">8, 0, 8, 0</column>
+<column name="buf_13_read_1_reg_1120">8, 0, 8, 0</column>
+<column name="buf_14_read_1_reg_1115">8, 0, 8, 0</column>
+<column name="buf_15_read_1_reg_1110">8, 0, 8, 0</column>
+<column name="buf_1_read_1_reg_1180">8, 0, 8, 0</column>
+<column name="buf_2_read_1_reg_1175">8, 0, 8, 0</column>
+<column name="buf_3_read_1_reg_1170">8, 0, 8, 0</column>
+<column name="buf_4_read_1_reg_1165">8, 0, 8, 0</column>
+<column name="buf_5_read_1_reg_1160">8, 0, 8, 0</column>
+<column name="buf_6_read_1_reg_1155">8, 0, 8, 0</column>
+<column name="buf_7_read_1_reg_1150">8, 0, 8, 0</column>
+<column name="buf_8_read_1_reg_1145">8, 0, 8, 0</column>
+<column name="buf_9_read_1_reg_1140">8, 0, 8, 0</column>
+<column name="ctx_Iv_load_4_lcssa_s_reg_373">8, 0, 8, 0</column>
+<column name="grp_Cipher_fu_480_ap_start_reg">1, 0, 1, 0</column>
+<column name="icmp_ln573_10_reg_1086">1, 0, 1, 0</column>
+<column name="icmp_ln573_11_reg_1090">1, 0, 1, 0</column>
+<column name="icmp_ln573_12_reg_1094">1, 0, 1, 0</column>
+<column name="icmp_ln573_13_reg_1098">1, 0, 1, 0</column>
+<column name="icmp_ln573_14_reg_1102">1, 0, 1, 0</column>
+<column name="icmp_ln573_15_reg_1106">1, 0, 1, 0</column>
+<column name="icmp_ln573_1_reg_1050">1, 0, 1, 0</column>
+<column name="icmp_ln573_2_reg_1054">1, 0, 1, 0</column>
+<column name="icmp_ln573_3_reg_1058">1, 0, 1, 0</column>
+<column name="icmp_ln573_4_reg_1062">1, 0, 1, 0</column>
+<column name="icmp_ln573_5_reg_1066">1, 0, 1, 0</column>
+<column name="icmp_ln573_6_reg_1070">1, 0, 1, 0</column>
+<column name="icmp_ln573_7_reg_1074">1, 0, 1, 0</column>
+<column name="icmp_ln573_8_reg_1078">1, 0, 1, 0</column>
+<column name="icmp_ln573_9_reg_1082">1, 0, 1, 0</column>
+<column name="icmp_ln573_reg_1046">1, 0, 1, 0</column>
+<column name="x_0_0_1_reg_852">8, 0, 8, 0</column>
+<column name="x_0_1_1_reg_859">8, 0, 8, 0</column>
+<column name="x_0_2_1_reg_878">8, 0, 8, 0</column>
+<column name="x_0_3_1_reg_885">8, 0, 8, 0</column>
+<column name="x_1_0_1_reg_904">8, 0, 8, 0</column>
+<column name="x_1_1_1_reg_911">8, 0, 8, 0</column>
+<column name="x_1_2_1_reg_930">8, 0, 8, 0</column>
+<column name="x_1_3_1_reg_937">8, 0, 8, 0</column>
+<column name="x_2_0_1_reg_956">8, 0, 8, 0</column>
+<column name="x_2_1_1_reg_963">8, 0, 8, 0</column>
+<column name="x_2_2_1_reg_982">8, 0, 8, 0</column>
+<column name="x_2_3_1_reg_989">8, 0, 8, 0</column>
+<column name="x_3_0_1_reg_1008">8, 0, 8, 0</column>
+<column name="x_3_1_1_reg_1015">8, 0, 8, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, AES_CTR_xcrypt_buffe, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, AES_CTR_xcrypt_buffe, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, AES_CTR_xcrypt_buffe, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, AES_CTR_xcrypt_buffe, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, AES_CTR_xcrypt_buffe, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, AES_CTR_xcrypt_buffe, return value</column>
+<column name="ap_return_0">out, 8, ap_ctrl_hs, AES_CTR_xcrypt_buffe, return value</column>
+<column name="ap_return_1">out, 8, ap_ctrl_hs, AES_CTR_xcrypt_buffe, return value</column>
+<column name="ap_return_2">out, 8, ap_ctrl_hs, AES_CTR_xcrypt_buffe, return value</column>
+<column name="ap_return_3">out, 8, ap_ctrl_hs, AES_CTR_xcrypt_buffe, return value</column>
+<column name="ap_return_4">out, 8, ap_ctrl_hs, AES_CTR_xcrypt_buffe, return value</column>
+<column name="ap_return_5">out, 8, ap_ctrl_hs, AES_CTR_xcrypt_buffe, return value</column>
+<column name="ap_return_6">out, 8, ap_ctrl_hs, AES_CTR_xcrypt_buffe, return value</column>
+<column name="ap_return_7">out, 8, ap_ctrl_hs, AES_CTR_xcrypt_buffe, return value</column>
+<column name="ap_return_8">out, 8, ap_ctrl_hs, AES_CTR_xcrypt_buffe, return value</column>
+<column name="ap_return_9">out, 8, ap_ctrl_hs, AES_CTR_xcrypt_buffe, return value</column>
+<column name="ap_return_10">out, 8, ap_ctrl_hs, AES_CTR_xcrypt_buffe, return value</column>
+<column name="ap_return_11">out, 8, ap_ctrl_hs, AES_CTR_xcrypt_buffe, return value</column>
+<column name="ap_return_12">out, 8, ap_ctrl_hs, AES_CTR_xcrypt_buffe, return value</column>
+<column name="ap_return_13">out, 8, ap_ctrl_hs, AES_CTR_xcrypt_buffe, return value</column>
+<column name="ap_return_14">out, 8, ap_ctrl_hs, AES_CTR_xcrypt_buffe, return value</column>
+<column name="ap_return_15">out, 8, ap_ctrl_hs, AES_CTR_xcrypt_buffe, return value</column>
+<column name="ctx_RoundKey_address0">out, 8, ap_memory, ctx_RoundKey, array</column>
+<column name="ctx_RoundKey_ce0">out, 1, ap_memory, ctx_RoundKey, array</column>
+<column name="ctx_RoundKey_q0">in, 8, ap_memory, ctx_RoundKey, array</column>
+<column name="ctx_RoundKey_address1">out, 8, ap_memory, ctx_RoundKey, array</column>
+<column name="ctx_RoundKey_ce1">out, 1, ap_memory, ctx_RoundKey, array</column>
+<column name="ctx_RoundKey_q1">in, 8, ap_memory, ctx_RoundKey, array</column>
+<column name="ctx_Iv_address0">out, 4, ap_memory, ctx_Iv, array</column>
+<column name="ctx_Iv_ce0">out, 1, ap_memory, ctx_Iv, array</column>
+<column name="ctx_Iv_we0">out, 1, ap_memory, ctx_Iv, array</column>
+<column name="ctx_Iv_d0">out, 8, ap_memory, ctx_Iv, array</column>
+<column name="ctx_Iv_q0">in, 8, ap_memory, ctx_Iv, array</column>
+<column name="ctx_Iv_address1">out, 4, ap_memory, ctx_Iv, array</column>
+<column name="ctx_Iv_ce1">out, 1, ap_memory, ctx_Iv, array</column>
+<column name="ctx_Iv_we1">out, 1, ap_memory, ctx_Iv, array</column>
+<column name="ctx_Iv_d1">out, 8, ap_memory, ctx_Iv, array</column>
+<column name="ctx_Iv_q1">in, 8, ap_memory, ctx_Iv, array</column>
+<column name="buf_0_read">in, 8, ap_none, buf_0_read, scalar</column>
+<column name="buf_1_read">in, 8, ap_none, buf_1_read, scalar</column>
+<column name="buf_2_read">in, 8, ap_none, buf_2_read, scalar</column>
+<column name="buf_3_read">in, 8, ap_none, buf_3_read, scalar</column>
+<column name="buf_4_read">in, 8, ap_none, buf_4_read, scalar</column>
+<column name="buf_5_read">in, 8, ap_none, buf_5_read, scalar</column>
+<column name="buf_6_read">in, 8, ap_none, buf_6_read, scalar</column>
+<column name="buf_7_read">in, 8, ap_none, buf_7_read, scalar</column>
+<column name="buf_8_read">in, 8, ap_none, buf_8_read, scalar</column>
+<column name="buf_9_read">in, 8, ap_none, buf_9_read, scalar</column>
+<column name="buf_10_read">in, 8, ap_none, buf_10_read, scalar</column>
+<column name="buf_11_read">in, 8, ap_none, buf_11_read, scalar</column>
+<column name="buf_12_read">in, 8, ap_none, buf_12_read, scalar</column>
+<column name="buf_13_read">in, 8, ap_none, buf_13_read, scalar</column>
+<column name="buf_14_read">in, 8, ap_none, buf_14_read, scalar</column>
+<column name="buf_15_read">in, 8, ap_none, buf_15_read, scalar</column>
+</table>
+</item>
+</section>
+</profile>
