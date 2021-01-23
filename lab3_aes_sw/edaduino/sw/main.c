@@ -66,7 +66,15 @@ uint32_t crypt_msg_sw(uint8_t* msg, const uint8_t* key, const uint8_t* iv){
 	 * 		 - The IV is updated inside the AES_ctx struct within one call to AES_CTR_xcrypt_buffer(..)
 	 * 		 - AES_CTR_xcrypt_buffer(..) takes messages with lengths of 16-Byte multiplicity
 	 * 		 - Use get_CpuCycles() from bsp.h to retreive the current Cpu cycle count */
+    time1 = get_CpuCycles();
 
+    // void AES_init_ctx_iv(struct AES_ctx *ctx, const uint8_t *key, const uint8_t *iv);
+    AES_init_ctx_iv(&ctx, key, iv);
+
+    //void AES_CTR_xcrypt_buffer(struct AES_ctx *ctx, uint8_t *buf, uint32_t length);
+    AES_CTR_xcrypt_buffer(&ctx, msg, MSG_ROWS*MSG_COLS);
+
+    time2 = get_CpuCycles();
     return(time2 - time1);
 }
 
