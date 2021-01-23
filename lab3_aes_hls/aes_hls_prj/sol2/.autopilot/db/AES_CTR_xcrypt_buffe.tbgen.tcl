@@ -173,8 +173,8 @@ set RtlHierarchyInfo {[
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "Aligned", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"II" : "108",
-		"VariableLatency" : "0", "ExactLatency" : "115", "EstimateLatencyMin" : "115", "EstimateLatencyMax" : "115",
+		"II" : "99",
+		"VariableLatency" : "0", "ExactLatency" : "106", "EstimateLatencyMin" : "106", "EstimateLatencyMax" : "106",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -210,8 +210,8 @@ set RtlHierarchyInfo {[
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"II" : "108",
-		"VariableLatency" : "0", "ExactLatency" : "107", "EstimateLatencyMin" : "107", "EstimateLatencyMax" : "107",
+		"II" : "99",
+		"VariableLatency" : "0", "ExactLatency" : "98", "EstimateLatencyMin" : "98", "EstimateLatencyMax" : "98",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -367,22 +367,22 @@ set ArgLastReadFirstWriteLatency {
 	AES_CTR_xcrypt_buffe {
 		ctx_RoundKey {Type I LastRead 8 FirstWrite -1}
 		ctx_Iv {Type IO LastRead 8 FirstWrite 8}
-		buf_0_read {Type I LastRead 107 FirstWrite -1}
-		buf_1_read {Type I LastRead 107 FirstWrite -1}
-		buf_2_read {Type I LastRead 107 FirstWrite -1}
-		buf_3_read {Type I LastRead 107 FirstWrite -1}
-		buf_4_read {Type I LastRead 107 FirstWrite -1}
-		buf_5_read {Type I LastRead 107 FirstWrite -1}
-		buf_6_read {Type I LastRead 107 FirstWrite -1}
-		buf_7_read {Type I LastRead 107 FirstWrite -1}
-		buf_8_read {Type I LastRead 107 FirstWrite -1}
-		buf_9_read {Type I LastRead 107 FirstWrite -1}
-		buf_10_read {Type I LastRead 107 FirstWrite -1}
-		buf_11_read {Type I LastRead 107 FirstWrite -1}
-		buf_12_read {Type I LastRead 107 FirstWrite -1}
-		buf_13_read {Type I LastRead 107 FirstWrite -1}
-		buf_14_read {Type I LastRead 107 FirstWrite -1}
-		buf_15_read {Type I LastRead 107 FirstWrite -1}
+		buf_0_read {Type I LastRead 98 FirstWrite -1}
+		buf_1_read {Type I LastRead 98 FirstWrite -1}
+		buf_2_read {Type I LastRead 98 FirstWrite -1}
+		buf_3_read {Type I LastRead 98 FirstWrite -1}
+		buf_4_read {Type I LastRead 98 FirstWrite -1}
+		buf_5_read {Type I LastRead 98 FirstWrite -1}
+		buf_6_read {Type I LastRead 98 FirstWrite -1}
+		buf_7_read {Type I LastRead 98 FirstWrite -1}
+		buf_8_read {Type I LastRead 98 FirstWrite -1}
+		buf_9_read {Type I LastRead 98 FirstWrite -1}
+		buf_10_read {Type I LastRead 98 FirstWrite -1}
+		buf_11_read {Type I LastRead 98 FirstWrite -1}
+		buf_12_read {Type I LastRead 98 FirstWrite -1}
+		buf_13_read {Type I LastRead 98 FirstWrite -1}
+		buf_14_read {Type I LastRead 98 FirstWrite -1}
+		buf_15_read {Type I LastRead 98 FirstWrite -1}
 		sbox {Type I LastRead -1 FirstWrite -1}}
 	Cipher {
 		state_0_0_read {Type I LastRead 0 FirstWrite -1}
@@ -474,8 +474,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "115", "Max" : "115"}
-	, {"Name" : "Interval", "Min" : "108", "Max" : "108"}
+	{"Name" : "Latency", "Min" : "106", "Max" : "106"}
+	, {"Name" : "Interval", "Min" : "99", "Max" : "99"}
 ]}
 
 set PipelineEnableSignalInfo {[

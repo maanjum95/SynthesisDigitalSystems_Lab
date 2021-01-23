@@ -1,0 +1,188 @@
+
+
+================================================================
+== Vivado HLS Report for 'AddRoundKey'
+================================================================
+* Date:           Sat Jan 23 21:09:27 2021
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        aes_hls_prj
+* Solution:       sol3
+* Product family: spartan7
+* Target device:  xc7s15-ftgb196-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+--------+----------+------------+
+    |  Clock | Target | Estimated| Uncertainty|
+    +--------+--------+----------+------------+
+    |ap_clk  |  100.00|     5.335|       12.50|
+    +--------+--------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |   15|   15|   15|   15|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+-------+------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF  |  LUT | URAM|
++-----------------+---------+-------+-------+------+-----+
+|DSP              |        -|      -|      -|     -|    -|
+|Expression       |        -|      -|      0|   232|    -|
+|FIFO             |        -|      -|      -|     -|    -|
+|Instance         |        -|      -|      -|     -|    -|
+|Memory           |        -|      -|      -|     -|    -|
+|Multiplexer      |        -|      -|      -|   425|    -|
+|Register         |        -|      -|    132|     -|    -|
++-----------------+---------+-------+-------+------+-----+
+|Total            |        0|      0|    132|   657|    0|
++-----------------+---------+-------+-------+------+-----+
+|Available        |       20|     20|  16000|  8000|    0|
++-----------------+---------+-------+-------+------+-----+
+|Utilization (%)  |        0|      0|   ~0  |     8|    0|
++-----------------+---------+-------+-------+------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +------------------------+----------+-------+---+----+------------+------------+
+    |      Variable Name     | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------+----------+-------+---+----+------------+------------+
+    |or_ln265_10_fu_558_p2   |    or    |      0|  0|   8|           8|           4|
+    |or_ln265_11_fu_580_p2   |    or    |      0|  0|   8|           8|           4|
+    |or_ln265_12_fu_590_p2   |    or    |      0|  0|   8|           8|           4|
+    |or_ln265_13_fu_612_p2   |    or    |      0|  0|   8|           8|           4|
+    |or_ln265_14_fu_622_p2   |    or    |      0|  0|   8|           8|           4|
+    |or_ln265_1_fu_420_p2    |    or    |      0|  0|   8|           8|           2|
+    |or_ln265_2_fu_430_p2    |    or    |      0|  0|   8|           8|           2|
+    |or_ln265_3_fu_452_p2    |    or    |      0|  0|   8|           8|           3|
+    |or_ln265_4_fu_462_p2    |    or    |      0|  0|   8|           8|           3|
+    |or_ln265_5_fu_484_p2    |    or    |      0|  0|   8|           8|           3|
+    |or_ln265_6_fu_494_p2    |    or    |      0|  0|   8|           8|           3|
+    |or_ln265_7_fu_516_p2    |    or    |      0|  0|   8|           8|           4|
+    |or_ln265_8_fu_526_p2    |    or    |      0|  0|   8|           8|           4|
+    |or_ln265_9_fu_548_p2    |    or    |      0|  0|   8|           8|           4|
+    |or_ln265_fu_409_p2      |    or    |      0|  0|   8|           8|           1|
+    |grp_fu_378_p2           |    xor   |      0|  0|   8|           8|           8|
+    |grp_fu_385_p2           |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln265_10_fu_568_p2  |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln265_11_fu_574_p2  |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln265_12_fu_600_p2  |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln265_13_fu_606_p2  |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln265_2_fu_440_p2   |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln265_3_fu_446_p2   |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln265_4_fu_472_p2   |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln265_5_fu_478_p2   |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln265_6_fu_504_p2   |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln265_7_fu_510_p2   |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln265_8_fu_536_p2   |    xor   |      0|  0|   8|           8|           8|
+    |xor_ln265_9_fu_542_p2   |    xor   |      0|  0|   8|           8|           8|
+    +------------------------+----------+-------+---+----+------------+------------+
+    |Total                   |          |      0|  0| 232|         232|         161|
+    +------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------+----+-----------+-----+-----------+
+    |        Name       | LUT| Input Size| Bits| Total Bits|
+    +-------------------+----+-----------+-----+-----------+
+    |RoundKey_address0  |  44|          9|    8|         72|
+    |RoundKey_address1  |  44|          9|    8|         72|
+    |ap_NS_fsm          |  85|         17|    1|         17|
+    |state_address0     |  85|         17|    4|         68|
+    |state_address1     |  85|         17|    4|         68|
+    |state_d0           |  41|          8|    8|         64|
+    |state_d1           |  41|          8|    8|         64|
+    +-------------------+----+-----------+-----+-----------+
+    |Total              | 425|         85|   41|        425|
+    +-------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-----------------------+----+----+-----+-----------+
+    |          Name         | FF | LUT| Bits| Const Bits|
+    +-----------------------+----+----+-----+-----------+
+    |ap_CS_fsm              |  16|   0|   16|          0|
+    |reg_370                |   8|   0|    8|          0|
+    |reg_374                |   8|   0|    8|          0|
+    |shl_ln_reg_762         |   4|   0|    8|          4|
+    |state_load_22_reg_662  |   8|   0|    8|          0|
+    |state_load_23_reg_667  |   8|   0|    8|          0|
+    |state_load_24_reg_682  |   8|   0|    8|          0|
+    |state_load_25_reg_687  |   8|   0|    8|          0|
+    |state_load_26_reg_702  |   8|   0|    8|          0|
+    |state_load_27_reg_707  |   8|   0|    8|          0|
+    |state_load_28_reg_722  |   8|   0|    8|          0|
+    |state_load_29_reg_727  |   8|   0|    8|          0|
+    |state_load_30_reg_742  |   8|   0|    8|          0|
+    |state_load_31_reg_747  |   8|   0|    8|          0|
+    |state_load_32_reg_790  |   8|   0|    8|          0|
+    |state_load_33_reg_795  |   8|   0|    8|          0|
+    +-----------------------+----+----+-----+-----------+
+    |Total                  | 132|   0|  136|          4|
+    +-----------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------+-----+-----+------------+--------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  | Source Object|    C Type    |
++-------------------+-----+-----+------------+--------------+--------------+
+|ap_clk             |  in |    1| ap_ctrl_hs |  AddRoundKey | return value |
+|ap_rst             |  in |    1| ap_ctrl_hs |  AddRoundKey | return value |
+|ap_start           |  in |    1| ap_ctrl_hs |  AddRoundKey | return value |
+|ap_done            | out |    1| ap_ctrl_hs |  AddRoundKey | return value |
+|ap_idle            | out |    1| ap_ctrl_hs |  AddRoundKey | return value |
+|ap_ready           | out |    1| ap_ctrl_hs |  AddRoundKey | return value |
+|round              |  in |    5|   ap_none  |     round    |    scalar    |
+|state_address0     | out |    4|  ap_memory |     state    |     array    |
+|state_ce0          | out |    1|  ap_memory |     state    |     array    |
+|state_we0          | out |    1|  ap_memory |     state    |     array    |
+|state_d0           | out |    8|  ap_memory |     state    |     array    |
+|state_q0           |  in |    8|  ap_memory |     state    |     array    |
+|state_address1     | out |    4|  ap_memory |     state    |     array    |
+|state_ce1          | out |    1|  ap_memory |     state    |     array    |
+|state_we1          | out |    1|  ap_memory |     state    |     array    |
+|state_d1           | out |    8|  ap_memory |     state    |     array    |
+|state_q1           |  in |    8|  ap_memory |     state    |     array    |
+|RoundKey_address0  | out |    8|  ap_memory |   RoundKey   |     array    |
+|RoundKey_ce0       | out |    1|  ap_memory |   RoundKey   |     array    |
+|RoundKey_q0        |  in |    8|  ap_memory |   RoundKey   |     array    |
+|RoundKey_address1  | out |    8|  ap_memory |   RoundKey   |     array    |
+|RoundKey_ce1       | out |    1|  ap_memory |   RoundKey   |     array    |
+|RoundKey_q1        |  in |    8|  ap_memory |   RoundKey   |     array    |
++-------------------+-----+-----+------------+--------------+--------------+
+

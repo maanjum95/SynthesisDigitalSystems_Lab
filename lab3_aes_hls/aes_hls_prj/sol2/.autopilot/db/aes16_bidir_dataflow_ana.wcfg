@@ -37,38 +37,38 @@
          <obj_property name="Render_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir//AESL_inst_aes16_bidir_activity.dataflowTxWaveData.Cycles</obj_property>
          <obj_property name="Value_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir//AESL_inst_aes16_bidir_activity.dataflowTxWaveData.OutStanding</obj_property>
          <obj_property name="Detail_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir//AESL_inst_aes16_bidir_activity.dataflowTxTooltipData</obj_property>
-         <wvobject type="group" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_KeyExpansion_fu_371/grp_KeyExpansion_fu_371_activity">
-            <obj_property name="label">grp_KeyExpansion_fu_371_activity</obj_property>
+         <wvobject type="group" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_KeyExpansion_fu_373/grp_KeyExpansion_fu_373_activity">
+            <obj_property name="label">grp_KeyExpansion_fu_373_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">grp_KeyExpansion_fu_371_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_KeyExpansion_fu_371_activity</obj_property>
+            <obj_property name="ElementShortName">grp_KeyExpansion_fu_373_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_KeyExpansion_fu_373_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_KeyExpansion_fu_371/grp_KeyExpansion_fu_371_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_KeyExpansion_fu_371/grp_KeyExpansion_fu_371_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_KeyExpansion_fu_371/grp_KeyExpansion_fu_371_activity.dataflowTxTooltipData</obj_property>
+            <obj_property name="Render_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_KeyExpansion_fu_373/grp_KeyExpansion_fu_373_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_KeyExpansion_fu_373/grp_KeyExpansion_fu_373_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_KeyExpansion_fu_373/grp_KeyExpansion_fu_373_activity.dataflowTxTooltipData</obj_property>
          </wvobject>
-         <wvobject type="group" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_395/grp_AES_CTR_xcrypt_buffe_fu_395_activity">
-            <obj_property name="label">grp_AES_CTR_xcrypt_buffe_fu_395_activity</obj_property>
+         <wvobject type="group" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_397/grp_AES_CTR_xcrypt_buffe_fu_397_activity">
+            <obj_property name="label">grp_AES_CTR_xcrypt_buffe_fu_397_activity</obj_property>
             <obj_property name="DisplayName">label</obj_property>
             <obj_property name="UseFullPath">true</obj_property>
-            <obj_property name="ElementShortName">grp_AES_CTR_xcrypt_buffe_fu_395_activity</obj_property>
-            <obj_property name="ObjectShortName">grp_AES_CTR_xcrypt_buffe_fu_395_activity</obj_property>
+            <obj_property name="ElementShortName">grp_AES_CTR_xcrypt_buffe_fu_397_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_AES_CTR_xcrypt_buffe_fu_397_activity</obj_property>
             <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
             <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
             <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
             <obj_property name="UseCustomSignalColor">true</obj_property>
             <obj_property name="CustomSignalColor">turquoise</obj_property>
             <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-            <obj_property name="Render_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_395/grp_AES_CTR_xcrypt_buffe_fu_395_activity.dataflowTxWaveData.Cycles</obj_property>
-            <obj_property name="Value_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_395/grp_AES_CTR_xcrypt_buffe_fu_395_activity.dataflowTxWaveData.OutStanding</obj_property>
-            <obj_property name="Detail_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_395/grp_AES_CTR_xcrypt_buffe_fu_395_activity.dataflowTxTooltipData</obj_property>
-            <wvobject type="group" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_395/grp_Cipher_fu_480/grp_Cipher_fu_480_activity">
+            <obj_property name="Render_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_397/grp_AES_CTR_xcrypt_buffe_fu_397_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_397/grp_AES_CTR_xcrypt_buffe_fu_397_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_397/grp_AES_CTR_xcrypt_buffe_fu_397_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_397/grp_Cipher_fu_480/grp_Cipher_fu_480_activity">
                <obj_property name="label">grp_Cipher_fu_480_activity</obj_property>
                <obj_property name="DisplayName">label</obj_property>
                <obj_property name="UseFullPath">true</obj_property>
@@ -80,10 +80,10 @@
                <obj_property name="UseCustomSignalColor">true</obj_property>
                <obj_property name="CustomSignalColor">turquoise</obj_property>
                <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-               <obj_property name="Render_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_395/grp_Cipher_fu_480/grp_Cipher_fu_480_activity.dataflowTxWaveData.Cycles</obj_property>
-               <obj_property name="Value_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_395/grp_Cipher_fu_480/grp_Cipher_fu_480_activity.dataflowTxWaveData.OutStanding</obj_property>
-               <obj_property name="Detail_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_395/grp_Cipher_fu_480/grp_Cipher_fu_480_activity.dataflowTxTooltipData</obj_property>
-               <wvobject type="group" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_395/grp_Cipher_fu_480/grp_AddRoundKey_fu_184/grp_AddRoundKey_fu_184_activity">
+               <obj_property name="Render_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_397/grp_Cipher_fu_480/grp_Cipher_fu_480_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_397/grp_Cipher_fu_480/grp_Cipher_fu_480_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_397/grp_Cipher_fu_480/grp_Cipher_fu_480_activity.dataflowTxTooltipData</obj_property>
+               <wvobject type="group" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_397/grp_Cipher_fu_480/grp_AddRoundKey_fu_184/grp_AddRoundKey_fu_184_activity">
                   <obj_property name="label">grp_AddRoundKey_fu_184_activity</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
                   <obj_property name="UseFullPath">true</obj_property>
@@ -95,11 +95,11 @@
                   <obj_property name="UseCustomSignalColor">true</obj_property>
                   <obj_property name="CustomSignalColor">turquoise</obj_property>
                   <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                  <obj_property name="Render_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_395/grp_Cipher_fu_480/grp_AddRoundKey_fu_184/grp_AddRoundKey_fu_184_activity.dataflowTxWaveData.Cycles</obj_property>
-                  <obj_property name="Value_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_395/grp_Cipher_fu_480/grp_AddRoundKey_fu_184/grp_AddRoundKey_fu_184_activity.dataflowTxWaveData.OutStanding</obj_property>
-                  <obj_property name="Detail_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_395/grp_Cipher_fu_480/grp_AddRoundKey_fu_184/grp_AddRoundKey_fu_184_activity.dataflowTxTooltipData</obj_property>
+                  <obj_property name="Render_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_397/grp_Cipher_fu_480/grp_AddRoundKey_fu_184/grp_AddRoundKey_fu_184_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_397/grp_Cipher_fu_480/grp_AddRoundKey_fu_184/grp_AddRoundKey_fu_184_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_397/grp_Cipher_fu_480/grp_AddRoundKey_fu_184/grp_AddRoundKey_fu_184_activity.dataflowTxTooltipData</obj_property>
                </wvobject>
-               <wvobject type="group" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_395/grp_Cipher_fu_480/grp_SubBytes_fu_234/grp_SubBytes_fu_234_activity">
+               <wvobject type="group" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_397/grp_Cipher_fu_480/grp_SubBytes_fu_234/grp_SubBytes_fu_234_activity">
                   <obj_property name="label">grp_SubBytes_fu_234_activity</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
                   <obj_property name="UseFullPath">true</obj_property>
@@ -111,9 +111,9 @@
                   <obj_property name="UseCustomSignalColor">true</obj_property>
                   <obj_property name="CustomSignalColor">turquoise</obj_property>
                   <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
-                  <obj_property name="Render_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_395/grp_Cipher_fu_480/grp_SubBytes_fu_234/grp_SubBytes_fu_234_activity.dataflowTxWaveData.Cycles</obj_property>
-                  <obj_property name="Value_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_395/grp_Cipher_fu_480/grp_SubBytes_fu_234/grp_SubBytes_fu_234_activity.dataflowTxWaveData.OutStanding</obj_property>
-                  <obj_property name="Detail_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_395/grp_Cipher_fu_480/grp_SubBytes_fu_234/grp_SubBytes_fu_234_activity.dataflowTxTooltipData</obj_property>
+                  <obj_property name="Render_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_397/grp_Cipher_fu_480/grp_SubBytes_fu_234/grp_SubBytes_fu_234_activity.dataflowTxWaveData.Cycles</obj_property>
+                  <obj_property name="Value_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_397/grp_Cipher_fu_480/grp_SubBytes_fu_234/grp_SubBytes_fu_234_activity.dataflowTxWaveData.OutStanding</obj_property>
+                  <obj_property name="Detail_Data">/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_397/grp_Cipher_fu_480/grp_SubBytes_fu_234/grp_SubBytes_fu_234_activity.dataflowTxTooltipData</obj_property>
                </wvobject>
             </wvobject>
          </wvobject>
@@ -126,13 +126,13 @@
    <wvobject type="group" fp_name="AESL_inst_aes16_bidir_group">
       <obj_property name="label">AESL_inst_aes16_bidir</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <wvobject type="protoinst" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_KeyExpansion_fu_371/grp_KeyExpansion_fu_371_activity">
-         <obj_property name="ElementShortName">grp_KeyExpansion_fu_371_activity</obj_property>
-         <obj_property name="ObjectShortName">grp_KeyExpansion_fu_371_activity</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_KeyExpansion_fu_373/grp_KeyExpansion_fu_373_activity">
+         <obj_property name="ElementShortName">grp_KeyExpansion_fu_373_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_KeyExpansion_fu_373_activity</obj_property>
       </wvobject>
-      <wvobject type="protoinst" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_395/grp_AES_CTR_xcrypt_buffe_fu_395_activity">
-         <obj_property name="ElementShortName">grp_AES_CTR_xcrypt_buffe_fu_395_activity</obj_property>
-         <obj_property name="ObjectShortName">grp_AES_CTR_xcrypt_buffe_fu_395_activity</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_397/grp_AES_CTR_xcrypt_buffe_fu_397_activity">
+         <obj_property name="ElementShortName">grp_AES_CTR_xcrypt_buffe_fu_397_activity</obj_property>
+         <obj_property name="ObjectShortName">grp_AES_CTR_xcrypt_buffe_fu_397_activity</obj_property>
       </wvobject>
       <wvobject type="group" fp_name="AESL_inst_aes16_bidir_Handshake_group">
          <obj_property name="label">Block-level handshake</obj_property>
@@ -150,45 +150,45 @@
             <obj_property name="ObjectShortName">ap_done</obj_property>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="grp_KeyExpansion_fu_371_group">
-         <obj_property name="label">grp_KeyExpansion_fu_371</obj_property>
+      <wvobject type="group" fp_name="grp_KeyExpansion_fu_373_group">
+         <obj_property name="label">grp_KeyExpansion_fu_373</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="group" fp_name="grp_KeyExpansion_fu_371_Handshake_group">
+         <wvobject type="group" fp_name="grp_KeyExpansion_fu_373_Handshake_group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_KeyExpansion_fu_371/ap_start">
+            <wvobject type="logic" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_KeyExpansion_fu_373/ap_start">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_KeyExpansion_fu_371/ap_ready">
+            <wvobject type="logic" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_KeyExpansion_fu_373/ap_ready">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_KeyExpansion_fu_371/ap_done">
+            <wvobject type="logic" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_KeyExpansion_fu_373/ap_done">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
          </wvobject>
       </wvobject>
-      <wvobject type="group" fp_name="grp_AES_CTR_xcrypt_buffe_fu_395_group">
-         <obj_property name="label">grp_AES_CTR_xcrypt_buffe_fu_395</obj_property>
+      <wvobject type="group" fp_name="grp_AES_CTR_xcrypt_buffe_fu_397_group">
+         <obj_property name="label">grp_AES_CTR_xcrypt_buffe_fu_397</obj_property>
          <obj_property name="DisplayName">label</obj_property>
-         <wvobject type="protoinst" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_395/grp_Cipher_fu_480/grp_Cipher_fu_480_activity">
+         <wvobject type="protoinst" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_397/grp_Cipher_fu_480/grp_Cipher_fu_480_activity">
             <obj_property name="ElementShortName">grp_Cipher_fu_480_activity</obj_property>
             <obj_property name="ObjectShortName">grp_Cipher_fu_480_activity</obj_property>
          </wvobject>
-         <wvobject type="group" fp_name="grp_AES_CTR_xcrypt_buffe_fu_395_Handshake_group">
+         <wvobject type="group" fp_name="grp_AES_CTR_xcrypt_buffe_fu_397_Handshake_group">
             <obj_property name="label">Block-level handshake</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="logic" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_395/ap_start">
+            <wvobject type="logic" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_397/ap_start">
                <obj_property name="ElementShortName">ap_start</obj_property>
                <obj_property name="ObjectShortName">ap_start</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_395/ap_ready">
+            <wvobject type="logic" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_397/ap_ready">
                <obj_property name="ElementShortName">ap_ready</obj_property>
                <obj_property name="ObjectShortName">ap_ready</obj_property>
             </wvobject>
-            <wvobject type="logic" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_395/ap_done">
+            <wvobject type="logic" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_397/ap_done">
                <obj_property name="ElementShortName">ap_done</obj_property>
                <obj_property name="ObjectShortName">ap_done</obj_property>
             </wvobject>
@@ -196,26 +196,26 @@
          <wvobject type="group" fp_name="grp_Cipher_fu_480_group">
             <obj_property name="label">grp_Cipher_fu_480</obj_property>
             <obj_property name="DisplayName">label</obj_property>
-            <wvobject type="protoinst" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_395/grp_Cipher_fu_480/grp_AddRoundKey_fu_184/grp_AddRoundKey_fu_184_activity">
+            <wvobject type="protoinst" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_397/grp_Cipher_fu_480/grp_AddRoundKey_fu_184/grp_AddRoundKey_fu_184_activity">
                <obj_property name="ElementShortName">grp_AddRoundKey_fu_184_activity</obj_property>
                <obj_property name="ObjectShortName">grp_AddRoundKey_fu_184_activity</obj_property>
             </wvobject>
-            <wvobject type="protoinst" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_395/grp_Cipher_fu_480/grp_SubBytes_fu_234/grp_SubBytes_fu_234_activity">
+            <wvobject type="protoinst" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_397/grp_Cipher_fu_480/grp_SubBytes_fu_234/grp_SubBytes_fu_234_activity">
                <obj_property name="ElementShortName">grp_SubBytes_fu_234_activity</obj_property>
                <obj_property name="ObjectShortName">grp_SubBytes_fu_234_activity</obj_property>
             </wvobject>
             <wvobject type="group" fp_name="grp_Cipher_fu_480_Handshake_group">
                <obj_property name="label">Block-level handshake</obj_property>
                <obj_property name="DisplayName">label</obj_property>
-               <wvobject type="logic" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_395/grp_Cipher_fu_480/ap_start">
+               <wvobject type="logic" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_397/grp_Cipher_fu_480/ap_start">
                   <obj_property name="ElementShortName">ap_start</obj_property>
                   <obj_property name="ObjectShortName">ap_start</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_395/grp_Cipher_fu_480/ap_ready">
+               <wvobject type="logic" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_397/grp_Cipher_fu_480/ap_ready">
                   <obj_property name="ElementShortName">ap_ready</obj_property>
                   <obj_property name="ObjectShortName">ap_ready</obj_property>
                </wvobject>
-               <wvobject type="logic" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_395/grp_Cipher_fu_480/ap_done">
+               <wvobject type="logic" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_397/grp_Cipher_fu_480/ap_done">
                   <obj_property name="ElementShortName">ap_done</obj_property>
                   <obj_property name="ObjectShortName">ap_done</obj_property>
                </wvobject>
@@ -226,15 +226,15 @@
                <wvobject type="group" fp_name="grp_AddRoundKey_fu_184_Handshake_group">
                   <obj_property name="label">Block-level handshake</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="logic" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_395/grp_Cipher_fu_480/grp_AddRoundKey_fu_184/ap_start">
+                  <wvobject type="logic" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_397/grp_Cipher_fu_480/grp_AddRoundKey_fu_184/ap_start">
                      <obj_property name="ElementShortName">ap_start</obj_property>
                      <obj_property name="ObjectShortName">ap_start</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_395/grp_Cipher_fu_480/grp_AddRoundKey_fu_184/ap_ready">
+                  <wvobject type="logic" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_397/grp_Cipher_fu_480/grp_AddRoundKey_fu_184/ap_ready">
                      <obj_property name="ElementShortName">ap_ready</obj_property>
                      <obj_property name="ObjectShortName">ap_ready</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_395/grp_Cipher_fu_480/grp_AddRoundKey_fu_184/ap_done">
+                  <wvobject type="logic" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_397/grp_Cipher_fu_480/grp_AddRoundKey_fu_184/ap_done">
                      <obj_property name="ElementShortName">ap_done</obj_property>
                      <obj_property name="ObjectShortName">ap_done</obj_property>
                   </wvobject>
@@ -246,15 +246,15 @@
                <wvobject type="group" fp_name="grp_SubBytes_fu_234_Handshake_group">
                   <obj_property name="label">Block-level handshake</obj_property>
                   <obj_property name="DisplayName">label</obj_property>
-                  <wvobject type="logic" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_395/grp_Cipher_fu_480/grp_SubBytes_fu_234/ap_start">
+                  <wvobject type="logic" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_397/grp_Cipher_fu_480/grp_SubBytes_fu_234/ap_start">
                      <obj_property name="ElementShortName">ap_start</obj_property>
                      <obj_property name="ObjectShortName">ap_start</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_395/grp_Cipher_fu_480/grp_SubBytes_fu_234/ap_ready">
+                  <wvobject type="logic" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_397/grp_Cipher_fu_480/grp_SubBytes_fu_234/ap_ready">
                      <obj_property name="ElementShortName">ap_ready</obj_property>
                      <obj_property name="ObjectShortName">ap_ready</obj_property>
                   </wvobject>
-                  <wvobject type="logic" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_395/grp_Cipher_fu_480/grp_SubBytes_fu_234/ap_done">
+                  <wvobject type="logic" fp_name="/apatb_aes16_bidir_top/AESL_inst_aes16_bidir/grp_AES_CTR_xcrypt_buffe_fu_397/grp_Cipher_fu_480/grp_SubBytes_fu_234/ap_done">
                      <obj_property name="ElementShortName">ap_done</obj_property>
                      <obj_property name="ObjectShortName">ap_done</obj_property>
                   </wvobject>

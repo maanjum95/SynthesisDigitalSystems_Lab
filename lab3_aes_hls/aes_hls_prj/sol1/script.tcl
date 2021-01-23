@@ -5,12 +5,12 @@
 ############################################################
 open_project aes_hls_prj
 set_top aes16_bidir
-add_files c_src/aes.c
-add_files c_src/aes.h
-add_files hls/top_aes.c
 add_files hls/top_aes.h
-add_files -tb testbench/aes_test.c -cflags "-Wno-unknown-pragmas"
-add_files -tb testbench/out.gold.dat -cflags "-Wno-unknown-pragmas"
+add_files hls/top_aes.c
+add_files c_src/aes.h
+add_files c_src/aes.c
+add_files -tb testbench/out.gold.dat -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
+add_files -tb testbench/aes_test.c -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 open_solution "sol1"
 set_part {xc7s15-ftgb196-2}
 create_clock -period 100 -name default

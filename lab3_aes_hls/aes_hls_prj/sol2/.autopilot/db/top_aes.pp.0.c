@@ -137,9 +137,7 @@
 # 1 "<built-in>" 2
 # 1 "hls/top_aes.c" 2
 # 1 "hls/../c_src/aes.h" 1
-
-
-
+# 10 "hls/../c_src/aes.h"
 # 1 "/nas/ei/share/tools/xilinx/Vivado/2019.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
 # 33 "/nas/ei/share/tools/xilinx/Vivado/2019.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
 # 1 "/usr/include/stdint.h" 1 3 4
@@ -347,8 +345,8 @@ typedef unsigned long int uintptr_t;
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
 # 34 "/nas/ei/share/tools/xilinx/Vivado/2019.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
-# 5 "hls/../c_src/aes.h" 2
-# 44 "hls/../c_src/aes.h"
+# 11 "hls/../c_src/aes.h" 2
+# 50 "hls/../c_src/aes.h"
 struct AES_ctx {
   uint8_t RoundKey[176];
 
@@ -369,10 +367,10 @@ void AES_ctx_set_iv(struct AES_ctx *ctx, const uint8_t *iv);
 
 void AES_ECB_encrypt(const struct AES_ctx *ctx, uint8_t *buf);
 void AES_ECB_decrypt(const struct AES_ctx *ctx, uint8_t *buf);
-# 73 "hls/../c_src/aes.h"
+# 79 "hls/../c_src/aes.h"
 void AES_CBC_encrypt_buffer(struct AES_ctx *ctx, uint8_t *buf, uint32_t length);
 void AES_CBC_decrypt_buffer(struct AES_ctx *ctx, uint8_t *buf, uint32_t length);
-# 86 "hls/../c_src/aes.h"
+# 92 "hls/../c_src/aes.h"
 void AES_CTR_xcrypt_buffer(struct AES_ctx *ctx, uint8_t *buf, uint32_t length);
 # 2 "hls/top_aes.c" 2
 # 1 "hls/top_aes.h" 1
@@ -404,9 +402,6 @@ void aes16_bidir(uint32_t key[4], uint32_t inout[4], uint32_t iv[4]){_ssdm_SpecA
 #pragma HLS ARRAY_PARTITION variable=&key complete dim=1
 #pragma HLS ARRAY_PARTITION variable=&iv complete dim=1
 
-
-
-
  uint8_t _key[16];
  uint8_t _text[16];
  uint8_t _iv[16];
@@ -421,7 +416,7 @@ void aes16_bidir(uint32_t key[4], uint32_t inout[4], uint32_t iv[4]){_ssdm_SpecA
    _iv[i*4 +k] = (iv[i] >>(8*k) );
   }
  }
-# 54 "hls/top_aes.c"
+# 51 "hls/top_aes.c"
     AES_init_ctx_iv(&ctx, _key, _iv);
     AES_CTR_xcrypt_buffer(&ctx, _text, 16);
 
@@ -435,5 +430,5 @@ void aes16_bidir(uint32_t key[4], uint32_t inout[4], uint32_t iv[4]){_ssdm_SpecA
                     ((uint32_t)(ctx.Iv[i*4+1]) << 8) |
                     ((uint32_t)(ctx.Iv[i*4+0]) << 0) ;
  }
-# 77 "hls/top_aes.c"
+# 74 "hls/top_aes.c"
 }

@@ -13,7 +13,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_AES_CTR_xcrypt_buffe_fu_395/grp_AES_CTR_xcrypt_buffe_fu_395_activity": {
+				"grp_AES_CTR_xcrypt_buffe_fu_397/grp_AES_CTR_xcrypt_buffe_fu_397_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -23,7 +23,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_AES_CTR_xcrypt_buffe_fu_395/grp_Cipher_fu_480/grp_AddRoundKey_fu_184/grp_AddRoundKey_fu_184_activity": {
+				"grp_AES_CTR_xcrypt_buffe_fu_397/grp_Cipher_fu_480/grp_AddRoundKey_fu_184/grp_AddRoundKey_fu_184_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -33,7 +33,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_AES_CTR_xcrypt_buffe_fu_395/grp_Cipher_fu_480/grp_Cipher_fu_480_activity": {
+				"grp_AES_CTR_xcrypt_buffe_fu_397/grp_Cipher_fu_480/grp_Cipher_fu_480_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -43,7 +43,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_AES_CTR_xcrypt_buffe_fu_395/grp_Cipher_fu_480/grp_SubBytes_fu_234/grp_SubBytes_fu_234_activity": {
+				"grp_AES_CTR_xcrypt_buffe_fu_397/grp_Cipher_fu_480/grp_SubBytes_fu_234/grp_SubBytes_fu_234_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},
@@ -53,7 +53,7 @@
 						"AP_START": { "actual": "ap_start"}
 					}
 				},
-				"grp_KeyExpansion_fu_371/grp_KeyExpansion_fu_371_activity": {
+				"grp_KeyExpansion_fu_373/grp_KeyExpansion_fu_373_activity": {
 					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
 					"ports": {
 						"AP_CLK": { "actual": "ap_clk"},

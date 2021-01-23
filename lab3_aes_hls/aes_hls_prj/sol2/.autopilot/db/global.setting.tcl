@@ -1,13 +1,13 @@
 
 set TopModule "aes16_bidir"
-set ClockPeriod 10
+set ClockPeriod 100
 set ClockList ap_clk
 set HasVivadoClockPeriod 0
 set CombLogicFlag 0
 set PipelineFlag 1
 set DataflowTaskPipelineFlag 1
-set TrivialPipelineFlag 0
-set noPortSwitchingFlag 1
+set TrivialPipelineFlag 1
+set noPortSwitchingFlag 0
 set FloatingPointFlag 0
 set FftOrFirFlag 0
 set NbRWValue 0
@@ -42,8 +42,8 @@ set SCTraceOption all
 set TargetInfo xc7s15:-ftgb196:-2
 set SourceFiles {sc {} c {../../hls/top_aes.c ../../c_src/aes.c}}
 set SourceFlags {sc {} c {{} {}}}
-set DirectiveFile /nas/ei/share/TUEIEDA/LabSDS/SS20/ge29noy/labsds/aes_hls/aes_hls_prj/sol2/sol2.directive
-set TBFiles {verilog {../../testbench/aes_test.c ../../testbench/out.gold.dat} bc {../../testbench/aes_test.c ../../testbench/out.gold.dat} sc {../../testbench/aes_test.c ../../testbench/out.gold.dat} vhdl {../../testbench/aes_test.c ../../testbench/out.gold.dat} c {} cas {../../testbench/aes_test.c ../../testbench/out.gold.dat}}
+set DirectiveFile /nas/ei/share/TUEIEDA/LabSDS/WS20/ge46bod/lab3_aes_hls/aes_hls_prj/sol2/sol2.directive
+set TBFiles {verilog {../../testbench/out.gold.dat ../../testbench/aes_test.c} bc {../../testbench/out.gold.dat ../../testbench/aes_test.c} sc {../../testbench/out.gold.dat ../../testbench/aes_test.c} vhdl {../../testbench/out.gold.dat ../../testbench/aes_test.c} c {} cas {../../testbench/out.gold.dat ../../testbench/aes_test.c}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

@@ -109,9 +109,9 @@
       "impl\/verilog\/aes16_bidir.v"
     ],
     "Misc": ["impl\/misc\/logo.png"],
-    "DesignXml": "\/nas\/ei\/share\/TUEIEDA\/LabSDS\/SS20\/ge29noy\/lab2_aes_hls\/aes_hls_prj\/sol1\/.autopilot\/db\/aes16_bidir.design.xml",
-    "DebugDir": "\/nas\/ei\/share\/TUEIEDA\/LabSDS\/SS20\/ge29noy\/lab2_aes_hls\/aes_hls_prj\/sol1\/.debug",
-    "ProtoInst": ["\/nas\/ei\/share\/TUEIEDA\/LabSDS\/SS20\/ge29noy\/lab2_aes_hls\/aes_hls_prj\/sol1\/.debug\/aes16_bidir.protoinst"]
+    "DesignXml": "\/nas\/ei\/share\/TUEIEDA\/LabSDS\/WS20\/ge46bod\/lab3_aes_hls\/aes_hls_prj\/sol1\/.autopilot\/db\/aes16_bidir.design.xml",
+    "DebugDir": "\/nas\/ei\/share\/TUEIEDA\/LabSDS\/WS20\/ge46bod\/lab3_aes_hls\/aes_hls_prj\/sol1\/.debug",
+    "ProtoInst": ["\/nas\/ei\/share\/TUEIEDA\/LabSDS\/WS20\/ge46bod\/lab3_aes_hls\/aes_hls_prj\/sol1\/.debug\/aes16_bidir.protoinst"]
   },
   "SubcoreInfo": {
     "HasXpmMemory": false,
@@ -835,7 +835,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2020-06-19 16:44:11 CEST",
+    "Time": "2021-01-23 11:15:27 CET",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.1"
   }

@@ -4,7 +4,7 @@ set isTaskLevelControl 1
 set isCombinational 0
 set isDatapathOnly 0
 set isFreeRunPipelineModule 0
-set isPipelined 1
+set isPipelined 0
 set pipeline_type function
 set FunctionProtocol ap_ctrl_hs
 set isOneStateSeq 0
@@ -119,9 +119,9 @@ set RtlHierarchyInfo {[
 		"CDFG" : "aes16_bidir",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
-		"Pipeline" : "Aligned", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
+		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "204",
-		"VariableLatency" : "0", "ExactLatency" : "212", "EstimateLatencyMin" : "212", "EstimateLatencyMax" : "212",
+		"VariableLatency" : "0", "ExactLatency" : "203", "EstimateLatencyMin" : "203", "EstimateLatencyMax" : "203",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -143,11 +143,11 @@ set RtlHierarchyInfo {[
 			{"Name" : "iv_3", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "sbox", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "5", "SubInstance" : "grp_AES_CTR_xcrypt_buffe_fu_395", "Port" : "sbox"},
-					{"ID" : "3", "SubInstance" : "grp_KeyExpansion_fu_371", "Port" : "sbox"}]}]},
+					{"ID" : "5", "SubInstance" : "grp_AES_CTR_xcrypt_buffe_fu_397", "Port" : "sbox"},
+					{"ID" : "3", "SubInstance" : "grp_KeyExpansion_fu_373", "Port" : "sbox"}]}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.ctx_RoundKey_U", "Parent" : "0"},
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.ctx_Iv_U", "Parent" : "0"},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_KeyExpansion_fu_371", "Parent" : "0", "Child" : ["4"],
+	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_KeyExpansion_fu_373", "Parent" : "0", "Child" : ["4"],
 		"CDFG" : "KeyExpansion",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -179,14 +179,14 @@ set RtlHierarchyInfo {[
 			{"Name" : "Key_14_read", "Type" : "None", "Direction" : "I"},
 			{"Name" : "Key_15_read", "Type" : "None", "Direction" : "I"},
 			{"Name" : "sbox", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_KeyExpansion_fu_371.sbox_U", "Parent" : "3"},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_AES_CTR_xcrypt_buffe_fu_395", "Parent" : "0", "Child" : ["6"],
+	{"ID" : "4", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_KeyExpansion_fu_373.sbox_U", "Parent" : "3"},
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_AES_CTR_xcrypt_buffe_fu_397", "Parent" : "0", "Child" : ["6"],
 		"CDFG" : "AES_CTR_xcrypt_buffe",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "Aligned", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"II" : "108",
-		"VariableLatency" : "0", "ExactLatency" : "115", "EstimateLatencyMin" : "115", "EstimateLatencyMax" : "115",
+		"II" : "99",
+		"VariableLatency" : "0", "ExactLatency" : "106", "EstimateLatencyMin" : "106", "EstimateLatencyMax" : "106",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -217,13 +217,13 @@ set RtlHierarchyInfo {[
 			{"Name" : "sbox", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
 					{"ID" : "6", "SubInstance" : "grp_Cipher_fu_480", "Port" : "sbox"}]}]},
-	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_AES_CTR_xcrypt_buffe_fu_395.grp_Cipher_fu_480", "Parent" : "5", "Child" : ["7", "8", "9", "11"],
+	{"ID" : "6", "Level" : "2", "Path" : "`AUTOTB_DUT_INST.grp_AES_CTR_xcrypt_buffe_fu_397.grp_Cipher_fu_480", "Parent" : "5", "Child" : ["7", "8", "9", "11"],
 		"CDFG" : "Cipher",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"II" : "108",
-		"VariableLatency" : "0", "ExactLatency" : "107", "EstimateLatencyMin" : "107", "EstimateLatencyMax" : "107",
+		"II" : "99",
+		"VariableLatency" : "0", "ExactLatency" : "98", "EstimateLatencyMin" : "98", "EstimateLatencyMax" : "98",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -253,7 +253,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "sbox", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
 					{"ID" : "9", "SubInstance" : "grp_SubBytes_fu_234", "Port" : "sbox"}]}]},
-	{"ID" : "7", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_AES_CTR_xcrypt_buffe_fu_395.grp_Cipher_fu_480.grp_MixColumns_fu_164", "Parent" : "6",
+	{"ID" : "7", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_AES_CTR_xcrypt_buffe_fu_397.grp_Cipher_fu_480.grp_MixColumns_fu_164", "Parent" : "6",
 		"CDFG" : "MixColumns",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "1", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0",
@@ -283,7 +283,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "state_3_1_read", "Type" : "None", "Direction" : "I"},
 			{"Name" : "state_3_2_read", "Type" : "None", "Direction" : "I"},
 			{"Name" : "state_3_3_read", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "8", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_AES_CTR_xcrypt_buffe_fu_395.grp_Cipher_fu_480.grp_AddRoundKey_fu_184", "Parent" : "6",
+	{"ID" : "8", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_AES_CTR_xcrypt_buffe_fu_397.grp_Cipher_fu_480.grp_AddRoundKey_fu_184", "Parent" : "6",
 		"CDFG" : "AddRoundKey",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -315,7 +315,7 @@ set RtlHierarchyInfo {[
 			{"Name" : "state_3_2_read", "Type" : "None", "Direction" : "I"},
 			{"Name" : "state_3_3_read", "Type" : "None", "Direction" : "I"},
 			{"Name" : "RoundKey", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "9", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_AES_CTR_xcrypt_buffe_fu_395.grp_Cipher_fu_480.grp_SubBytes_fu_234", "Parent" : "6", "Child" : ["10"],
+	{"ID" : "9", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_AES_CTR_xcrypt_buffe_fu_397.grp_Cipher_fu_480.grp_SubBytes_fu_234", "Parent" : "6", "Child" : ["10"],
 		"CDFG" : "SubBytes",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -346,8 +346,8 @@ set RtlHierarchyInfo {[
 			{"Name" : "state_3_2_read", "Type" : "None", "Direction" : "I"},
 			{"Name" : "state_3_3_read", "Type" : "None", "Direction" : "I"},
 			{"Name" : "sbox", "Type" : "Memory", "Direction" : "I"}]},
-	{"ID" : "10", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_AES_CTR_xcrypt_buffe_fu_395.grp_Cipher_fu_480.grp_SubBytes_fu_234.sbox_U", "Parent" : "9"},
-	{"ID" : "11", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_AES_CTR_xcrypt_buffe_fu_395.grp_Cipher_fu_480.grp_ShiftRows_fu_256", "Parent" : "6",
+	{"ID" : "10", "Level" : "4", "Path" : "`AUTOTB_DUT_INST.grp_AES_CTR_xcrypt_buffe_fu_397.grp_Cipher_fu_480.grp_SubBytes_fu_234.sbox_U", "Parent" : "9"},
+	{"ID" : "11", "Level" : "3", "Path" : "`AUTOTB_DUT_INST.grp_AES_CTR_xcrypt_buffe_fu_397.grp_Cipher_fu_480.grp_ShiftRows_fu_256", "Parent" : "6",
 		"CDFG" : "ShiftRows",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "0", "ap_start" : "0", "ap_ready" : "1", "ap_done" : "0", "ap_continue" : "0", "ap_idle" : "0",
@@ -381,14 +381,14 @@ set ArgLastReadFirstWriteLatency {
 		key_1 {Type I LastRead 0 FirstWrite -1}
 		key_2 {Type I LastRead 0 FirstWrite -1}
 		key_3 {Type I LastRead 0 FirstWrite -1}
-		inout_0 {Type IO LastRead 88 FirstWrite 203}
-		inout_1 {Type IO LastRead 88 FirstWrite 203}
-		inout_2 {Type IO LastRead 88 FirstWrite 203}
-		inout_3 {Type IO LastRead 88 FirstWrite 203}
-		iv_0 {Type IO LastRead 9 FirstWrite 212}
-		iv_1 {Type IO LastRead 8 FirstWrite 211}
-		iv_2 {Type IO LastRead 12 FirstWrite 212}
-		iv_3 {Type IO LastRead 14 FirstWrite 212}
+		inout_0 {Type IO LastRead 88 FirstWrite 194}
+		inout_1 {Type IO LastRead 88 FirstWrite 194}
+		inout_2 {Type IO LastRead 88 FirstWrite 194}
+		inout_3 {Type IO LastRead 88 FirstWrite 194}
+		iv_0 {Type IO LastRead 0 FirstWrite 203}
+		iv_1 {Type IO LastRead 2 FirstWrite 203}
+		iv_2 {Type IO LastRead 4 FirstWrite 203}
+		iv_3 {Type IO LastRead 6 FirstWrite 203}
 		sbox {Type I LastRead -1 FirstWrite -1}}
 	KeyExpansion {
 		RoundKey {Type O LastRead -1 FirstWrite 0}
@@ -412,22 +412,22 @@ set ArgLastReadFirstWriteLatency {
 	AES_CTR_xcrypt_buffe {
 		ctx_RoundKey {Type I LastRead 8 FirstWrite -1}
 		ctx_Iv {Type IO LastRead 8 FirstWrite 8}
-		buf_0_read {Type I LastRead 107 FirstWrite -1}
-		buf_1_read {Type I LastRead 107 FirstWrite -1}
-		buf_2_read {Type I LastRead 107 FirstWrite -1}
-		buf_3_read {Type I LastRead 107 FirstWrite -1}
-		buf_4_read {Type I LastRead 107 FirstWrite -1}
-		buf_5_read {Type I LastRead 107 FirstWrite -1}
-		buf_6_read {Type I LastRead 107 FirstWrite -1}
-		buf_7_read {Type I LastRead 107 FirstWrite -1}
-		buf_8_read {Type I LastRead 107 FirstWrite -1}
-		buf_9_read {Type I LastRead 107 FirstWrite -1}
-		buf_10_read {Type I LastRead 107 FirstWrite -1}
-		buf_11_read {Type I LastRead 107 FirstWrite -1}
-		buf_12_read {Type I LastRead 107 FirstWrite -1}
-		buf_13_read {Type I LastRead 107 FirstWrite -1}
-		buf_14_read {Type I LastRead 107 FirstWrite -1}
-		buf_15_read {Type I LastRead 107 FirstWrite -1}
+		buf_0_read {Type I LastRead 98 FirstWrite -1}
+		buf_1_read {Type I LastRead 98 FirstWrite -1}
+		buf_2_read {Type I LastRead 98 FirstWrite -1}
+		buf_3_read {Type I LastRead 98 FirstWrite -1}
+		buf_4_read {Type I LastRead 98 FirstWrite -1}
+		buf_5_read {Type I LastRead 98 FirstWrite -1}
+		buf_6_read {Type I LastRead 98 FirstWrite -1}
+		buf_7_read {Type I LastRead 98 FirstWrite -1}
+		buf_8_read {Type I LastRead 98 FirstWrite -1}
+		buf_9_read {Type I LastRead 98 FirstWrite -1}
+		buf_10_read {Type I LastRead 98 FirstWrite -1}
+		buf_11_read {Type I LastRead 98 FirstWrite -1}
+		buf_12_read {Type I LastRead 98 FirstWrite -1}
+		buf_13_read {Type I LastRead 98 FirstWrite -1}
+		buf_14_read {Type I LastRead 98 FirstWrite -1}
+		buf_15_read {Type I LastRead 98 FirstWrite -1}
 		sbox {Type I LastRead -1 FirstWrite -1}}
 	Cipher {
 		state_0_0_read {Type I LastRead 0 FirstWrite -1}
@@ -519,12 +519,11 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "212", "Max" : "212"}
+	{"Name" : "Latency", "Min" : "203", "Max" : "203"}
 	, {"Name" : "Interval", "Min" : "204", "Max" : "204"}
 ]}
 
 set PipelineEnableSignalInfo {[
-	{"Pipeline" : "0", "EnableSignal" : "ap_enable_pp0"}
 ]}
 
 set Spec2ImplPortList { 

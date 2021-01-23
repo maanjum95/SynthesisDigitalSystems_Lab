@@ -1,0 +1,242 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'AES_CTR_xcrypt_buffe'" level="0">
+<item name = "Date">Sat Jan 23 21:09:28 2021
+</item>
+<item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
+<item name = "Project">aes_hls_prj</item>
+<item name = "Solution">sol3</item>
+<item name = "Product family">spartan7</item>
+<item name = "Target device">xc7s15-ftgb196-2</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">100.00, 6.100, 12.50</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">790, 822, 790, 822, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_AddRoundKey_fu_551">AddRoundKey, 15, 15, 15, 15, none</column>
+<column name="grp_SubBytes_fu_570">SubBytes, 15, 15, 15, 15, none</column>
+<column name="grp_ShiftRows_fu_577">ShiftRows, 11, 11, 11, 11, none</column>
+<column name="grp_MixColumns_fu_582">MixColumns, 17, 17, 17, 17, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- AES_CTR_xcrypt_buffer_label1">32, 32, 2, -, -, 16, no</column>
+<column name="- conv_1dTostate_label0">40, 40, 10, -, -, 4, no</column>
+<column name=" + conv_1dTostate_label1">8, 8, 2, -, -, 4, no</column>
+<column name="- conv_stateTo1d_label2">40, 40, 10, -, -, 4, no</column>
+<column name=" + conv_stateTo1d_label3">8, 8, 2, -, -, 4, no</column>
+<column name="- AES_CTR_xcrypt_buffer_label2">2, 33, 2, -, -, 1 ~ 16, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 335, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">1, -, 390, 1580, -</column>
+<column name="Memory">1, -, 16, 2, 0</column>
+<column name="Multiplexer">-, -, -, 1241, -</column>
+<column name="Register">-, -, 288, -, -</column>
+<specialColumn name="Available">20, 20, 16000, 8000, 0</specialColumn>
+<specialColumn name="Utilization (%)">10, 0, 4, 39, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="grp_AddRoundKey_fu_551">AddRoundKey, 0, 0, 132, 657, 0</column>
+<column name="grp_MixColumns_fu_582">MixColumns, 0, 0, 54, 318, 0</column>
+<column name="grp_ShiftRows_fu_577">ShiftRows, 0, 0, 92, 262, 0</column>
+<column name="grp_SubBytes_fu_570">SubBytes, 1, 0, 112, 343, 0</column>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="buffer_U">AES_CTR_xcrypt_buffe_buffer, 0, 16, 2, 0, 16, 8, 1, 128</column>
+<column name="x_U">AES_CTR_xcrypt_buffe_x, 1, 0, 0, 0, 16, 8, 1, 128</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln476_1_fu_656_p2">+, 0, 0, 15, 6, 6</column>
+<column name="add_ln476_fu_678_p2">+, 0, 0, 13, 4, 4</column>
+<column name="add_ln484_1_fu_732_p2">+, 0, 0, 15, 6, 6</column>
+<column name="add_ln484_fu_754_p2">+, 0, 0, 13, 4, 4</column>
+<column name="add_ln568_fu_601_p2">+, 0, 0, 15, 5, 1</column>
+<column name="add_ln577_fu_786_p2">+, 0, 0, 15, 5, 2</column>
+<column name="add_ln583_fu_792_p2">+, 0, 0, 15, 8, 1</column>
+<column name="i_3_fu_706_p2">+, 0, 0, 12, 3, 1</column>
+<column name="i_fu_630_p2">+, 0, 0, 12, 3, 1</column>
+<column name="k_2_fu_748_p2">+, 0, 0, 12, 3, 1</column>
+<column name="k_fu_672_p2">+, 0, 0, 12, 3, 1</column>
+<column name="icmp_ln474_fu_624_p2">icmp, 0, 0, 9, 3, 4</column>
+<column name="icmp_ln475_fu_666_p2">icmp, 0, 0, 9, 3, 4</column>
+<column name="icmp_ln482_fu_700_p2">icmp, 0, 0, 9, 3, 4</column>
+<column name="icmp_ln483_fu_742_p2">icmp, 0, 0, 9, 3, 4</column>
+<column name="icmp_ln568_fu_595_p2">icmp, 0, 0, 11, 5, 6</column>
+<column name="icmp_ln579_fu_780_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="xor_ln589_10_fu_861_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln589_11_fu_867_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln589_12_fu_873_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln589_13_fu_879_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln589_14_fu_885_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln589_15_fu_892_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln589_1_fu_806_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln589_2_fu_813_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln589_3_fu_819_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln589_4_fu_825_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln589_5_fu_831_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln589_6_fu_837_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln589_7_fu_843_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln589_8_fu_849_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln589_9_fu_855_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln589_fu_799_p2">xor, 0, 0, 8, 8, 8</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">465, 106, 1, 106</column>
+<column name="bi_1_0_reg_539">9, 2, 5, 10</column>
+<column name="buf_r_address0">85, 17, 4, 68</column>
+<column name="buf_r_address1">85, 17, 4, 68</column>
+<column name="buf_r_d0">44, 9, 8, 72</column>
+<column name="buf_r_d1">44, 9, 8, 72</column>
+<column name="buffer_address0">53, 12, 4, 48</column>
+<column name="buffer_address1">44, 9, 4, 36</column>
+<column name="buffer_d0">15, 3, 8, 24</column>
+<column name="ctx_Iv_address0">21, 4, 4, 16</column>
+<column name="ctx_Iv_d0">15, 3, 8, 24</column>
+<column name="ctx_RoundKey_ce0">9, 2, 1, 2</column>
+<column name="ctx_RoundKey_ce1">9, 2, 1, 2</column>
+<column name="grp_AddRoundKey_fu_551_round">53, 12, 5, 60</column>
+<column name="i_0_i1_reg_517">9, 2, 3, 6</column>
+<column name="i_0_i_reg_495">9, 2, 3, 6</column>
+<column name="k_0_0_reg_484">9, 2, 5, 10</column>
+<column name="k_0_i3_reg_528">9, 2, 3, 6</column>
+<column name="k_0_i_reg_506">9, 2, 3, 6</column>
+<column name="x_address0">38, 7, 4, 28</column>
+<column name="x_address1">27, 5, 4, 20</column>
+<column name="x_ce0">33, 6, 1, 6</column>
+<column name="x_ce1">27, 5, 1, 5</column>
+<column name="x_d0">33, 6, 8, 48</column>
+<column name="x_d1">27, 5, 8, 40</column>
+<column name="x_we0">33, 6, 1, 6</column>
+<column name="x_we1">27, 5, 1, 5</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="add_ln484_reg_984">4, 0, 4, 0</column>
+<column name="add_ln568_reg_902">5, 0, 5, 0</column>
+<column name="ap_CS_fsm">105, 0, 105, 0</column>
+<column name="bi_1_0_reg_539">5, 0, 5, 0</column>
+<column name="buf_load_10_reg_1106">8, 0, 8, 0</column>
+<column name="buf_load_11_reg_1111">8, 0, 8, 0</column>
+<column name="buf_load_12_reg_1136">8, 0, 8, 0</column>
+<column name="buf_load_13_reg_1141">8, 0, 8, 0</column>
+<column name="buf_load_2_reg_1026">8, 0, 8, 0</column>
+<column name="buf_load_3_reg_1031">8, 0, 8, 0</column>
+<column name="buf_load_4_reg_1046">8, 0, 8, 0</column>
+<column name="buf_load_5_reg_1051">8, 0, 8, 0</column>
+<column name="buf_load_6_reg_1066">8, 0, 8, 0</column>
+<column name="buf_load_7_reg_1071">8, 0, 8, 0</column>
+<column name="buf_load_8_reg_1086">8, 0, 8, 0</column>
+<column name="buf_load_9_reg_1091">8, 0, 8, 0</column>
+<column name="ctx_Iv_addr_1_reg_993">4, 0, 4, 0</column>
+<column name="grp_AddRoundKey_fu_551_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_MixColumns_fu_582_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_ShiftRows_fu_577_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_SubBytes_fu_570_ap_start_reg">1, 0, 1, 0</column>
+<column name="i_0_i1_reg_517">3, 0, 3, 0</column>
+<column name="i_0_i_reg_495">3, 0, 3, 0</column>
+<column name="i_3_reg_961">3, 0, 3, 0</column>
+<column name="i_reg_925">3, 0, 3, 0</column>
+<column name="k_0_0_reg_484">5, 0, 5, 0</column>
+<column name="k_0_i3_reg_528">3, 0, 3, 0</column>
+<column name="k_0_i_reg_506">3, 0, 3, 0</column>
+<column name="k_2_reg_979">3, 0, 3, 0</column>
+<column name="k_reg_943">3, 0, 3, 0</column>
+<column name="reg_587">8, 0, 8, 0</column>
+<column name="reg_591">8, 0, 8, 0</column>
+<column name="shl_ln2_reg_966">2, 0, 4, 2</column>
+<column name="shl_ln_reg_930">2, 0, 4, 2</column>
+<column name="tmp_5_reg_989">1, 0, 1, 0</column>
+<column name="x_addr_reg_935">4, 0, 4, 0</column>
+<column name="zext_ln474_reg_917">3, 0, 6, 3</column>
+<column name="zext_ln482_reg_953">3, 0, 6, 3</column>
+<column name="zext_ln568_reg_907">5, 0, 64, 59</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, AES_CTR_xcrypt_buffe, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, AES_CTR_xcrypt_buffe, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, AES_CTR_xcrypt_buffe, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, AES_CTR_xcrypt_buffe, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, AES_CTR_xcrypt_buffe, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, AES_CTR_xcrypt_buffe, return value</column>
+<column name="ctx_RoundKey_address0">out, 8, ap_memory, ctx_RoundKey, array</column>
+<column name="ctx_RoundKey_ce0">out, 1, ap_memory, ctx_RoundKey, array</column>
+<column name="ctx_RoundKey_q0">in, 8, ap_memory, ctx_RoundKey, array</column>
+<column name="ctx_RoundKey_address1">out, 8, ap_memory, ctx_RoundKey, array</column>
+<column name="ctx_RoundKey_ce1">out, 1, ap_memory, ctx_RoundKey, array</column>
+<column name="ctx_RoundKey_q1">in, 8, ap_memory, ctx_RoundKey, array</column>
+<column name="ctx_Iv_address0">out, 4, ap_memory, ctx_Iv, array</column>
+<column name="ctx_Iv_ce0">out, 1, ap_memory, ctx_Iv, array</column>
+<column name="ctx_Iv_we0">out, 1, ap_memory, ctx_Iv, array</column>
+<column name="ctx_Iv_d0">out, 8, ap_memory, ctx_Iv, array</column>
+<column name="ctx_Iv_q0">in, 8, ap_memory, ctx_Iv, array</column>
+<column name="buf_r_address0">out, 4, ap_memory, buf_r, array</column>
+<column name="buf_r_ce0">out, 1, ap_memory, buf_r, array</column>
+<column name="buf_r_we0">out, 1, ap_memory, buf_r, array</column>
+<column name="buf_r_d0">out, 8, ap_memory, buf_r, array</column>
+<column name="buf_r_q0">in, 8, ap_memory, buf_r, array</column>
+<column name="buf_r_address1">out, 4, ap_memory, buf_r, array</column>
+<column name="buf_r_ce1">out, 1, ap_memory, buf_r, array</column>
+<column name="buf_r_we1">out, 1, ap_memory, buf_r, array</column>
+<column name="buf_r_d1">out, 8, ap_memory, buf_r, array</column>
+<column name="buf_r_q1">in, 8, ap_memory, buf_r, array</column>
+</table>
+</item>
+</section>
+</profile>

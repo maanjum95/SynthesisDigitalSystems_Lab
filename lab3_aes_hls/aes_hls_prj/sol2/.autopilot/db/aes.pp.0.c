@@ -136,11 +136,9 @@
 # 7 "<command line>" 2
 # 1 "<built-in>" 2
 # 1 "c_src/aes.c" 2
-# 39 "c_src/aes.c"
+# 45 "c_src/aes.c"
 # 1 "c_src/aes.h" 1
-
-
-
+# 10 "c_src/aes.h"
 # 1 "/nas/ei/share/tools/xilinx/Vivado/2019.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 1 3
 # 33 "/nas/ei/share/tools/xilinx/Vivado/2019.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 3
 # 1 "/usr/include/stdint.h" 1 3 4
@@ -348,8 +346,8 @@ typedef unsigned long int uintptr_t;
 typedef __intmax_t intmax_t;
 typedef __uintmax_t uintmax_t;
 # 34 "/nas/ei/share/tools/xilinx/Vivado/2019.1/lnx64/tools/clang/bin/../lib/clang/3.1/include/stdint.h" 2 3
-# 5 "c_src/aes.h" 2
-# 44 "c_src/aes.h"
+# 11 "c_src/aes.h" 2
+# 50 "c_src/aes.h"
 struct AES_ctx {
   uint8_t RoundKey[176];
 
@@ -370,12 +368,12 @@ void AES_ctx_set_iv(struct AES_ctx *ctx, const uint8_t *iv);
 
 void AES_ECB_encrypt(const struct AES_ctx *ctx, uint8_t *buf);
 void AES_ECB_decrypt(const struct AES_ctx *ctx, uint8_t *buf);
-# 73 "c_src/aes.h"
+# 79 "c_src/aes.h"
 void AES_CBC_encrypt_buffer(struct AES_ctx *ctx, uint8_t *buf, uint32_t length);
 void AES_CBC_decrypt_buffer(struct AES_ctx *ctx, uint8_t *buf, uint32_t length);
-# 86 "c_src/aes.h"
+# 92 "c_src/aes.h"
 void AES_CTR_xcrypt_buffer(struct AES_ctx *ctx, uint8_t *buf, uint32_t length);
-# 40 "c_src/aes.c" 2
+# 46 "c_src/aes.c" 2
 # 1 "/usr/include/string.h" 1 3 4
 # 26 "/usr/include/string.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -659,8 +657,8 @@ extern char *__stpncpy (char *__restrict __dest,
 extern char *stpncpy (char *__restrict __dest,
         const char *__restrict __src, size_t __n)
      __attribute__ ((__nothrow__ )) __attribute__ ((__nonnull__ (1, 2)));
-# 41 "c_src/aes.c" 2
-# 73 "c_src/aes.c"
+# 47 "c_src/aes.c" 2
+# 79 "c_src/aes.c"
 typedef uint8_t state_t[4][4];
 
 
@@ -722,7 +720,7 @@ static const uint8_t rsbox[256] = {
 
 static const uint8_t Rcon[11] = {0x8d, 0x01, 0x02, 0x04, 0x08, 0x10,
                                  0x20, 0x40, 0x80, 0x1b, 0x36};
-# 168 "c_src/aes.c"
+# 174 "c_src/aes.c"
 static void KeyExpansion(uint8_t *RoundKey, const uint8_t *Key) {
   unsigned i, j, k;
   uint8_t tempa[4];
@@ -771,7 +769,7 @@ static void KeyExpansion(uint8_t *RoundKey, const uint8_t *Key) {
 
       tempa[0] = tempa[0] ^ Rcon[i / 4];
     }
-# 227 "c_src/aes.c"
+# 233 "c_src/aes.c"
     j = i * 4;
     k = (i - 4) * 4;
     RoundKey[j + 0] = RoundKey[k + 0] ^ tempa[0];
@@ -853,7 +851,7 @@ static void ShiftRows(state_t *state) {
 static uint8_t xtime(uint8_t x) { return ((x << 1) ^ (((x >> 7) & 1) * 0x1b)); }
 
 
-static void MixColumns(state_t *state) {
+static void MixColumns (state_t *state) {
   uint8_t i;
   uint8_t Tmp, Tm, t;
   for (i = 0; i < 4; ++i) {
@@ -873,7 +871,7 @@ static void MixColumns(state_t *state) {
     (*state)[i][3] ^= Tm ^ Tmp;
   }
 }
-# 356 "c_src/aes.c"
+# 362 "c_src/aes.c"
 static void InvMixColumns(state_t *state) {
   int i;
   uint8_t a, b, c, d;

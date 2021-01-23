@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'MixColumns'" level="0">
-<item name = "Date">Tue Jun 16 16:55:52 2020
+<item name = "Date">Sat Jan 23 11:19:14 2021
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">aes_hls_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 3.357, 1.25</column>
+<column name="ap_clk">100.00, 3.357, 12.50</column>
 </table>
 </item>
 </section>

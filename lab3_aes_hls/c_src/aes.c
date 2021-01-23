@@ -176,7 +176,7 @@ static void KeyExpansion(uint8_t *RoundKey, const uint8_t *Key) {
   uint8_t tempa[4]; // Used for the column/row operations
 
   // The first round key is the key itself.
-  for (i = 0; i < Nk; ++i) {
+  KeyExpansion_label0:for (i = 0; i < Nk; ++i) {
     RoundKey[(i * 4) + 0] = Key[(i * 4) + 0];
     RoundKey[(i * 4) + 1] = Key[(i * 4) + 1];
     RoundKey[(i * 4) + 2] = Key[(i * 4) + 2];
@@ -184,7 +184,7 @@ static void KeyExpansion(uint8_t *RoundKey, const uint8_t *Key) {
   }
 
   // All other round keys are found from the previous round keys.
-  for (i = Nk; i < Nb * (Nr + 1); ++i) {
+  KeyExpansion_label1:for (i = Nk; i < Nb * (Nr + 1); ++i) {
     {
       k = (i - 1) * 4;
       tempa[0] = RoundKey[k + 0];
@@ -260,8 +260,8 @@ void AES_ctx_set_iv(struct AES_ctx *ctx, const uint8_t *iv) {
 static void AddRoundKey(uint8_t round, state_t *state,
                         const uint8_t *RoundKey) {
   uint8_t i, j;
-  for (i = 0; i < 4; ++i) {
-    for (j = 0; j < 4; ++j) {
+  AddRoundKey_label2:for (i = 0; i < 4; ++i) {
+    AddRoundKey_label1:for (j = 0; j < 4; ++j) {
       (*state)[i][j] ^= RoundKey[(round * Nb * 4) + (i * Nb) + j];
     }
   }
@@ -271,8 +271,8 @@ static void AddRoundKey(uint8_t round, state_t *state,
 // state matrix with values in an S-box.
 static void SubBytes(state_t *state) {
   uint8_t i, j;
-  for (i = 0; i < 4; ++i) {
-    for (j = 0; j < 4; ++j) {
+  SubBytes_label4:for (i = 0; i < 4; ++i) {
+    SubBytes_label5:for (j = 0; j < 4; ++j) {
       (*state)[j][i] = getSBoxValue((*state)[j][i]);
     }
   }
@@ -314,7 +314,7 @@ static uint8_t xtime(uint8_t x) { return ((x << 1) ^ (((x >> 7) & 1) * 0x1b)); }
 static void MixColumns (state_t *state) {
   uint8_t i;
   uint8_t Tmp, Tm, t;
-  for (i = 0; i < 4; ++i) {
+  MixColumns_label0:for (i = 0; i < 4; ++i) {
     t = (*state)[i][0];
     Tmp = (*state)[i][0] ^ (*state)[i][1] ^ (*state)[i][2] ^ (*state)[i][3];
     Tm = (*state)[i][0] ^ (*state)[i][1];
@@ -429,7 +429,7 @@ static void Cipher(state_t *state, const uint8_t *RoundKey) {
   // The first Nr-1 rounds are identical.
   // These Nr rounds are executed in the loop below.
   // Last one without MixColumns()
-  for (round = 1;; ++round) {
+  Cipher_label0:for (round = 1;; ++round) {
     SubBytes(state);
     ShiftRows(state);
     if (round == Nr) {
@@ -471,16 +471,16 @@ static void InvCipher(state_t *state, const uint8_t *RoundKey) {
 #if defined(ECB) && (ECB == 1)
 
 void conv_1dTostate(uint8_t _1d[16], state_t _2d){
-    for(size_t i = 0; i < 4; ++i){
-        for(size_t k = 0; k< 4; ++k){
+    conv_1dTostate_label0:for(size_t i = 0; i < 4; ++i){
+        conv_1dTostate_label1:for(size_t k = 0; k< 4; ++k){
             _2d[i][k] = _1d[i*4 + k];
         }
     }
 }
 
 void conv_stateTo1d(uint8_t _1d[16], state_t _2d){
-    for(size_t i = 0; i < 4; ++i){
-        for(size_t k = 0; k< 4; ++k){
+    conv_stateTo1d_label2:for(size_t i = 0; i < 4; ++i){
+        conv_stateTo1d_label3:for(size_t k = 0; k< 4; ++k){
             _1d[i*4 + k] = _2d[i][k];
         }
     }

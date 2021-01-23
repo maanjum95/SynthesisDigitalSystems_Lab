@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'AddRoundKey'" level="0">
-<item name = "Date">Tue Jun 16 16:55:58 2020
+<item name = "Date">Sat Jan 23 11:19:21 2021
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">aes_hls_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 3.566, 1.25</column>
+<column name="ap_clk">100.00, 3.566, 12.50</column>
 </table>
 </item>
 </section>
@@ -79,38 +79,38 @@
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="ap_block_pp0_stage0_11001">and, 0, 0, 2, 1, 1</column>
 <column name="ap_block_pp0_stage0_subdone">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln259_10_fu_435_p2">or, 0, 0, 8, 8, 4</column>
-<column name="or_ln259_11_fu_445_p2">or, 0, 0, 8, 8, 4</column>
-<column name="or_ln259_12_fu_455_p2">or, 0, 0, 8, 8, 4</column>
-<column name="or_ln259_13_fu_537_p2">or, 0, 0, 8, 8, 4</column>
-<column name="or_ln259_14_fu_547_p2">or, 0, 0, 8, 8, 4</column>
-<column name="or_ln259_1_fu_345_p2">or, 0, 0, 8, 8, 2</column>
-<column name="or_ln259_2_fu_355_p2">or, 0, 0, 8, 8, 2</column>
-<column name="or_ln259_3_fu_365_p2">or, 0, 0, 8, 8, 3</column>
-<column name="or_ln259_4_fu_375_p2">or, 0, 0, 8, 8, 3</column>
-<column name="or_ln259_5_fu_385_p2">or, 0, 0, 8, 8, 3</column>
-<column name="or_ln259_6_fu_395_p2">or, 0, 0, 8, 8, 3</column>
-<column name="or_ln259_7_fu_405_p2">or, 0, 0, 8, 8, 4</column>
-<column name="or_ln259_8_fu_415_p2">or, 0, 0, 8, 8, 4</column>
-<column name="or_ln259_9_fu_425_p2">or, 0, 0, 8, 8, 4</column>
-<column name="or_ln259_fu_334_p2">or, 0, 0, 8, 8, 1</column>
+<column name="or_ln265_10_fu_435_p2">or, 0, 0, 8, 8, 4</column>
+<column name="or_ln265_11_fu_445_p2">or, 0, 0, 8, 8, 4</column>
+<column name="or_ln265_12_fu_455_p2">or, 0, 0, 8, 8, 4</column>
+<column name="or_ln265_13_fu_537_p2">or, 0, 0, 8, 8, 4</column>
+<column name="or_ln265_14_fu_547_p2">or, 0, 0, 8, 8, 4</column>
+<column name="or_ln265_1_fu_345_p2">or, 0, 0, 8, 8, 2</column>
+<column name="or_ln265_2_fu_355_p2">or, 0, 0, 8, 8, 2</column>
+<column name="or_ln265_3_fu_365_p2">or, 0, 0, 8, 8, 3</column>
+<column name="or_ln265_4_fu_375_p2">or, 0, 0, 8, 8, 3</column>
+<column name="or_ln265_5_fu_385_p2">or, 0, 0, 8, 8, 3</column>
+<column name="or_ln265_6_fu_395_p2">or, 0, 0, 8, 8, 3</column>
+<column name="or_ln265_7_fu_405_p2">or, 0, 0, 8, 8, 4</column>
+<column name="or_ln265_8_fu_415_p2">or, 0, 0, 8, 8, 4</column>
+<column name="or_ln265_9_fu_425_p2">or, 0, 0, 8, 8, 4</column>
+<column name="or_ln265_fu_334_p2">or, 0, 0, 8, 8, 1</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln259_10_fu_515_p2">xor, 0, 0, 8, 8, 8</column>
-<column name="xor_ln259_11_fu_520_p2">xor, 0, 0, 8, 8, 8</column>
-<column name="xor_ln259_12_fu_525_p2">xor, 0, 0, 8, 8, 8</column>
-<column name="xor_ln259_13_fu_531_p2">xor, 0, 0, 8, 8, 8</column>
-<column name="xor_ln259_14_fu_557_p2">xor, 0, 0, 8, 8, 8</column>
-<column name="xor_ln259_15_fu_562_p2">xor, 0, 0, 8, 8, 8</column>
-<column name="xor_ln259_1_fu_470_p2">xor, 0, 0, 8, 8, 8</column>
-<column name="xor_ln259_2_fu_475_p2">xor, 0, 0, 8, 8, 8</column>
-<column name="xor_ln259_3_fu_480_p2">xor, 0, 0, 8, 8, 8</column>
-<column name="xor_ln259_4_fu_485_p2">xor, 0, 0, 8, 8, 8</column>
-<column name="xor_ln259_5_fu_490_p2">xor, 0, 0, 8, 8, 8</column>
-<column name="xor_ln259_6_fu_495_p2">xor, 0, 0, 8, 8, 8</column>
-<column name="xor_ln259_7_fu_500_p2">xor, 0, 0, 8, 8, 8</column>
-<column name="xor_ln259_8_fu_505_p2">xor, 0, 0, 8, 8, 8</column>
-<column name="xor_ln259_9_fu_510_p2">xor, 0, 0, 8, 8, 8</column>
-<column name="xor_ln259_fu_465_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln265_10_fu_515_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln265_11_fu_520_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln265_12_fu_525_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln265_13_fu_531_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln265_14_fu_557_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln265_15_fu_562_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln265_1_fu_470_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln265_2_fu_475_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln265_3_fu_480_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln265_4_fu_485_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln265_5_fu_490_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln265_6_fu_495_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln265_7_fu_500_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln265_8_fu_505_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln265_9_fu_510_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln265_fu_465_p2">xor, 0, 0, 8, 8, 8</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -158,20 +158,20 @@
 <column name="shl_ln_reg_649">4, 0, 8, 4</column>
 <column name="state_3_2_read_3_reg_802">8, 0, 8, 0</column>
 <column name="state_3_3_read_4_reg_797">8, 0, 8, 0</column>
-<column name="xor_ln259_10_reg_857">8, 0, 8, 0</column>
-<column name="xor_ln259_11_reg_862">8, 0, 8, 0</column>
-<column name="xor_ln259_12_reg_867">8, 0, 8, 0</column>
-<column name="xor_ln259_13_reg_872">8, 0, 8, 0</column>
-<column name="xor_ln259_1_reg_812">8, 0, 8, 0</column>
-<column name="xor_ln259_2_reg_817">8, 0, 8, 0</column>
-<column name="xor_ln259_3_reg_822">8, 0, 8, 0</column>
-<column name="xor_ln259_4_reg_827">8, 0, 8, 0</column>
-<column name="xor_ln259_5_reg_832">8, 0, 8, 0</column>
-<column name="xor_ln259_6_reg_837">8, 0, 8, 0</column>
-<column name="xor_ln259_7_reg_842">8, 0, 8, 0</column>
-<column name="xor_ln259_8_reg_847">8, 0, 8, 0</column>
-<column name="xor_ln259_9_reg_852">8, 0, 8, 0</column>
-<column name="xor_ln259_reg_807">8, 0, 8, 0</column>
+<column name="xor_ln265_10_reg_857">8, 0, 8, 0</column>
+<column name="xor_ln265_11_reg_862">8, 0, 8, 0</column>
+<column name="xor_ln265_12_reg_867">8, 0, 8, 0</column>
+<column name="xor_ln265_13_reg_872">8, 0, 8, 0</column>
+<column name="xor_ln265_1_reg_812">8, 0, 8, 0</column>
+<column name="xor_ln265_2_reg_817">8, 0, 8, 0</column>
+<column name="xor_ln265_3_reg_822">8, 0, 8, 0</column>
+<column name="xor_ln265_4_reg_827">8, 0, 8, 0</column>
+<column name="xor_ln265_5_reg_832">8, 0, 8, 0</column>
+<column name="xor_ln265_6_reg_837">8, 0, 8, 0</column>
+<column name="xor_ln265_7_reg_842">8, 0, 8, 0</column>
+<column name="xor_ln265_8_reg_847">8, 0, 8, 0</column>
+<column name="xor_ln265_9_reg_852">8, 0, 8, 0</column>
+<column name="xor_ln265_reg_807">8, 0, 8, 0</column>
 </table>
 </item>
 </section>

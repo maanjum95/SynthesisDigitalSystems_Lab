@@ -58,13 +58,13 @@
   },
   "ClockInfo": {
     "ClockName": "ap_clk",
-    "ClockPeriod": "10",
+    "ClockPeriod": "100",
     "IsCombLogic": "0",
     "II": "204",
-    "Latency": "212",
-    "Uncertainty": "1.25"
+    "Latency": "203",
+    "Uncertainty": "12.5"
   },
-  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
+  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 100.000 [get_ports ap_clk]"]},
   "Ipx": {
     "Vendor": "xilinx.com",
     "Library": "hls",
@@ -112,9 +112,9 @@
       "impl\/verilog\/aes16_bidir.v"
     ],
     "Misc": ["impl\/misc\/logo.png"],
-    "DesignXml": "\/nas\/ei\/share\/TUEIEDA\/LabSDS\/SS20\/ge29noy\/labsds\/aes_hls\/aes_hls_prj\/sol2\/.autopilot\/db\/aes16_bidir.design.xml",
-    "DebugDir": "\/nas\/ei\/share\/TUEIEDA\/LabSDS\/SS20\/ge29noy\/labsds\/aes_hls\/aes_hls_prj\/sol2\/.debug",
-    "ProtoInst": ["\/nas\/ei\/share\/TUEIEDA\/LabSDS\/SS20\/ge29noy\/labsds\/aes_hls\/aes_hls_prj\/sol2\/.debug\/aes16_bidir.protoinst"]
+    "DesignXml": "\/nas\/ei\/share\/TUEIEDA\/LabSDS\/WS20\/ge46bod\/lab3_aes_hls\/aes_hls_prj\/sol2\/.autopilot\/db\/aes16_bidir.design.xml",
+    "DebugDir": "\/nas\/ei\/share\/TUEIEDA\/LabSDS\/WS20\/ge46bod\/lab3_aes_hls\/aes_hls_prj\/sol2\/.debug",
+    "ProtoInst": ["\/nas\/ei\/share\/TUEIEDA\/LabSDS\/WS20\/ge46bod\/lab3_aes_hls\/aes_hls_prj\/sol2\/.debug\/aes16_bidir.protoinst"]
   },
   "SubcoreInfo": {
     "HasXpmMemory": false,
@@ -511,11 +511,11 @@
       "Instances": [
         {
           "ModuleName": "KeyExpansion",
-          "InstanceName": "grp_KeyExpansion_fu_371"
+          "InstanceName": "grp_KeyExpansion_fu_373"
         },
         {
           "ModuleName": "AES_CTR_xcrypt_buffe",
-          "InstanceName": "grp_AES_CTR_xcrypt_buffe_fu_395",
+          "InstanceName": "grp_AES_CTR_xcrypt_buffe_fu_397",
           "Instances": [{
               "ModuleName": "Cipher",
               "InstanceName": "grp_Cipher_fu_480",
@@ -594,7 +594,7 @@
       "aes16_bidir": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
-        "isPipelined": "1",
+        "isPipelined": "0",
         "isCombinational": "0",
         "isOneStateSeq": "0"
       }
@@ -610,8 +610,8 @@
           "PipelineType": "function"
         },
         "Timing": {
-          "Target": "10.00",
-          "Uncertainty": "1.25",
+          "Target": "100.00",
+          "Uncertainty": "12.50",
           "Estimate": "5.951"
         },
         "Area": {
@@ -632,8 +632,8 @@
           "PipelineType": "function"
         },
         "Timing": {
-          "Target": "10.00",
-          "Uncertainty": "1.25",
+          "Target": "100.00",
+          "Uncertainty": "12.50",
           "Estimate": "3.566"
         },
         "Area": {
@@ -654,8 +654,8 @@
           "PipelineType": "function"
         },
         "Timing": {
-          "Target": "10.00",
-          "Uncertainty": "1.25",
+          "Target": "100.00",
+          "Uncertainty": "12.50",
           "Estimate": "2.771"
         },
         "Area": {
@@ -676,8 +676,8 @@
           "PipelineType": "function"
         },
         "Timing": {
-          "Target": "10.00",
-          "Uncertainty": "1.25",
+          "Target": "100.00",
+          "Uncertainty": "12.50",
           "Estimate": "0.000"
         },
         "Area": {
@@ -698,8 +698,8 @@
           "PipelineType": "function"
         },
         "Timing": {
-          "Target": "10.00",
-          "Uncertainty": "1.25",
+          "Target": "100.00",
+          "Uncertainty": "12.50",
           "Estimate": "3.357"
         },
         "Area": {
@@ -712,66 +712,66 @@
       },
       "Cipher": {
         "Latency": {
-          "LatencyBest": "107",
-          "LatencyAvg": "107",
-          "LatencyWorst": "107",
-          "PipelineII": "108",
-          "PipelineDepth": "108",
+          "LatencyBest": "98",
+          "LatencyAvg": "98",
+          "LatencyWorst": "98",
+          "PipelineII": "99",
+          "PipelineDepth": "99",
           "PipelineType": "function"
         },
         "Timing": {
-          "Target": "10.00",
-          "Uncertainty": "1.25",
-          "Estimate": "7.173"
+          "Target": "100.00",
+          "Uncertainty": "12.50",
+          "Estimate": "9.778"
         },
         "Area": {
           "BRAM_18K": "8",
-          "FF": "606",
-          "LUT": "2574",
+          "FF": "469",
+          "LUT": "2538",
           "DSP48E": "0",
           "URAM": "0"
         }
       },
       "AES_CTR_xcrypt_buffe": {
         "Latency": {
-          "LatencyBest": "115",
-          "LatencyAvg": "115",
-          "LatencyWorst": "115",
-          "PipelineII": "108",
-          "PipelineDepth": "116",
+          "LatencyBest": "106",
+          "LatencyAvg": "106",
+          "LatencyWorst": "106",
+          "PipelineII": "99",
+          "PipelineDepth": "107",
           "PipelineType": "function"
         },
         "Timing": {
-          "Target": "10.00",
-          "Uncertainty": "1.25",
-          "Estimate": "7.173"
+          "Target": "100.00",
+          "Uncertainty": "12.50",
+          "Estimate": "9.778"
         },
         "Area": {
           "BRAM_18K": "8",
-          "FF": "1121",
-          "LUT": "3741",
+          "FF": "975",
+          "LUT": "3669",
           "DSP48E": "0",
           "URAM": "0"
         }
       },
       "aes16_bidir": {
         "Latency": {
-          "LatencyBest": "212",
-          "LatencyAvg": "212",
-          "LatencyWorst": "212",
+          "LatencyBest": "203",
+          "LatencyAvg": "203",
+          "LatencyWorst": "203",
           "PipelineII": "204",
-          "PipelineDepth": "213",
+          "PipelineDepth": "204",
           "PipelineType": "function"
         },
         "Timing": {
-          "Target": "10.00",
-          "Uncertainty": "1.25",
-          "Estimate": "7.173"
+          "Target": "100.00",
+          "Uncertainty": "12.50",
+          "Estimate": "9.778"
         },
         "Area": {
           "BRAM_18K": "11",
-          "FF": "2992",
-          "LUT": "8545",
+          "FF": "2860",
+          "LUT": "8451",
           "URAM": "0",
           "DSP48E": "0"
         }
@@ -788,7 +788,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2020-06-16 16:56:08 CEST",
+    "Time": "2021-01-23 11:19:28 CET",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.1"
   }

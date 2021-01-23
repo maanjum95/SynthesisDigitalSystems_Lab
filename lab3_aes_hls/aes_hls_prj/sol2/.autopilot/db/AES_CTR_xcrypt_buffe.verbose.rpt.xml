@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'AES_CTR_xcrypt_buffe'" level="0">
-<item name = "Date">Tue Jun 16 16:56:01 2020
+<item name = "Date">Sat Jan 23 11:19:24 2021
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">aes_hls_prj</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00, 7.173, 1.25</column>
+<column name="ap_clk">100.00, 9.778, 12.50</column>
 </table>
 </item>
 </section>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">115, 115, 108, 108, function</column>
+<column name="">106, 106, 99, 99, function</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_Cipher_fu_480">Cipher, 107, 107, 108, 108, function</column>
+<column name="grp_Cipher_fu_480">Cipher, 98, 98, 99, 99, function</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
@@ -50,19 +50,19 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 353, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">8, -, 606, 2574, -</column>
+<column name="Instance">8, -, 469, 2538, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, 814, -</column>
-<column name="Register">-, -, 515, -, -</column>
+<column name="Multiplexer">-, -, -, 778, -</column>
+<column name="Register">-, -, 506, -, -</column>
 <specialColumn name="Available">20, 20, 16000, 8000, 0</specialColumn>
-<specialColumn name="Utilization (%)">40, 0, 7, 46, 0</specialColumn>
+<specialColumn name="Utilization (%)">40, 0, 6, 45, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="grp_Cipher_fu_480">Cipher, 8, 0, 606, 2574, 0</column>
+<column name="grp_Cipher_fu_480">Cipher, 8, 0, 469, 2538, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
@@ -79,9 +79,12 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln577_fu_593_p2">+, 0, 0, 15, 8, 1</column>
+<column name="add_ln583_fu_593_p2">+, 0, 0, 15, 8, 1</column>
 <column name="ap_block_pp0_stage0_11001">and, 0, 0, 2, 1, 1</column>
-<column name="ap_condition_369">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_360">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_565">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_568">and, 0, 0, 2, 1, 1</column>
+<column name="ap_condition_571">and, 0, 0, 2, 1, 1</column>
 <column name="ap_condition_574">and, 0, 0, 2, 1, 1</column>
 <column name="ap_condition_577">and, 0, 0, 2, 1, 1</column>
 <column name="ap_condition_580">and, 0, 0, 2, 1, 1</column>
@@ -93,47 +96,44 @@
 <column name="ap_condition_598">and, 0, 0, 2, 1, 1</column>
 <column name="ap_condition_601">and, 0, 0, 2, 1, 1</column>
 <column name="ap_condition_604">and, 0, 0, 2, 1, 1</column>
-<column name="ap_condition_607">and, 0, 0, 2, 1, 1</column>
-<column name="ap_condition_610">and, 0, 0, 2, 1, 1</column>
-<column name="ap_condition_613">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln573_10_fu_558_p2">icmp, 0, 0, 11, 8, 2</column>
-<column name="icmp_ln573_11_fu_563_p2">icmp, 0, 0, 11, 8, 2</column>
-<column name="icmp_ln573_12_fu_568_p2">icmp, 0, 0, 11, 8, 2</column>
-<column name="icmp_ln573_13_fu_573_p2">icmp, 0, 0, 11, 8, 2</column>
-<column name="icmp_ln573_14_fu_578_p2">icmp, 0, 0, 11, 8, 2</column>
-<column name="icmp_ln573_15_fu_583_p2">icmp, 0, 0, 11, 8, 2</column>
-<column name="icmp_ln573_1_fu_512_p2">icmp, 0, 0, 11, 8, 2</column>
-<column name="icmp_ln573_2_fu_518_p2">icmp, 0, 0, 11, 8, 2</column>
-<column name="icmp_ln573_3_fu_523_p2">icmp, 0, 0, 11, 8, 2</column>
-<column name="icmp_ln573_4_fu_528_p2">icmp, 0, 0, 11, 8, 2</column>
-<column name="icmp_ln573_5_fu_533_p2">icmp, 0, 0, 11, 8, 2</column>
-<column name="icmp_ln573_6_fu_538_p2">icmp, 0, 0, 11, 8, 2</column>
-<column name="icmp_ln573_7_fu_543_p2">icmp, 0, 0, 11, 8, 2</column>
-<column name="icmp_ln573_8_fu_548_p2">icmp, 0, 0, 11, 8, 2</column>
-<column name="icmp_ln573_9_fu_553_p2">icmp, 0, 0, 11, 8, 2</column>
-<column name="icmp_ln573_fu_506_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln579_10_fu_558_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln579_11_fu_563_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln579_12_fu_568_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln579_13_fu_573_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln579_14_fu_578_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln579_15_fu_583_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln579_1_fu_512_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln579_2_fu_518_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln579_3_fu_523_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln579_4_fu_528_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln579_5_fu_533_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln579_6_fu_538_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln579_7_fu_543_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln579_8_fu_548_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln579_9_fu_553_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln579_fu_506_p2">icmp, 0, 0, 11, 8, 2</column>
 <column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
-<column name="xor_ln583_10_fu_714_p2">xor, 0, 0, 8, 8, 8</column>
-<column name="xor_ln583_11_fu_719_p2">xor, 0, 0, 8, 8, 8</column>
-<column name="xor_ln583_12_fu_724_p2">xor, 0, 0, 8, 8, 8</column>
-<column name="xor_ln583_13_fu_729_p2">xor, 0, 0, 8, 8, 8</column>
-<column name="xor_ln583_14_fu_734_p2">xor, 0, 0, 8, 8, 8</column>
-<column name="xor_ln583_15_fu_739_p2">xor, 0, 0, 8, 8, 8</column>
-<column name="xor_ln583_1_fu_669_p2">xor, 0, 0, 8, 8, 8</column>
-<column name="xor_ln583_2_fu_674_p2">xor, 0, 0, 8, 8, 8</column>
-<column name="xor_ln583_3_fu_679_p2">xor, 0, 0, 8, 8, 8</column>
-<column name="xor_ln583_4_fu_684_p2">xor, 0, 0, 8, 8, 8</column>
-<column name="xor_ln583_5_fu_689_p2">xor, 0, 0, 8, 8, 8</column>
-<column name="xor_ln583_6_fu_694_p2">xor, 0, 0, 8, 8, 8</column>
-<column name="xor_ln583_7_fu_699_p2">xor, 0, 0, 8, 8, 8</column>
-<column name="xor_ln583_8_fu_704_p2">xor, 0, 0, 8, 8, 8</column>
-<column name="xor_ln583_9_fu_709_p2">xor, 0, 0, 8, 8, 8</column>
-<column name="xor_ln583_fu_664_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln589_10_fu_714_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln589_11_fu_719_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln589_12_fu_724_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln589_13_fu_729_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln589_14_fu_734_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln589_15_fu_739_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln589_1_fu_669_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln589_2_fu_674_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln589_3_fu_679_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln589_4_fu_684_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln589_5_fu_689_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln589_6_fu_694_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln589_7_fu_699_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln589_8_fu_704_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln589_9_fu_709_p2">xor, 0, 0, 8, 8, 8</column>
+<column name="xor_ln589_fu_664_p2">xor, 0, 0, 8, 8, 8</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="ap_NS_fsm">477, 109, 1, 109</column>
+<column name="ap_NS_fsm">441, 100, 1, 100</column>
 <column name="ap_enable_reg_pp0_iter0">9, 2, 1, 2</column>
 <column name="ap_enable_reg_pp0_iter1">9, 2, 1, 2</column>
 <column name="ap_phi_reg_pp0_iter0_ctx_Iv_addr_4_lcssa_013_reg_411">65, 16, 4, 64</column>
@@ -145,7 +145,7 @@
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="ap_CS_fsm">108, 0, 108, 0</column>
+<column name="ap_CS_fsm">99, 0, 99, 0</column>
 <column name="ap_enable_reg_pp0_iter0_reg">1, 0, 1, 0</column>
 <column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
 <column name="ap_phi_reg_pp0_iter0_ctx_Iv_addr_4_lcssa_013_reg_411">4, 0, 4, 0</column>
@@ -184,22 +184,22 @@
 <column name="buf_9_read_1_reg_1140">8, 0, 8, 0</column>
 <column name="ctx_Iv_load_4_lcssa_s_reg_373">8, 0, 8, 0</column>
 <column name="grp_Cipher_fu_480_ap_start_reg">1, 0, 1, 0</column>
-<column name="icmp_ln573_10_reg_1086">1, 0, 1, 0</column>
-<column name="icmp_ln573_11_reg_1090">1, 0, 1, 0</column>
-<column name="icmp_ln573_12_reg_1094">1, 0, 1, 0</column>
-<column name="icmp_ln573_13_reg_1098">1, 0, 1, 0</column>
-<column name="icmp_ln573_14_reg_1102">1, 0, 1, 0</column>
-<column name="icmp_ln573_15_reg_1106">1, 0, 1, 0</column>
-<column name="icmp_ln573_1_reg_1050">1, 0, 1, 0</column>
-<column name="icmp_ln573_2_reg_1054">1, 0, 1, 0</column>
-<column name="icmp_ln573_3_reg_1058">1, 0, 1, 0</column>
-<column name="icmp_ln573_4_reg_1062">1, 0, 1, 0</column>
-<column name="icmp_ln573_5_reg_1066">1, 0, 1, 0</column>
-<column name="icmp_ln573_6_reg_1070">1, 0, 1, 0</column>
-<column name="icmp_ln573_7_reg_1074">1, 0, 1, 0</column>
-<column name="icmp_ln573_8_reg_1078">1, 0, 1, 0</column>
-<column name="icmp_ln573_9_reg_1082">1, 0, 1, 0</column>
-<column name="icmp_ln573_reg_1046">1, 0, 1, 0</column>
+<column name="icmp_ln579_10_reg_1086">1, 0, 1, 0</column>
+<column name="icmp_ln579_11_reg_1090">1, 0, 1, 0</column>
+<column name="icmp_ln579_12_reg_1094">1, 0, 1, 0</column>
+<column name="icmp_ln579_13_reg_1098">1, 0, 1, 0</column>
+<column name="icmp_ln579_14_reg_1102">1, 0, 1, 0</column>
+<column name="icmp_ln579_15_reg_1106">1, 0, 1, 0</column>
+<column name="icmp_ln579_1_reg_1050">1, 0, 1, 0</column>
+<column name="icmp_ln579_2_reg_1054">1, 0, 1, 0</column>
+<column name="icmp_ln579_3_reg_1058">1, 0, 1, 0</column>
+<column name="icmp_ln579_4_reg_1062">1, 0, 1, 0</column>
+<column name="icmp_ln579_5_reg_1066">1, 0, 1, 0</column>
+<column name="icmp_ln579_6_reg_1070">1, 0, 1, 0</column>
+<column name="icmp_ln579_7_reg_1074">1, 0, 1, 0</column>
+<column name="icmp_ln579_8_reg_1078">1, 0, 1, 0</column>
+<column name="icmp_ln579_9_reg_1082">1, 0, 1, 0</column>
+<column name="icmp_ln579_reg_1046">1, 0, 1, 0</column>
 <column name="x_0_0_1_reg_852">8, 0, 8, 0</column>
 <column name="x_0_1_1_reg_859">8, 0, 8, 0</column>
 <column name="x_0_2_1_reg_878">8, 0, 8, 0</column>
