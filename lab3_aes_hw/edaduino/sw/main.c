@@ -68,6 +68,12 @@ static bsp_init_t cfg = {
 uint32_t crypt_msg_hw(uint8_t* msg, const uint8_t* key, const uint8_t* iv){
 	uint64_t time1 = 0, time2 = 0;
 
+	uint8_t iv_val[16];
+	uint8_t input[16];
+	uint8_t encrypted[16];
+	uint8_t buffer[16];
+	int i, j;
+
 	/* TODO: Invoke the hardware accelerator to en-/decrypt a msg_t data structure.
 	 * 		 Return the spent time for setup and actual en-/decryption
 	 * Tips: - Driver functions aes_ha_write128B_.../aes_ha_read128B_... take a pointer to a byte-array and accesses the first 128 bit
@@ -76,7 +82,50 @@ uint32_t crypt_msg_hw(uint8_t* msg, const uint8_t* key, const uint8_t* iv){
 	 * 		   for every new message en/decryption
 	 * 		 - The (private) Key-register is not updated by the hardware in any way.
 	 * 		 - Find a way to determine a finished 128 Bit encryption by interfacing with the AES_HA ISR */
+	time1 = get_CpuCycles();
 
+	// writing the key
+	aes_ha_write128B_Key(key);
+
+	// copying the iv value
+	for (i = 0; i < 16; i++)
+		iv_val[i] = iv[i];
+
+	for (i = 0; i < MSG_ROWS*MSG_COLS; i+=16) {
+		// Encrypt
+		aes_ha_write128B_IV(iv_val);
+
+		// copying message to buffer
+		for (j = 0; j < 16; j++)
+			buffer[j] = msg[i+j];
+
+		// Processing this 16 byte data
+		aes_ha_write128B_IO(buffer);
+		aes_ha_read128B_IO(input);
+		aes_done = 0;
+		aes_ha_start();
+
+		// Wait for encryption to complete
+		while(!aes_done)
+			aes_ha_read128B_IO(encrypted); // TODO
+
+		// copying buffer back to original message
+		for (j = 0; j < 16; j++)
+			msg[i+j] = encrypted[j]; // TODO
+
+		// updating iv
+		for (j = (AES_BLOCKLEN - 1); j >= 0; j--) {
+			if (iv_val[j] == 255) {
+				iv_val[j] = 0;
+				continue;
+			}
+			iv_val[j]++;
+			break;
+		}
+	}
+
+
+	time2 = get_CpuCycles();
     return(time2 - time1);
 }
 
